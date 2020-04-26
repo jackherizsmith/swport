@@ -1,11 +1,14 @@
 {
-  "name": "Sally Wardle portfolio",
+  "name": "sally-wardle-portfolio",
   "version": "1.0.0",
   "description": "The portfolio of Sally Wardle",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "eleventy --serve"
   },
   "author": "@jackherizsmith",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
 }
