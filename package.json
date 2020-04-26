@@ -4,7 +4,8 @@
   "description": "The portfolio of Sally Wardle",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve"
+    "start": "eleventy --serve",
+    "build": "eleventy"
   },
   "author": "@jackherizsmith",
   "license": "ISC",
