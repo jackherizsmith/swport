@@ -1,8 +1,16 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Sally Wardle</title>
+        <title>Sally Wardle |
+            {{title}}</title>
     </head>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/portfolio">Portfolio</a>
+        </nav>
+    </header>
     <body>
-        {{ content }}
+        {{ content | safe }}
     </body>

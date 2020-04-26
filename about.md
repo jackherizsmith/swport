@@ -1,3 +1,8 @@
+---
+layout: base.njk
+title: "About"
+---
+
 # Sally is..
 
 awesome
