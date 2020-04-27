@@ -1,9 +1,9 @@
 ---
-layout: base.njk
-title: "Home"
+title: Home
+layout: home.njk
 ---
 
-# Sally - jouranlist
+# Sally Wardle, journalist
 
 ## Here to write the news
 

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Sally Wardle |
+            {{title}}</title>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/main.css" />
+    </head>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/portfolio">Portfolio</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+    <body>
+        {{ content | safe }}
+    </body>
+    <footer>
+        <p>Sally Wardle © 2020</p>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+        <a href="#">Medium</a>
+
+        <p>Built by <a href="https://www.jackherizsmith.com">Jack</a></p>. 
+    </footer>
+</html>

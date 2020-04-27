@@ -1,0 +1,16 @@
+---
+layout: base
+---
+
+{{ content | safe }}
+
+<form name="contact" method="POST" data-netlify="true">
+    <label for="name">Your name <span>*</span></label>
+    <input type="text" name="name" id="name" required />
+    <label for="email">Your email <span>*</span></label>
+    <input type="email" name="email" id="email" required />
+    <label for="message">Your message <span>*</span></label>
+    <textarea name="message" id="message" required></textarea>
+    <button type="submit">Send</button>
+</form>
+<script src="/js/form.js"></script>

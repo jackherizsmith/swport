@@ -1,10 +1,10 @@
 ---
-layout: base.njk
-title: "About"
+title: About
+layout: about.njk
 ---
 
 # Sally is..
 
-awesome
+awesomes
 
 ![sally](/images/pic1.png)

@@ -1,0 +1,14 @@
+---
+layout: base.njk
+---
+
+<h2>Here is my work</h2>
+
+<section>
+{%- for portfolio in collections.portfolioReversed -%}
+    <article>
+        <h3>{{portfolio.data.title}}</h3>
+        <img src="{{portfolio.data.thumb}}">
+    </article>
+{%- endfor -%}
+</section>

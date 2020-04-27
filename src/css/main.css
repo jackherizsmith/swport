@@ -1,0 +1,112 @@
+:root {
+  --text: hsl(267, 73%, 3%);
+  --page: hsl(220, 8%, 92%);
+  --flair: hsl(194, 100%, 27%);
+  --text-secondary: hsl(231, 11%, 34%);
+  --page-secondary: hsl(224, 11%, 67%);
+  --font-title: 'Playfair Display', serif;
+  --font: "Merriweather", serif;
+  --font-secondary: "PT Mono", monospace;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--page);
+  color: var(--text);
+  font-family: var(--font);
+}
+
+label,
+input,
+button {
+  display: block;
+  font: inherit;
+  color: inherit;
+}
+
+form {
+  max-width: 30rem;
+  padding: 2rem;
+}
+
+label {
+  margin-top: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+label > span {
+  color: var(--flair);
+}
+
+input,
+textarea {
+  margin-top: 0.5rem;
+  border-radius: 2px;
+  border: 2px solid transparent;
+  box-shadow: 0 3px 6px var(--text-secondary);
+  padding: 0.5rem;
+  background-color: hsl(0, 0%, 98%);
+  min-width: 100%;
+  max-width: 100%;
+}
+
+button {
+  border-radius: 2px;
+  border: 0;
+  box-shadow: 0 3px 6px var(--text-secondary);
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: var(--flair);
+  color: var(--page);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-title);
+}
+
+section {
+  display: flex;
+}
+
+article {
+    display:relative;
+  padding: 1rem;
+  overflow: hidden;
+  margin: 2rem;
+  width: 16rem;
+  height: 16rem;
+  background-color: var(--page);
+  box-shadow: .5rem 0.5rem 1.5rem var(--text-secondary);
+}
+
+article:hover {
+  transform: translateY(-5px);
+  background-color: #eee;
+  box-shadow: .5rem 1rem 1rem var(--text-secondary);
+}
+
+article:active {
+  transform: translateY(-3px);
+  background-color: #eee;
+  box-shadow: .5rem .8rem 1rem var(--text-secondary);
+}
+
+article > img {
+    width: calc(100% + 2rem);
+    height: auto;
+  transform: translateX(-1rem);
+}
