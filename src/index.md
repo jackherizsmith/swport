@@ -3,6 +3,6 @@ title: Home
 layout: home.njk
 ---
 
-## Freelance journalist
-
-![Sally headshot](/images/main.jpeg)
+I have been reporting news for ages.
+<br><br>
+Trust me, I know what I'm doing.

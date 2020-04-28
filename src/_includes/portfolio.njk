@@ -3,5 +3,9 @@ layout: base.njk
 ---
 
 <h2>{{title}}</h2>
-<img src="{{thumbnail}}" alt="{{title}}">
-{{ content | safe }}
+<div class="article__image-wrapper">
+    <img src="{{thumbnail}}" alt="{{title}}" class="article__image">
+</div>
+<div class="article__wrapper">
+    {{ content | safe }}
+</div>

@@ -16,7 +16,7 @@
   padding: 0;
   box-sizing: inherit;
   font-family: var(--font);
-  font-size: 1.6rem;
+  font-size: inherit;
   font-weight: 300;
 }
 
@@ -35,10 +35,44 @@ header nav {
   justify-content: space-around;
 }
 
-header nav a {
+header nav a:link, a:visited {
   font-size: 2.5rem;
   text-decoration: none;
   color: var(--text);
+}
+
+header nav a::after {
+  content: "";
+  width: 0;
+  display: block;
+  margin: 0 auto;
+  height:0.2rem;
+  background-color: var(--flair);
+  animation: underlineIn .4s ease-in;
+}
+
+header nav a:hover::after {
+  content: "";
+  animation: underlineOut .3s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes underlineOut {
+  0% {
+    width:0%;
+  }
+  100% {
+    width:100%;
+  }
+}
+
+@keyframes underlineIn {
+  0% {
+    width:100%;
+  }
+  100% {
+    width:0;
+  }
 }
 
 body {
@@ -49,7 +83,7 @@ body {
   color: var(--text);
   font-family: var(--font);
   overflow-x: hidden;
-  padding-bottom: 23rem;
+  padding-bottom: 26rem;
   min-height: 100vh;
 }
 
@@ -59,6 +93,7 @@ h1 {
   font-family: var(--font-title);
   text-align: center;
   margin-bottom: 3rem;
+  
 }
 
 h2 {
@@ -66,12 +101,24 @@ h2 {
   font-weight: 400;
   font-family: var(--font-secondary);
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 h3 {
   font-size: 2rem;
   font-weight: 300;
   font-family: var(--font-secondary);
+}
+
+.about__photo {
+  float: left;
+  border-radius: 10rem;
+  margin: 0 3rem;
+}
+
+.home__intro {
+  padding: 0 3rem;
+  font-size: 3rem;
 }
 
 section {
@@ -105,7 +152,7 @@ article:active {
 
 article img {
     width: calc(100% + 3rem);
-    filter: saturate(80%);
+    filter: saturate(0%);
     height:auto;
   transform: translateX(-3rem);
   position: absolute;
@@ -126,9 +173,29 @@ article a:link::after, a:visited::after {
   z-index: 1;
 }
 
+.article__image {
+  display: block;
+  width: 100vw;
+  height: 30rem;
+}
+
+.article__image {
+  object-fit: cover;
+}
+
+.article__wrapper {
+  font-size: 2.5rem;
+  padding: 2rem 4rem;
+}
+
+.article__wrapper p::first-line {
+  font-weight: bold;
+  line-height: 5rem;
+}
+
 form {
   max-width: 50rem;
-  padding: 2rem;
+  margin: 0 auto;
 }
 
 label,
@@ -141,12 +208,13 @@ button {
 
 label {
   margin-top: 1.5rem;
-  font-weight: bold;
+  font-size: 2.3rem;
   line-height: 1;
 }
 
 label > span {
   color: var(--flair);
+  font-size: 2rem;
 }
 
 input,
@@ -165,17 +233,33 @@ input::placeholder {
   color: var(--flair);
 }
 
+.form__error {
+  display: inline-block;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  color:hsl(0, 100%, 32%);
+}
+
 button {
-  border-radius: 2px;
+  border-radius: .8rem;
   border: 0;
-  box-shadow: 0 3px 6px var(--text-secondary);
-  margin-top: 1.5rem;
-  padding: 0.75rem 1.25rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 1px;
+  box-shadow: 0 .3rem .6rem var(--text-secondary);
+  margin: 1.5rem 0 0 .5rem;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  letter-spacing: .2rem;
   background-color: var(--flair);
   color: var(--page);
+}
+
+button:hover {
+  transform: translateY(-.3rem);
+  box-shadow: 0 .4rem .8rem var(--text-secondary);
+}
+
+button:active {
+  transform: translateY(-.1rem);
+  box-shadow: 0 .3rem .6rem var(--text-secondary);
 }
 
 footer {
@@ -197,10 +281,6 @@ footer {
   width: 4rem;
   margin: 1rem;
   filter: invert();
-}
-
-.footer__svg-icon {
-  fill: white;
 }
 
 .footer__name {
