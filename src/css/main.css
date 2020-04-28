@@ -22,7 +22,6 @@ body {
   background-color: var(--page);
   color: var(--text);
   font-family: var(--font);
-  margin-bottom: 8rem;
   overflow-x: hidden;
 }
 
@@ -82,6 +81,8 @@ h3 {
 
 section {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 article {
@@ -101,6 +102,15 @@ article:hover {
   box-shadow: .5rem 1rem 1rem var(--text-secondary);
 }
 
+article img {
+    width: calc(100% + 2rem);
+    filter: saturate(80%);
+    height:auto;
+  transform: translateX(-1rem);
+  position: absolute;
+  top:40%;
+}
+
 article:hover img {
   filter: saturate(100%);
 }
@@ -111,16 +121,7 @@ article:active {
   box-shadow: .5rem .8rem 1rem var(--text-secondary);
 }
 
-article img {
-    width: calc(100% + 2rem);
-    filter: saturate(80%);
-    height: auto;
-  transform: translateX(-1rem);
-  position: absolute;
-  top:40%;
-}
-
-article a::after {
+article a:link::after, a:visited::after {
   content:"";
   position: absolute;
   top: 0;
@@ -131,8 +132,6 @@ article a::after {
 }
 
 footer {
-  position: fixed;
-  left: 0;
   bottom: 0;
   width: 100%;
   background-color: var(--text);
