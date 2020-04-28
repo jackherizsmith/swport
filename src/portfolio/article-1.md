@@ -6,12 +6,6 @@ date: 2020-03-01
 thumbnail: /images/world-end.jpg
 ---
 
-# The world is ending
-
-> What are you going to do about it?
-
-![End of the world](/images/portfolio/world-end.jpg)
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla velit et tortor hendrerit, eu elementum mauris tristique. Etiam vulputate sit amet felis sed egestas. Phasellus ultricies pulvinar varius. Phasellus vulputate leo ac venenatis fringilla. Sed eleifend non eros eu luctus. Cras pretium erat sapien, ac eleifend magna rutrum in. Curabitur mauris nulla, condimentum venenatis lacinia sed, lobortis ac libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc eget risus et nisl rutrum mattis. In hac habitasse platea dictumst. Cras maximus velit et congue cursus. Nulla ultricies dictum felis sit amet volutpat. Maecenas rhoncus, augue sed posuere lacinia, magna ipsum convallis nulla, a vehicula sapien elit et velit. In laoreet aliquam enim non mattis. Donec non vehicula mauris. Duis tempor dolor ipsum, ut tristique nisi fermentum ut.
 
 Donec ut tellus vitae dolor scelerisque condimentum. Phasellus lacinia convallis nibh. Quisque hendrerit velit mi. Sed mattis blandit tempus. Sed vel venenatis dui. Aenean sagittis diam euismod nibh auctor, a porta felis lobortis. Suspendisse libero tortor, dignissim sit amet ante sit amet, sodales sodales dui. Quisque blandit mauris sit amet felis dapibus, et ultrices est efficitur. Curabitur vestibulum purus et nunc aliquet porttitor. Pellentesque ut feugiat nulla, a consequat ante. Nulla tortor ex, lacinia sit amet massa at, dapibus tempus neque. Nulla vel consequat diam, vitae vestibulum nunc. Cras porta nibh ex, et venenatis massa elementum ac. Etiam in tellus fermentum, hendrerit mi nec, condimentum erat. Donec felis nisi, egestas eu fermentum ut, tincidunt non risus.

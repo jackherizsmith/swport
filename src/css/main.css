@@ -83,7 +83,7 @@ section {
 }
 
 article {
-    display:relative;
+    position:relative;
   padding: 1rem;
   overflow: hidden;
   margin: 2rem;
@@ -99,14 +99,31 @@ article:hover {
   box-shadow: .5rem 1rem 1rem var(--text-secondary);
 }
 
+article:hover img {
+  filter: saturate(100%);
+}
+
 article:active {
   transform: translateY(-3px);
   background-color: #eee;
   box-shadow: .5rem .8rem 1rem var(--text-secondary);
 }
 
-article > img {
+article img {
     width: calc(100% + 2rem);
+    filter: saturate(80%);
     height: auto;
   transform: translateX(-1rem);
+  position: absolute;
+  top:40%;
+}
+
+article a::after {
+  content:"";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
