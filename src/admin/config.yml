@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
-media_folder: "src/images/portfolio" # Media files will be stored in the repo under images/uploads
-public_folder: "/images/portfolio"
+media_folder: "src/images" 
+public_folder: "/images"
 
 collections:
   - name: "portfolio" # Used in routes, e.g., /admin/collections/blog
@@ -18,3 +18,12 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "pages"
+    label: "Editable pages"
+    files:
+      - name: "about"
+        label: "About"
+        file: "/src/about.md"
+        fields:
+          - {label: "About title", name: "title", widget: "string"}
+          - {label: "About text", name: "body", widget: "markdown"}

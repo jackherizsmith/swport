@@ -1,9 +1,9 @@
 ---
-title: Why the world is ending
 layout: portfolio.njk
 tags: portfolio
+title: Why the world is ending
 date: 2020-03-01
-thumbnail: /images/portfolio/world-end.jpg
+thumbnail: /images/world-end.jpg
 ---
 
 # The world is ending
