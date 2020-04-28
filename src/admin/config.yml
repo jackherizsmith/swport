@@ -26,4 +26,5 @@ collections:
         file: "/src/about.md"
         fields:
           - {label: "About title", name: "title", widget: "string"}
+          - {label: "About photo", name: "image", widget: "image"}
           - {label: "About text", name: "body", widget: "markdown"}
