@@ -3,7 +3,7 @@ title: It's a health crisis like nothing we've seen before
 layout: portfolio.njk
 tags: portfolio
 date: 2020-02-01
-thumb: /images/portfolio/health-crisis.png
+thumbnail: /images/portfolio/health-crisis.png
 ---
 
 # It's a health crisis like nothing we've seen before

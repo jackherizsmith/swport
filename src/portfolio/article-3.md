@@ -3,7 +3,7 @@ title: Something about COVID 19
 layout: portfolio.njk
 tags: portfolio
 date: 2020-01-01
-thumb: /images/portfolio/thing-covid.jpg
+thumbnail: /images/portfolio/thing-covid.jpg
 ---
 
 # Something about COVID 19
