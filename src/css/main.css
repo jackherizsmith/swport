@@ -220,6 +220,7 @@ label > span {
 input,
 textarea {
   margin-top: 0.5rem;
+  font-size: 2rem;
   border-radius: 2px;
   border: 2px solid transparent;
   box-shadow: 0 3px 6px var(--text-secondary);
