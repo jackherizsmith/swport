@@ -18,11 +18,14 @@
 }
 
 body {
+  position: relative;
   box-sizing: border-box;
   background-color: var(--page);
   color: var(--text);
   font-family: var(--font);
   overflow-x: hidden;
+  padding-bottom: 8rem;
+  min-height: 100vh;
 }
 
 label,
@@ -132,6 +135,7 @@ article a:link::after, a:visited::after {
 }
 
 footer {
+  position: absolute;
   bottom: 0;
   width: 100%;
   background-color: var(--text);
