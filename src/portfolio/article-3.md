@@ -3,14 +3,14 @@ title: Something about COVID 19
 layout: portfolio.njk
 tags: portfolio
 date: 2020-01-01
-thumb: /images/thing-covid.jpg
+thumb: /images/portfolio/thing-covid.jpg
 ---
 
 # Something about COVID 19
 
 > There is just three things you must know
 
-![thing about covid](/images/thing-covid.jpg)
+![thing about covid](/images/portfolio/thing-covid.jpg)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla velit et tortor hendrerit, eu elementum mauris tristique. Etiam vulputate sit amet felis sed egestas. Phasellus ultricies pulvinar varius. Phasellus vulputate leo ac venenatis fringilla. Sed eleifend non eros eu luctus. Cras pretium erat sapien, ac eleifend magna rutrum in. Curabitur mauris nulla, condimentum venenatis lacinia sed, lobortis ac libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc eget risus et nisl rutrum mattis. In hac habitasse platea dictumst. Cras maximus velit et congue cursus. Nulla ultricies dictum felis sit amet volutpat. Maecenas rhoncus, augue sed posuere lacinia, magna ipsum convallis nulla, a vehicula sapien elit et velit. In laoreet aliquam enim non mattis. Donec non vehicula mauris. Duis tempor dolor ipsum, ut tristique nisi fermentum ut.
 
