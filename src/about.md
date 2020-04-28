@@ -1,11 +1,8 @@
 ---
 title: About
 layout: about.njk
-image: /images/pic1.png
+image: /images/main.jpeg
 ---
-
 # Sally is..
 
-awesomes
-
-![About Sally]({{ image }})
+one in a million
