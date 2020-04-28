@@ -8,4 +8,3 @@ image: /images/pic1.png
 
 awesomes
 
-![About Sally]({{ image }})
