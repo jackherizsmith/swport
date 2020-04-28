@@ -1,29 +1,30 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Sally Wardle |
-            {{title}}</title>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+        <title>Sally Wardle | {{title}}</title>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
         <link rel="stylesheet" href="/css/main.css"/>
     </head>
     <header>
         <nav>
-            <a href="/">Home</a>
-            <a href="/portfolio">Portfolio</a>
-            <a href="/contact">Contact</a>
-            <a href="/about">About</a>
+            <a class="home" href="/">Home</a>
+            <a class="portfolio" href="/portfolio">Portfolio</a>
+            <a class="contact" href="/contact">Contact</a>
+            <a class="about" href="/about">About</a>
         </nav>
     </header>
     <body>
+        <h1>Sally Wardle</h1>
         {{ content | safe }}
     </body>
     <footer>
-        <nav class="footer__links">
-            <a href="#">LinkedIn</a>
-            <a href="#">Twitter</a>
-            <a href="#">Medium</a>
+        <nav class="footer__nav">
+            <a href="#"><img class="footer__link" src="/images/linkedin.svg"></a>
+            <a href="#"><img class="footer__link" src="/images/twitter.svg"></a>
+            <a href="#"><img class="footer__link" src="/images/medium.svg"></a>
         </nav>
-        <p class="footer__name">Sally Wardle © 2020</p>
+        <p class="footer__name">Sally Wardle</p>
         <p class="footer__credit">Built by
             <a href="https://www.jackherizsmith.com">Jack</a>.</p>
     </footer>

@@ -4,7 +4,7 @@
   --flair: hsl(194, 100%, 27%);
   --text-secondary: hsl(231, 11%, 34%);
   --page-secondary: hsl(224, 11%, 67%);
-  --font-title: 'Playfair Display', serif;
+  --font-title: 'Dancing Script', cursive;
   --font: "Merriweather", serif;
   --font-secondary: "PT Mono", monospace;
 }
@@ -15,17 +15,120 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  font-family: var(--font);
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+header nav a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: var(--text);
 }
 
 body {
+  scroll-behavior: smooth;
   position: relative;
   box-sizing: border-box;
-  background-color: var(--page);
+  background-image: linear-gradient(132deg, rgba(167, 204, 225,1) 7%,rgba(236, 246, 237,1) 93%);
   color: var(--text);
   font-family: var(--font);
   overflow-x: hidden;
-  padding-bottom: 8rem;
+  padding-bottom: 23rem;
   min-height: 100vh;
+}
+
+h1 {
+  font-size: 8rem;
+  font-weight: 300;
+  font-family: var(--font-title);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: var(--font-secondary);
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: var(--font-secondary);
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+article {
+  position:relative;
+  padding: 3rem;
+  overflow: hidden;
+  margin: 4rem;
+  width: 30rem;
+  height: 30rem;
+  background-color: var(--page);
+  box-shadow: .5rem 0.5rem 1.5rem var(--text-secondary);
+}
+
+article:hover {
+  transform: translateY(-.5rem);
+  background-color: #eee;
+  box-shadow: .5rem 1rem 1rem var(--text-secondary);
+}
+
+article:active {
+  transform: translateY(-3px);
+  background-color: #eee;
+  box-shadow: .5rem .8rem 1rem var(--text-secondary);
+}
+
+article img {
+    width: calc(100% + 3rem);
+    filter: saturate(80%);
+    height:auto;
+  transform: translateX(-3rem);
+  position: absolute;
+  top:40%;
+}
+
+article:hover img {
+  filter: saturate(100%);
+}
+
+article a:link::after, a:visited::after {
+  content:"";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+form {
+  max-width: 50rem;
+  padding: 2rem;
 }
 
 label,
@@ -34,11 +137,6 @@ button {
   display: block;
   font: inherit;
   color: inherit;
-}
-
-form {
-  max-width: 30rem;
-  padding: 2rem;
 }
 
 label {
@@ -57,10 +155,14 @@ textarea {
   border-radius: 2px;
   border: 2px solid transparent;
   box-shadow: 0 3px 6px var(--text-secondary);
-  padding: 0.5rem;
+  padding: 1.5rem;
   background-color: hsl(0, 0%, 98%);
   min-width: 100%;
   max-width: 100%;
+}
+
+input::placeholder {
+  color: var(--flair);
 }
 
 button {
@@ -76,64 +178,6 @@ button {
   color: var(--page);
 }
 
-h1,
-h2,
-h3 {
-  font-family: var(--font-title);
-}
-
-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-article {
-    position:relative;
-  padding: 1rem;
-  overflow: hidden;
-  margin: 2rem;
-  width: 16rem;
-  height: 16rem;
-  background-color: var(--page);
-  box-shadow: .5rem 0.5rem 1.5rem var(--text-secondary);
-}
-
-article:hover {
-  transform: translateY(-5px);
-  background-color: #eee;
-  box-shadow: .5rem 1rem 1rem var(--text-secondary);
-}
-
-article img {
-    width: calc(100% + 2rem);
-    filter: saturate(80%);
-    height:auto;
-  transform: translateX(-1rem);
-  position: absolute;
-  top:40%;
-}
-
-article:hover img {
-  filter: saturate(100%);
-}
-
-article:active {
-  transform: translateY(-3px);
-  background-color: #eee;
-  box-shadow: .5rem .8rem 1rem var(--text-secondary);
-}
-
-article a:link::after, a:visited::after {
-  content:"";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-}
-
 footer {
   position: absolute;
   bottom: 0;
@@ -141,18 +185,37 @@ footer {
   background-color: var(--text);
   color: var(--page);
   text-align: center;
-  height: 8rem;
+  height: auto;
 }
 
-.footer__links {
+.footer__nav {
   background-color: var(--text-secondary);
-  height: 3rem;
+}
+
+.footer__link {
+  height: 4rem;
+  width: 4rem;
+  margin: 1rem;
+  filter: invert();
+}
+
+.footer__svg-icon {
+  fill: white;
+}
+
+.footer__name {
+  margin-top: 1rem;
+  font-size: 6rem;
+  font-family: var(--font-title);
 }
 
 .footer__credit {
-  float: right;
-  bottom:0;
-  padding-right: 1rem;
+  margin-right: 2rem;
+}
+
+.footer__credit, .footer__credit a {
+  font-size: 2rem;
+  text-align: right;
   color:var(--page-secondary);
-  height: 3rem;
+  margin-bottom: 2rem;
 }

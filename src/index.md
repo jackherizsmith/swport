@@ -3,12 +3,6 @@ title: Home
 layout: home.njk
 ---
 
-# Sally Wardle, journalist
+## Freelance journalist
 
-## Here to write the news
-
-Sally can:
-
-- write
-- read
-- ask questions
+![Sally headshot](/images/main.jpeg)
