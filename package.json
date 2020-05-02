@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "compile:sass": "node-sass src/sass/main.scss src/css/new-style.css -w"
   },
   "author": "@jackherizsmith",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0"
+    "@11ty/eleventy": "^0.10.0",
+    "node-sass": "^4.14.0"
   }
 }

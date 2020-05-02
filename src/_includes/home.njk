@@ -2,10 +2,42 @@
 layout: base.njk
 ---
 
-<h2>Freelance jounalist</h2>
+<section class="section-hero">
+    HERO
+</section>
 
-<img src="images/main.jpeg" class="about__photo">
+<section class="section-about">
+    ABOUT
+</section>
 
-<div class="home__intro">
-    {{ content | safe }}
-</div>
+<section class="section-portfolio">
+{%- for portfolio in collections.portfolioReversed -%}
+<!--if article 'featured' = true -->
+    <article tabindex="0" id="article{{loop.index0}}">
+        <h3>{{portfolio.data.title}}</h3>
+        <a href="{{portfolio.url}}" tabindex="-1"></a>
+        <img src="{{portfolio.data.thumbnail}}">
+    </article>
+{%- endfor -%}
+</section>
+
+<section class="section-testimonials">
+    TESTIMONIALS
+
+    <a href="#"><img class="" src="/images/icons/linkedin.svg"></a>
+    <a href="#"><img class="" src="/images/icons/twitter.svg"></a>
+    <a href="#"><img class="" src="/images/icons/medium.svg"></a>
+</section>
+
+<form name="contact" method="POST" data-netlify="true" action="/" class="section-form">
+    <label for="name">Your name<span>*</span></label>
+    <input type="text" name="name" id="name" required />
+    <div class="form__error"></div>
+    <label for="email">Your email<span>*</span></label>
+    <input type="email" name="email" id="email" required />
+    <div class="form__error"></div>
+    <label for="message">Your message<span>*</span></label>
+    <textarea name="message" id="message" required></textarea>
+    <div class="form__error"></div>
+    <button type="submit">Send</button>
+</form>

@@ -2,30 +2,25 @@
 <html lang="en">
     <head>
         <title>Sally Wardle | {{title}}</title>
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Elsie&family=Spectral:ital,wght@0,200;0,300;0,400;1,400&display=swap" rel="stylesheet">
         <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
         <link rel="stylesheet" href="/css/main.css"/>
     </head>
-    <header>
-        <nav>
-            <a class="home" href="/">Home</a>
-            <a class="portfolio" href="/portfolio">Portfolio</a>
-            <a class="contact" href="/contact">Contact</a>
-        </nav>
-    </header>
     <body>
-        <h1>Sally Wardle</h1>
+        <header>
+            <nav class="nav">
+                <a class="logo" href="./">Sally Wardle</a>
+                <div class="nav"><!--should be unordered list-->
+                    <a class="nav__link" href="#about">About</a>
+                    <a class="nav__link" href="#articles">Articles</a>
+                    <a class="nav__link" href="#contact">Contact</a>
+                </div>
+            </nav>
+        </header>
         {{ content | safe }}
+        <footer>
+            <p class="logo">Sally Wardle</p>
+        </footer>
     </body>
-    <footer>
-        <nav class="footer__nav">
-            <a href="#"><img class="footer__link" src="/images/linkedin.svg"></a>
-            <a href="#"><img class="footer__link" src="/images/twitter.svg"></a>
-            <a href="#"><img class="footer__link" src="/images/medium.svg"></a>
-        </nav>
-        <p class="footer__name">Sally Wardle</p>
-        <p class="footer__credit">Site by 
-            <a href="https://www.jackherizsmith.com">Jack</a>.</p>
-    </footer>
     <script src="/js/main.js"></script>
 </html>
