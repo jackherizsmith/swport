@@ -2,9 +2,11 @@
 layout: base.njk
 ---
 
-<section class="section-hero">
-    HERO
-</section>
+<header class="header">
+    <img src="images/layout/sally-hero.jpg" class="header__image">
+    <h1 class="logo header__title">Sally Wardle</h1>
+    <p class="header__tag">
+</header>
 
 <section class="section-about">
     ABOUT
@@ -13,10 +15,15 @@ layout: base.njk
 <section class="section-portfolio">
 {%- for portfolio in collections.portfolioReversed -%}
 <!--if article 'featured' = true -->
-    <article tabindex="0" id="article{{loop.index0}}">
-        <h3>{{portfolio.data.title}}</h3>
-        <a href="{{portfolio.url}}" tabindex="-1"></a>
-        <img src="{{portfolio.data.thumbnail}}">
+    <article tabindex="0" id="article{{loop.index0}}" class="article-card">
+        <div class="article-card__side article-card__side--front">
+            <img src="{{portfolio.data.tear}}" class="article-card__tear">
+        </div>
+        <div class="article-card__side article-card__side--back">
+            <img src="{{portfolio.data.thumbnail}}">
+            <h3 class="article-card__title">{{portfolio.data.title}}</h3>
+            <a href="{{portfolio.url}}" tabindex="-1" class="article-card__link">Read more &rarr;</a>
+        </div>
     </article>
 {%- endfor -%}
 </section>
@@ -29,15 +36,17 @@ layout: base.njk
     <a href="#"><img class="" src="/images/icons/medium.svg"></a>
 </section>
 
-<form name="contact" method="POST" data-netlify="true" action="/" class="section-form">
-    <label for="name">Your name<span>*</span></label>
-    <input type="text" name="name" id="name" required />
-    <div class="form__error"></div>
-    <label for="email">Your email<span>*</span></label>
-    <input type="email" name="email" id="email" required />
-    <div class="form__error"></div>
-    <label for="message">Your message<span>*</span></label>
-    <textarea name="message" id="message" required></textarea>
-    <div class="form__error"></div>
-    <button type="submit">Send</button>
-</form>
+<section class="section-contact">
+    <form name="contact" method="POST" data-netlify="true" action="/" class="form">
+        <label for="name">Your name<span>*</span></label>
+        <input type="text" name="name" id="name" required />
+        <div class="form__error"></div>
+        <label for="email">Your email<span>*</span></label>
+        <input type="email" name="email" id="email" required />
+        <div class="form__error"></div>
+        <label for="message">Your message<span>*</span></label>
+        <textarea name="message" id="message" required></textarea>
+        <div class="form__error"></div>
+        <button type="submit">Send</button>
+    </form>
+</section>

@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --text: hsl(267, 73%, 3%);
   --page: hsl(220, 8%, 92%);
   --flair: hsl(194, 100%, 27%);
@@ -6,9 +6,9 @@
   --page-secondary: hsl(224, 11%, 67%);
   --font-title: 'Spectral', serif;
   --font: 'Noto Sans JP', sans-serif;
-}
+} */
 
-*,
+/* *,
 *::after,
 *::before {
   margin: 0;
@@ -17,35 +17,35 @@
   font-family: var(--font);
   font-size: inherit;
   font-weight: 300;
-}
+} */
 
-*:focus {
+/* *:focus {
   outline: thick double #32a1ce;
   outline-offset: 1rem;
-}
-
+} */
+/* 
 html {
   font-size: 62.5%;
-}
-
+} */
+/* 
 header {
   padding: 2rem;
   margin: 2rem 0;
-}
+} */
 
-header nav {
+/* header nav {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
-}
+} */
 
-header nav a:link, a:visited {
+/* header nav a:link, a:visited {
   font-size: 2.5rem;
   text-decoration: none;
   color: var(--text);
-}
+} */
 
-header nav a::after, header nav a::before {
+/* header nav a::after, header nav a::before {
   content: "";
   width: 0;
   display: block;
@@ -58,42 +58,41 @@ header nav a::after, header nav a::before {
 header nav a:hover::after, header nav a:hover::before {
   content: "";
   width:100%;
-}
+} */
 
-body {
-  scroll-behavior: smooth;
+/* body { */
+  /* scroll-behavior: smooth;
   position: relative;
-  box-sizing: border-box;
-  background-image: linear-gradient(132deg, rgba(167, 204, 225,1) 7%,rgba(236, 246, 237,1) 93%);
-  color: var(--text);
+  box-sizing: border-box; */
+  /* background-image: linear-gradient(132deg, rgba(167, 204, 225,1) 7%,rgba(236, 246, 237,1) 93%); */
+  /* color: var(--text);
   font-family: var(--font);
   overflow-x: hidden;
   padding-bottom: 26rem;
   min-height: 100vh;
-}
+} */
 
-h1 {
+/* h1 {
   font-size: 8rem;
   font-weight: 300;
   font-family: var(--font-title);
   text-align: center;
   margin-bottom: 3rem;
-  
-}
+} */
 
-h2 {
+/* h2 {
   font-size: 4rem;
   font-weight: 400;
   font-family: var(--font-secondary);
   text-align: center;
   margin-bottom: 3rem;
-}
+} */
 
-h3 {
+/* h3 {
   font-size: 2rem;
   font-weight: 300;
   font-family: var(--font-secondary);
-}
+} */
 
 .about__photo {
   float: left;
