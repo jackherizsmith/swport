@@ -6,9 +6,9 @@ layout: base.njk
     <div class="header__image-wrapper">
         <img src="images/layout/sally-hero.jpg" class="header__image">
     </div>
-    <div class="header__text">
-        <h1 class="logo header__title">Sally Wardle</h1>
-        <h2 class="header__tag">Freelance journalist <br> and writer</h2>
+    <div class="header__text u-padding-bottom">
+        <h1 class="logo header__title u-padding-bottom">Sally Wardle</h1>
+        <p class="header__tag">Freelance journalist <br> and writer</h2>
     </div>
 </header>
 
@@ -22,23 +22,30 @@ layout: base.njk
 </nav>
 
 <section class="section-about">
-    ABOUT
+    <div class="section-about__content u-padding-bottom">
+        <h2 class="section-about__title u-padding-above u-padding-bottom">Hi, I'm Sally.</h2>
+        <p class="section-about__text u-padding-bottom">Nulla ultrices nibh vel est venenatis rhoncus. Etiam pharetra tortor eget felis molestie, et suscipit ipsum luctus. Vestibulum egestas lacus lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ligula urna, pulvinar sed faucibus sed, malesuada vel turpis. Nulla porta libero eget dui congue varius. Aenean porta consequat quam, et hendrerit arcu dignissim a. Phasellus quis sem leo.</p>
+        <a href="#contact" class="section-about__contact button--more">Get in touch</a>
+    </div>
 </section>
 
 <section class="section-portfolio">
-{%- for portfolio in collections.portfolioReversed -%}
-<!--if article 'featured' = true -->
-    <article tabindex="0" id="article{{loop.index0}}" class="article-card">
-        <div class="article-card__side article-card__side--front">
-            <img src="{{portfolio.data.tear}}" class="article-card__tear">
-        </div>
-        <div class="article-card__side article-card__side--back">
-            <img src="{{portfolio.data.thumbnail}}">
-            <h3 class="article-card__title">{{portfolio.data.title}}</h3>
-            <a href="{{portfolio.url}}" tabindex="-1" class="article-card__link">Read more &rarr;</a>
-        </div>
-    </article>
-{%- endfor -%}
+    <h2 class="section-portfolio__title u-padding-above u-padding-bottom">Things I have written</h2>
+    <div class="section-portfolio__wrapper">
+    {%- for portfolio in collections.portfolioReversed -%}
+    <!--if article 'featured' = true -->
+        <article tabindex="0" id="article{{loop.index0}}" class="article-card">
+            <div class="article-card__side article-card__side--front">
+                <img src="{{portfolio.data.tear}}" class="article-card__tear">
+            </div>
+            <div class="article-card__side article-card__side--back">
+                <img src="{{portfolio.data.thumb}}" class="article-card__thumb">
+                <h3 class="article-card__title">{{portfolio.data.title}}</h3>
+                <a href="{{portfolio.url}}" tabindex="-1" class="article-card__link button--more">Read more</a>
+            </div>
+        </article>
+    {%- endfor -%}
+    </div>
 </section>
 
 <section class="section-testimonials">
