@@ -22,6 +22,7 @@ layout: base.njk
 </nav>
 
 <section class="section-about">
+    <div id="about" class="u-anchor"></div>
     <div class="section-about__content u-padding-bottom">
         <h2 class="section-about__title u-padding-above u-padding-bottom">Hi, I'm Sally.</h2>
         <p class="section-about__text u-padding-bottom">Nulla ultrices nibh vel est venenatis rhoncus. Etiam pharetra tortor eget felis molestie, et suscipit ipsum luctus. Vestibulum egestas lacus lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ligula urna, pulvinar sed faucibus sed, malesuada vel turpis. Nulla porta libero eget dui congue varius. Aenean porta consequat quam, et hendrerit arcu dignissim a. Phasellus quis sem leo.</p>
@@ -30,6 +31,7 @@ layout: base.njk
 </section>
 
 <section class="section-portfolio u-padding-bottom-large">
+    <div id="articles" class="u-anchor"></div>
     <h2 class="section-portfolio__title u-padding-above u-padding-bottom">Things I have written</h2>
     <div class="section-portfolio__wrapper u-padding-bottom">
     {%- for portfolio in collections.portfolioReversed -%}
@@ -46,7 +48,7 @@ layout: base.njk
         </article>
     {%- endfor -%}
     </div>
-    <a href="{{collections.portfolioReversed[0].url}}" class="button section-portfolio__link">See portfolio</a>
+    <a href="{{collections.portfolioReversed[0].url}}" class="button section-portfolio__link">Explore my portfolio</a>
 </section>
 
 <section class="section-testimonials">
@@ -57,6 +59,7 @@ layout: base.njk
 </section>
 
 <section class="section-contact u-padding-bottom-large">
+    <div id="contact" class="u-anchor"></div>
     <h2 class="section-contact__title u-padding-above u-padding-bottom">Get in touch</h2>
     <form name="contact" method="POST" data-netlify="true" action="/" class="form">
         <div class="form__wrapper">  

@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; }
+
 *, *:before, *:after {
   padding: 0;
   margin: 0;
@@ -29,6 +32,10 @@ h1, h2, h3 {
 
 .u-padding-above {
   padding-top: 5rem; }
+
+.u-anchor {
+  position: absolute;
+  top: -11.8rem; }
 
 .button {
   text-decoration: none;
@@ -219,7 +226,8 @@ h1, h2, h3 {
 
 .section-about {
   background-image: linear-gradient(90deg, rgba(48, 55, 65, 0.95) 20%, rgba(48, 55, 65, 0.75) 70%, rgba(126, 142, 165, 0.3) 90%), url(../images/layout/papers.jpeg);
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
   .section-about__content {
     padding-left: 3rem;
     width: 70%;
@@ -247,10 +255,10 @@ h1, h2, h3 {
     flex-wrap: wrap;
     justify-content: center; }
   .section-portfolio__link {
-    position: absolute;
+    display: block;
+    width: fit-content;
     color: #303741;
-    left: 50%;
-    transform: translateX(-50%); }
+    margin: 0 auto; }
     .section-portfolio__link:hover {
       color: #f5f6fa;
       background-color: #303741; }
@@ -263,6 +271,7 @@ h1, h2, h3 {
 
 .section-contact {
   display: block;
+  position: relative;
   width: 100%;
   background-color: #f5f6fa; }
   .section-contact__title {
