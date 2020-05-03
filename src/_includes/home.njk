@@ -3,10 +3,23 @@ layout: base.njk
 ---
 
 <header class="header">
-    <img src="images/layout/sally-hero.jpg" class="header__image">
-    <h1 class="logo header__title">Sally Wardle</h1>
-    <p class="header__tag">
+    <div class="header__image-wrapper">
+        <img src="images/layout/sally-hero.jpg" class="header__image">
+    </div>
+    <div class="header__text">
+        <h1 class="logo header__title">Sally Wardle</h1>
+        <h2 class="header__tag">Freelance journalist <br> and writer</h2>
+    </div>
 </header>
+
+<nav class="nav">
+    <a class="logo nav__logo" href="./">Sally Wardle</a>
+    <ul class="nav__links"><!--should be unordered list-->
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#articles">Articles</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
 <section class="section-about">
     ABOUT
@@ -31,9 +44,9 @@ layout: base.njk
 <section class="section-testimonials">
     TESTIMONIALS
 
-    <a href="#"><img class="" src="/images/icons/linkedin.svg"></a>
-    <a href="#"><img class="" src="/images/icons/twitter.svg"></a>
-    <a href="#"><img class="" src="/images/icons/medium.svg"></a>
+    <a href="#"><img class="testimonial__icon" src="/images/icons/linkedin.svg"></a>
+    <a href="#"><img class="testimonial__icon" src="/images/icons/twitter.svg"></a>
+    <a href="#"><img class="testimonial__icon" src="/images/icons/medium.svg"></a>
 </section>
 
 <section class="section-contact">
