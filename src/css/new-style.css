@@ -48,13 +48,12 @@ h1, h2, h3 {
   perspective: 120rem;
   position: relative; }
   .article-card__side {
+    box-shadow: 0 1.5rem 3rem rgba(48, 55, 65, 0.15);
     overflow: hidden;
     border-radius: .3rem;
-    background-color: orangered;
     transition: all .8s;
     backface-visibility: hidden;
     border-radius: .3rem;
-    box-shadow: 0 1.5rem 3rem rgba(48, 55, 65, 0.15);
     height: 100%;
     width: 100%; }
     .article-card__side--front {
@@ -71,6 +70,9 @@ h1, h2, h3 {
     transform: rotateY(180deg); }
   .article-card:hover .article-card__side--back {
     transform: rotateY(0deg); }
+  .article-card:focus {
+    outline-offset: .5rem;
+    outline: 1rem solid #192b57; }
   .article-card__tear, .article-card__thumb, .article-card__title {
     position: absolute;
     top: 50%;
