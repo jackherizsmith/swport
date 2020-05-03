@@ -191,4 +191,4 @@ h1, h2, h3 {
   .section-portfolio__wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly; }
+    justify-content: center; }
