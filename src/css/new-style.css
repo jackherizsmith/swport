@@ -24,10 +24,13 @@ h1, h2, h3 {
 .u-padding-bottom {
   padding-bottom: 5rem; }
 
+.u-padding-bottom-large {
+  padding-bottom: 10rem; }
+
 .u-padding-above {
   padding-top: 5rem; }
 
-.button--more {
+.button {
   text-decoration: none;
   color: #f5f6fa;
   padding: 1rem 1.7rem;
@@ -36,9 +39,12 @@ h1, h2, h3 {
   text-align: center;
   border-radius: .3rem;
   transition: all .2s; }
-  .button--more:hover {
+  .button:hover {
     background-color: #f5f6fa;
     color: #303741; }
+
+.icon {
+  height: 5rem; }
 
 .article-card {
   height: 30rem;
@@ -95,8 +101,42 @@ h1, h2, h3 {
     transform: translateX(-50%);
     bottom: 4rem; }
 
-.testimonial__icon {
-  width: 1rem; }
+.form {
+  display: block;
+  max-width: 50rem;
+  margin: 0 auto; }
+  .form__label, .form__input {
+    display: block; }
+  .form__label {
+    margin: 1.5rem 0 2rem;
+    font-size: 2.3rem;
+    line-height: 1; }
+    .form__label > span {
+      color: #718094; }
+  .form__input {
+    font-size: 2rem;
+    border-radius: .3rem;
+    border: 0.4rem solid #192b57;
+    padding: 1.5rem;
+    background-color: #fafafa;
+    min-width: 100%;
+    max-width: 100%; }
+    .form__input:focus {
+      outline-offset: .5rem;
+      outline: 1rem solid #192b57; }
+  .form__error {
+    display: inline-block;
+    height: 2rem;
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    color: #a30000; }
+  .form__submit {
+    color: #303741;
+    margin-left: 3rem; }
+    .form__submit:hover {
+      color: #f5f6fa;
+      background-color: #303741; }
 
 .header {
   display: flex;
@@ -135,18 +175,15 @@ h1, h2, h3 {
   justify-content: space-between;
   z-index: 1; }
   .nav__logo {
+    box-sizing: border-box;
     text-align: center;
     font-size: 5rem;
     color: #f5f6fa;
-    padding: 1rem 2rem;
-    float: left; }
+    padding: 1rem 2rem; }
     .nav__logo:hover {
       outline: .2rem solid; }
   .nav__links {
-    display: flex;
-    list-style: none;
     float: right;
-    align-items: center;
     margin-right: .5rem; }
   .nav__link {
     text-decoration: none;
@@ -166,6 +203,20 @@ h1, h2, h3 {
       margin-left: 25%;
       width: 50%; }
 
+.links {
+  display: flex;
+  align-items: center;
+  list-style: none; }
+
+.footer {
+  height: 10rem;
+  background-color: #363c49;
+  text-align: center;
+  padding: 2rem 0; }
+  .footer__logo {
+    color: #f5f6fa;
+    font-size: 5rem; }
+
 .section-about {
   background-image: linear-gradient(90deg, rgba(48, 55, 65, 0.95) 20%, rgba(48, 55, 65, 0.75) 70%, rgba(126, 142, 165, 0.3) 90%), url(../images/layout/papers.jpeg);
   background-size: cover; }
@@ -184,7 +235,8 @@ h1, h2, h3 {
     width: 18rem; }
 
 .section-portfolio {
-  background-color: #f5f6fa; }
+  background-color: #f5f6fa;
+  position: relative; }
   .section-portfolio__title {
     display: block;
     text-align: center;
@@ -194,3 +246,25 @@ h1, h2, h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
+  .section-portfolio__link {
+    position: absolute;
+    color: #303741;
+    left: 50%;
+    transform: translateX(-50%); }
+    .section-portfolio__link:hover {
+      color: #f5f6fa;
+      background-color: #303741; }
+
+.section-testimonials {
+  background-image: linear-gradient(90deg, rgba(48, 55, 65, 0.95) 20%, rgba(48, 55, 65, 0.75) 70%, rgba(126, 142, 165, 0.3) 90%), url(../images/layout/testimonials.jpg);
+  background-size: cover; }
+  .section-testimonials__title {
+    font-size: 6rem; }
+
+.section-contact {
+  display: block;
+  width: 100%;
+  background-color: #f5f6fa; }
+  .section-contact__title {
+    font-size: 6rem;
+    text-align: center; }

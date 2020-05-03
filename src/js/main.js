@@ -60,7 +60,7 @@ function validate(input, test){
     input.style.borderColor = "hsl(106, 100%, 30%)";
     return true;
   } else {
-    input.style.borderColor = "transparent";
+    input.style.border = ".4rem solid hsl(223, 55%, 22%)";
     return false;
   }
 }

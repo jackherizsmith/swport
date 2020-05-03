@@ -14,10 +14,10 @@ layout: base.njk
 
 <nav class="nav">
     <a class="logo nav__logo" href="./">Sally Wardle</a>
-    <ul class="nav__links"><!--should be unordered list-->
-        <li><a class="nav__link" href="#about">About</a></li>
-        <li><a class="nav__link" href="#articles">Articles</a></li>
-        <li><a class="nav__link" href="#contact">Contact</a></li>
+    <ul class="nav__links links"><!--should be unordered list-->
+        <li class="link"><a class="nav__link" href="#about">About</a></li>
+        <li class="link"><a class="nav__link" href="#articles">Articles</a></li>
+        <li class="link"><a class="nav__link" href="#contact">Contact</a></li>
     </ul>
 </nav>
 
@@ -25,13 +25,13 @@ layout: base.njk
     <div class="section-about__content u-padding-bottom">
         <h2 class="section-about__title u-padding-above u-padding-bottom">Hi, I'm Sally.</h2>
         <p class="section-about__text u-padding-bottom">Nulla ultrices nibh vel est venenatis rhoncus. Etiam pharetra tortor eget felis molestie, et suscipit ipsum luctus. Vestibulum egestas lacus lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ligula urna, pulvinar sed faucibus sed, malesuada vel turpis. Nulla porta libero eget dui congue varius. Aenean porta consequat quam, et hendrerit arcu dignissim a. Phasellus quis sem leo.</p>
-        <a href="#contact" class="section-about__contact button--more">Get in touch</a>
+        <a href="#contact" class="section-about__contact button">Get in touch</a>
     </div>
 </section>
 
-<section class="section-portfolio">
+<section class="section-portfolio u-padding-bottom-large">
     <h2 class="section-portfolio__title u-padding-above u-padding-bottom">Things I have written</h2>
-    <div class="section-portfolio__wrapper">
+    <div class="section-portfolio__wrapper u-padding-bottom">
     {%- for portfolio in collections.portfolioReversed -%}
     <!--if article 'featured' = true -->
         <article tabindex="0" id="article{{loop.index0}}" class="article-card">
@@ -41,32 +41,38 @@ layout: base.njk
             <div class="article-card__side article-card__side--back">
                 <img src="{{portfolio.data.thumb}}" class="article-card__thumb">
                 <h3 class="article-card__title">{{portfolio.data.title}}</h3>
-                <a href="{{portfolio.url}}" tabindex="-1" class="article-card__link button--more">Read more</a>
+                <a href="{{portfolio.url}}" tabindex="-1" class="article-card__link button">Read more</a>
             </div>
         </article>
     {%- endfor -%}
     </div>
+    <a href="{{collections.portfolioReversed[0].url}}" class="button section-portfolio__link">See portfolio</a>
 </section>
 
 <section class="section-testimonials">
-    TESTIMONIALS
-
-    <a href="#"><img class="testimonial__icon" src="/images/icons/linkedin.svg"></a>
-    <a href="#"><img class="testimonial__icon" src="/images/icons/twitter.svg"></a>
-    <a href="#"><img class="testimonial__icon" src="/images/icons/medium.svg"></a>
+    <div class="section-about__content u-padding-bottom">
+        <h2 class="section-testimonials__title u-padding-above u-padding-bottom">Let's collaborate</h2>
+        <p class="section-about__text u-padding-bottom">Nulla ultrices nibh vel est venenatis rhoncus. Etiam pharetra tortor eget felis molestie, et suscipit ipsum luctus. Vestibulum egestas lacus lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ligula urna, pulvinar sed faucibus sed, malesuada vel turpis. Nulla porta libero eget dui congue varius. Aenean porta consequat quam, et hendrerit arcu dignissim a. Phasellus quis sem leo.</p>
+    </div>
 </section>
 
-<section class="section-contact">
+<section class="section-contact u-padding-bottom-large">
+    <h2 class="section-contact__title u-padding-above u-padding-bottom">Get in touch</h2>
     <form name="contact" method="POST" data-netlify="true" action="/" class="form">
-        <label for="name">Your name<span>*</span></label>
-        <input type="text" name="name" id="name" required />
-        <div class="form__error"></div>
-        <label for="email">Your email<span>*</span></label>
-        <input type="email" name="email" id="email" required />
-        <div class="form__error"></div>
-        <label for="message">Your message<span>*</span></label>
-        <textarea name="message" id="message" required></textarea>
-        <div class="form__error"></div>
-        <button type="submit">Send</button>
+        <div class="form__wrapper">  
+            <label for="name" class="form__label">Your name <span>*</span></label>
+            <input type="text" name="name" id="name" class="form__input" required />
+            <div class="form__error"></div>
+            
+            <label for="email" class="form__label">Your email <span>*</span></label>
+            <input type="email" name="email" id="email" class="form__input" required />
+            <div class="form__error"></div>
+            
+            <label for="message" class="form__label">Your message <span>*</span></label>
+            <textarea name="message" id="message" class="form__input" required></textarea>
+            <div class="form__error"></div>
+        </div>
+        
+        <button type="submit" class="button form__submit">Send</button>
     </form>
 </section>
