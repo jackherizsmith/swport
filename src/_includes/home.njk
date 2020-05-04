@@ -2,29 +2,10 @@
 layout: base.njk
 ---
 
-<header class="header">
-    <div class="header__image-wrapper">
-        <img src="images/layout/sally-hero.jpg" class="header__image">
-    </div>
-    <div class="header__text u-padding-bottom">
-        <h1 class="logo header__title u-padding-bottom">Sally Wardle</h1>
-        <p class="header__tag">Freelance journalist <br> and writer</h2>
-    </div>
-</header>
-
-<nav class="nav">
-    <a class="logo nav__logo" href="./">Sally Wardle</a>
-    <ul class="nav__links links"><!--should be unordered list-->
-        <li class="link"><a class="nav__link" href="#about">About</a></li>
-        <li class="link"><a class="nav__link" href="#articles">Articles</a></li>
-        <li class="link"><a class="nav__link" href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
 <section class="section-about">
     <div id="about" class="u-anchor"></div>
     <div class="section-about__content u-padding-bottom">
-        <h2 class="section-about__title u-padding-above u-padding-bottom">Hi, I'm Sally.</h2>
+        <h2 class="section-about__title u-padding-top u-padding-bottom">Hi, I'm Sally.</h2>
         <p class="section-about__text u-padding-bottom">Nulla ultrices nibh vel est venenatis rhoncus. Etiam pharetra tortor eget felis molestie, et suscipit ipsum luctus. Vestibulum egestas lacus lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ligula urna, pulvinar sed faucibus sed, malesuada vel turpis. Nulla porta libero eget dui congue varius. Aenean porta consequat quam, et hendrerit arcu dignissim a. Phasellus quis sem leo.</p>
         <a href="#contact" class="section-about__contact button">Get in touch</a>
     </div>
@@ -32,7 +13,7 @@ layout: base.njk
 
 <section class="section-portfolio u-padding-bottom-large">
     <div id="articles" class="u-anchor"></div>
-    <h2 class="section-portfolio__title u-padding-above u-padding-bottom">Things I have written</h2>
+    <h2 class="section-portfolio__title u-padding-top u-padding-bottom">Things I have written</h2>
     <div class="section-portfolio__wrapper u-padding-bottom">
     {%- for portfolio in collections.portfolioReversed -%}
     <!--if article 'featured' = true -->
@@ -53,14 +34,14 @@ layout: base.njk
 
 <section class="section-testimonials">
     <div class="section-about__content u-padding-bottom">
-        <h2 class="section-testimonials__title u-padding-above u-padding-bottom">Let's collaborate</h2>
+        <h2 class="section-testimonials__title u-padding-top u-padding-bottom">Let's collaborate</h2>
         <p class="section-about__text u-padding-bottom">Nulla ultrices nibh vel est venenatis rhoncus. Etiam pharetra tortor eget felis molestie, et suscipit ipsum luctus. Vestibulum egestas lacus lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ligula urna, pulvinar sed faucibus sed, malesuada vel turpis. Nulla porta libero eget dui congue varius. Aenean porta consequat quam, et hendrerit arcu dignissim a. Phasellus quis sem leo.</p>
     </div>
 </section>
 
 <section class="section-contact u-padding-bottom-large">
     <div id="contact" class="u-anchor"></div>
-    <h2 class="section-contact__title u-padding-above u-padding-bottom">Get in touch</h2>
+    <h2 class="section-contact__title u-padding-top u-padding-bottom">Get in touch</h2>
     <form name="contact" method="POST" data-netlify="true" action="/" class="form">
         <div class="form__wrapper">  
             <label for="name" class="form__label">Your name <span>*</span></label>

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
-    "compile:sass": "node-sass src/sass/main.scss src/css/new-style.css -w"
+    "compile:sass": "node-sass src/sass/main.scss src/css/main.css -w"
   },
   "author": "@jackherizsmith",
   "license": "ISC",
