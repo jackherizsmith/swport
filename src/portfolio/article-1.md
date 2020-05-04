@@ -1,10 +1,11 @@
 ---
 layout: portfolio.njk
-tags: portfolio
+tags: [portfolio, featured]
 title: Why the world is ending
 date: 2020-03-01
 tear: /images/portfolio/tear2.jpeg
 thumb: /images/portfolio/world-end.jpg
+journal: the Mail on Sunday
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla velit et tortor hendrerit, eu elementum mauris tristique. Etiam vulputate sit amet felis sed egestas. Phasellus ultricies pulvinar varius. Phasellus vulputate leo ac venenatis fringilla. Sed eleifend non eros eu luctus. Cras pretium erat sapien, ac eleifend magna rutrum in. Curabitur mauris nulla, condimentum venenatis lacinia sed, lobortis ac libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc eget risus et nisl rutrum mattis. In hac habitasse platea dictumst. Cras maximus velit et congue cursus. Nulla ultricies dictum felis sit amet volutpat. Maecenas rhoncus, augue sed posuere lacinia, magna ipsum convallis nulla, a vehicula sapien elit et velit. In laoreet aliquam enim non mattis. Donec non vehicula mauris. Duis tempor dolor ipsum, ut tristique nisi fermentum ut.

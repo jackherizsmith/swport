@@ -1,10 +1,11 @@
 ---
 layout: portfolio.njk
-tags: portfolio
+tags: [portfolio, featured]
 title: Something about COVID 19
 date: 2020-01-01
 tear: /images/portfolio/tear4.png
 thumb: /images/portfolio/thing-covid.jpg
+journal: the Mail on Sunday
 ---
 
 > There is just three things you must know

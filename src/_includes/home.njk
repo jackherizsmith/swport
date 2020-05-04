@@ -15,16 +15,15 @@ layout: base.njk
     <div id="articles" class="u-anchor"></div>
     <h2 class="section-portfolio__title u-padding-top u-padding-bottom">Things I have written</h2>
     <div class="section-portfolio__wrapper u-padding-bottom">
-    {%- for portfolio in collections.portfolioReversed -%}
-    <!--if article 'featured' = true -->
+    {%- for article in collections.featured -%}
         <article tabindex="0" id="article{{loop.index0}}" class="article-card">
             <div class="article-card__side article-card__side--front">
-                <img src="{{portfolio.data.tear}}" class="article-card__tear">
+                <img src="{{article.data.tear}}" class="article-card__tear">
             </div>
             <div class="article-card__side article-card__side--back">
-                <img src="{{portfolio.data.thumb}}" class="article-card__thumb">
-                <h3 class="article-card__title">{{portfolio.data.title}}</h3>
-                <a href="{{portfolio.url}}" tabindex="-1" class="article-card__link button">Read more</a>
+                <img src="{{article.data.thumb}}" class="article-card__thumb">
+                <h3 class="article-card__title">{{article.data.title}}</h3>
+                <a href="{{article.url}}" tabindex="-1" class="article-card__link button">Read more</a>
             </div>
         </article>
     {%- endfor -%}

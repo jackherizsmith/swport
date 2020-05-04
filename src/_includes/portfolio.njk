@@ -4,11 +4,12 @@ layout: base.njk
 
 <div class="portfolio">
     <nav class="portfolio__nav port-nav">
-        <h3 class="port-nav__heading u-padding-top">My work</h3>
+        <h3 class="port-nav__heading">Portfolio</h3>
         <ul class="port-nav__links">
-            {%- for portfolio in collections.portfolioReversed -%}
+            {%- for article in collections.portfolioReversed -%}
                 <li class="port-nav__item">
-                    <a href="{{portfolio.url}}" class="port-nav__link">{{portfolio.data.title}}</a>
+                    <a href="{{article.url}}" class="port-nav__link">{{article.data.title}}
+                    <p class="port-nav__date">{{article.data.date.toDateString()}}</p></a>
                 </li>
             {%- endfor -%}
         </ul>
@@ -16,8 +17,13 @@ layout: base.njk
 
     <article class="portfolio__article article">
         <img src="{{thumb}}" alt="{{title}}" class="article__image">
-        <h2 class="article__title">{{title}}</h2>
-        <p class="article__info"></p>
+        <header class="article__header">
+            <h1 class="article__title">{{title}}</h2>
+            <div class="article__info">
+                <p class="article__detail">Published in <span class="article__journal">{{journal}}</span> on <time class="article__date">{{date.toDateString()}}</time></p>
+                <a href="" class="article__pdf">Download as PDF</a>
+            <div>
+        </header>
         <div class="article__wrapper">
             {{ content | safe }}
         </div>
