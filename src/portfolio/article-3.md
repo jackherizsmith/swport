@@ -3,10 +3,11 @@ layout: portfolio.njk
 tags: portfolio
 featured: true 
 title: Something about COVID 19
-date: 2020-01-01
-tear: /images/portfolio/tear4.png
-thumb: /images/portfolio/thing-covid.jpg
 journal: the Mail on Sunday
+date: 2020-01-01
+thumb: /images/portfolio/tear4.png
+image: /images/portfolio/thing-covid.jpg
+pdf: /portfolio/Projects.pdf
 ---
 
 > There is just three things you must know
