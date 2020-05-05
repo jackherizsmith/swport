@@ -21,4 +21,4 @@ collections:
       - {label: "Headline image", hint: "ideally under 300kb", name: "image", widget: "image"}
       - {label: "Thumb", hint: "ideally under 80kb", name: "thumb", widget: "image"}
       - {label: "Article content", name: "body", widget: "markdown"}
-      - {label: "Downloadable PDF", name: "pdf", widget: "file", required: false}
+      # - {label: "Downloadable PDF", name: "pdf", widget: "file", required: false}
