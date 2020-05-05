@@ -1,8 +1,10 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
-media_folder: "src/images/portfolio" # Media files will be stored in the repo under images/uploads
+
+media_folder: "src/images/portfolio" 
 public_folder: "/images/portfolio"
+
 collections:
   - name: "portfolio" # Used in routes, e.g., /admin/collections/blog
     label: "Article" # Used in the UI
@@ -12,7 +14,11 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "portfolio.njk"}
       - {label: "tags", name: "tags", widget: "hidden", default: "portfolio"}
+      - {label: "Featured?", hint: "will put this article on your home page", name: "featured", widget: "boolean", default: false}
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Journal", hint: "where this was published (e.g. 'the Mail on Sunday')", name: "journal", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Headline image", hint: "ideally under 300kb", name: "image", widget: "image"}
+      - {label: "Thumb", hint: "ideally under 80kb", name: "thumb", widget: "image"}
+      - {label: "Article content", name: "body", widget: "markdown"}
+      - {label: "Downloadable PDF", name: "pdf", widget: "file", required: false}
