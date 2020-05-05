@@ -1,6 +1,7 @@
 ---
 layout: portfolio.njk
-tags: [portfolio, featured]
+tags: portfolio
+featured: true 
 title: Something about COVID 19
 date: 2020-01-01
 tear: /images/portfolio/tear4.png

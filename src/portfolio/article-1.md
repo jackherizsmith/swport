@@ -1,7 +1,8 @@
 ---
 layout: portfolio.njk
-tags: [portfolio, featured]
+tags: portfolio
 title: Why the world is ending
+featured: true
 date: 2020-03-01
 tear: /images/portfolio/tear2.jpeg
 thumb: /images/portfolio/world-end.jpg

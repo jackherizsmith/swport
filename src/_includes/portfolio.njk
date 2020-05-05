@@ -7,6 +7,7 @@ layout: base.njk
         <h3 class="port-nav__heading">Portfolio</h3>
         <ul class="port-nav__links">
             {%- for article in collections.portfolioReversed -%}
+                <!-- if article is current page show different (selected & inactive) link -->
                 <li class="port-nav__item">
                     <a href="{{article.url}}" class="port-nav__link">{{article.data.title}}
                     <p class="port-nav__date">{{article.data.date.toDateString()}}</p></a>

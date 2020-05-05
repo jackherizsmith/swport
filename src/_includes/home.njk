@@ -15,17 +15,19 @@ layout: base.njk
     <div id="work" class="u-anchor"></div>
     <h2 class="section-portfolio__title u-padding-top u-padding-bottom">Things I have written</h2>
     <div class="section-portfolio__wrapper u-padding-bottom">
-    {%- for article in collections.featured -%}
-        <article tabindex="0" id="article{{loop.index0}}" class="article-card">
-            <div class="article-card__side article-card__side--front">
-                <img src="{{article.data.tear}}" class="article-card__tear">
-            </div>
-            <div class="article-card__side article-card__side--back">
-                <img src="{{article.data.thumb}}" class="article-card__thumb">
-                <h3 class="article-card__title">{{article.data.title}}</h3>
-                <a href="{{article.url}}" tabindex="-1" class="article-card__link button">Read more</a>
-            </div>
-        </article>
+    {%- for article in collections.portfolioReversed -%}
+        {%- if article.data.featured == true -%}
+            <article tabindex="0" id="article{{loop.index0}}" class="article-card">
+                <div class="article-card__side article-card__side--front">
+                    <img src="{{article.data.tear}}" class="article-card__tear">
+                </div>
+                <div class="article-card__side article-card__side--back">
+                    <img src="{{article.data.thumb}}" class="article-card__thumb">
+                    <h3 class="article-card__title">{{article.data.title}}</h3>
+                    <a href="{{article.url}}" tabindex="-1" class="article-card__link button">Read more</a>
+                </div>
+            </article>
+        {%- endif -%}
     {%- endfor -%}
     </div>
     <a href="{{collections.portfolioReversed[0].url}}" class="button section-portfolio__link">Explore my portfolio</a>

@@ -1,6 +1,7 @@
 ---
 layout: portfolio.njk
 tags: portfolio
+featured: false
 title: It's a health crisis like nothing we've seen before
 date: 2020-02-01
 tear: /images/portfolio/tear3.jpg
