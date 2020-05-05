@@ -305,15 +305,15 @@ h1, h2, h3 {
     width: 30rem;
     height: 100vh;
     position: fixed;
-    overflow-y: scroll; }
+    overflow-y: scroll;
+    margin-bottom: 10rem; }
   .portfolio__article {
     margin-left: 30rem;
     width: auto; }
 
 .port-nav {
   border-right: 0.1rem solid #192b57;
-  background-color: #f5f6fa;
-  padding-bottom: 10rem; }
+  background-color: #f5f6fa; }
   .port-nav__heading {
     font-size: 5rem;
     padding: 2rem 3rem 0 0;
