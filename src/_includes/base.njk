@@ -22,11 +22,21 @@
         </header>
         <main>
             <nav class="nav"> <!-- if (home) => links internal, else navigate -->
-                <a class="logo nav__logo" href="#home">Sally Wardle</a>
+                {%- if title=="Home" -%}
+                    <a class="logo nav__logo" href="#home">Sally Wardle</a>
+                {%- else -%}
+                    <a class="logo nav__logo" href="/">Sally Wardle</a>
+                {%- endif -%}
                 <ul class="nav__links links"> <!-- may need to use JS to replace latest history, as with portfolio -->
+                {%- if title=="Home" -%}
                     <li class="link"><a class="nav__link" href="#about">About</a></li>
                     <li class="link"><a class="nav__link" href="#work">My Work</a></li>
                     <li class="link"><a class="nav__link" href="#contact">Contact</a></li>
+                {%-else-%}
+                    <li class="link"><a class="nav__link" href="/#about">About</a></li>
+                    <li class="link"><a class="nav__link" href="/#work">My Work</a></li>
+                    <li class="link"><a class="nav__link" href="/#contact">Contact</a></li>
+                {%-endif-%}
                 </ul>
             </nav>
             
