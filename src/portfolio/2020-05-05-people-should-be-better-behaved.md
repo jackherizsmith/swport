@@ -5,9 +5,9 @@ featured: true
 title: People should be better behaved
 journal: the Private Eye
 date: 2020-05-04T21:56:48.322Z
-image: /images/portfolio/photo-1559628129-67cf63b72248.jpeg
-thumb: /images/portfolio/screenshot-from-2020-04-24-09-32-38.png
-pdf: /images/portfolio/projects.pdf
+image: /media/portfolio/photo-1559628129-67cf63b72248.jpeg
+thumb: /media/portfolio/screenshot-from-2020-04-24-09-32-38.png
+pdf: /media/portfolio/projects.pdf
 ---
 o see working configuration examples, you can[start from a template](https://www.netlifycms.org/docs/start-with-a-template)or check out the[CMS demo site](https://cms-demo.netlify.com/). (No login required: click the login button and the CMS will open.) You can refer to the demo[configuration code](https://github.com/netlify/netlify-cms/blob/master/dev-test/config.yml)to see how each option was configured.
 

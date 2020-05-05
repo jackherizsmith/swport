@@ -5,9 +5,9 @@ featured: true
 title: Something about COVID 19
 journal: the Mail on Sunday
 date: 2020-01-01
-thumb: /images/portfolio/tear4.png
-image: /images/portfolio/thing-covid.jpg
-pdf: /portfolio/Projects.pdf
+thumb: /media/portfolio/tear4.png
+image: /media/portfolio/thing-covid.jpg
+pdf: /media/portfolio/Projects.pdf
 ---
 
 > There is just three things you must know

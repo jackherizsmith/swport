@@ -5,12 +5,14 @@ backend:
 media_folder: "src/images/portfolio" 
 public_folder: "/images/portfolio"
 
+display_url: https://wardles.netlify.app
+
 collections:
   - name: "portfolio" # Used in routes, e.g., /admin/collections/blog
     label: "Article" # Used in the UI
     folder: "src/portfolio/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{slug}}-{{second}}{{minute}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "portfolio.njk"}
       - {label: "tags", name: "tags", widget: "hidden", default: "portfolio"}
@@ -18,7 +20,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Journal", hint: "where this was published (e.g. 'the Mail on Sunday')", name: "journal", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Headline image", hint: "ideally under 300kb", name: "image", widget: "image"}
-      - {label: "Thumb", hint: "ideally under 80kb", name: "thumb", widget: "image"}
+      - {label: "Headline image", hint: "ideally under 300kb", name: "image", widget: "image", slug: {{slug}}-{{second}}{{minute}}-head}
+      - {label: "Thumb", hint: "ideally under 80kb", name: "thumb", widget: "image", slug: {{slug}}-{{second}}{{minute}}-thumb}
       - {label: "Article content", name: "body", widget: "markdown"}
-      - {label: "Downloadable PDF", name: "pdf", widget: "file", required: false}
+      - {label: "Downloadable PDF", name: "pdf", widget: "file", required: false, slug: {{slug}}-{{second}}{{minute}}}
