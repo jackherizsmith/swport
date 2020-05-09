@@ -8,6 +8,7 @@ date: 2020-04-13T11:08:37.769Z
 image: truvbu5as-usc2sh1l3-ef8b16885c71-512.png
 thumb: neo4j.svg
 pdf: test1.pdf
+slug: hope-0206-0206/
 ---
 
 
