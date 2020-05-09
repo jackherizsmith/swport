@@ -2,6 +2,7 @@
 layout: portfolio.njk
 tags: portfolio
 featured: true
+<<<<<<< HEAD:src/portfolio/hope-0206-0206/index.md
 title: Why does this work
 journal: working Mag
 date: 2020-04-13T11:08:37.769Z
@@ -9,6 +10,14 @@ image: truvbu5as-usc2sh1l3-ef8b16885c71-512.png
 thumb: neo4j.svg
 pdf: test1.pdf
 slug: hope-0206-0206/
+=======
+title: It's all gravy
+journal: the Mag
+date: 2020-04-26T11:17:44.383Z
+image: characters.jpeg
+thumb: 68747470733a2f2f706963732e6d652e6d652f7468756d625f6769742d7265706f2d6769742d70756c6c2d6769742d6d657267652d636f6e666c6963742d67696c742d36323032333832312e706e67.png
+pdf: projects.pdf
+>>>>>>> a7a873d4adea20b6de49fe0bd43da5843288fa42:src/portfolio/its-all-gravy-4518-4518/index.md
 ---
 
 
