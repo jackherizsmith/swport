@@ -19,10 +19,10 @@ layout: base.njk
         {%- if article.data.featured == true -%}
             <article tabindex="0" id="article{{loop.index0}}" class="article-card">
                 <div class="article-card__side article-card__side--front">
-                    <img src="/portfolio/{{article.data.slug}}{{article.data.thumb}}" class="article-card__thumb">
+                    <img src="{{article.data.thumb}}" class="article-card__thumb">
                 </div>
                 <div class="article-card__side article-card__side--back">
-                    <img src="/portfolio/{{article.data.slug}}{{article.data.image}}" class="article-card__image">
+                    <img src="{{article.data.image}}" class="article-card__image">
                     <h3 class="article-card__title">{{article.data.title}}</h3>
                     <a href="{{article.url}}" tabindex="-1" class="article-card__link button">Read more</a>
                 </div>
