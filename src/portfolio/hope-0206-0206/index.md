@@ -2,11 +2,11 @@
 layout: portfolio.njk
 tags: portfolio
 featured: true
-title: Hope
-journal: hope magazine
-date: 2020-05-04T21:20:31.526Z
-image: pri89458168-min.jpg
-thumb: download-1-.png
+title: Why does this work
+journal: working Mag
+date: 2020-04-13T11:08:37.769Z
+image: truvbu5as-usc2sh1l3-ef8b16885c71-512.png
+thumb: neo4j.svg
 pdf: test1.pdf
 ---
 
