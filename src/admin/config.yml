@@ -17,7 +17,7 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}-{{second}}{{minute}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "slug", name: "slug", widget: "hidden", default: {{slug}}}
+      - {label: "slug", name: "slug", widget: "hidden", default: "{{slug}}}"
       - {label: "Layout", name: "layout", widget: "hidden", default: "portfolio.njk"}
       - {label: "tags", name: "tags", widget: "hidden", default: "portfolio"}
       - {label: "Featured?", hint: "will put this article on your home page", name: "featured", widget: "boolean", default: false}
