@@ -4,7 +4,7 @@ backend:
 
 display_url: https://wardles.netlify.app
 media-folder: "src/portfolio/"
-media-folder: "/portfolio/"
+public-folder: "/portfolio/"
 
 collections:
   - name: "portfolio" # Used in routes, e.g., /admin/collections/blog
