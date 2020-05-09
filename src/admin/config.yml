@@ -3,14 +3,16 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 
 display_url: https://wardles.netlify.app
+media-folder: "src/portfolio/"
+media-folder: "/portfolio/"
 
 collections:
   - name: "portfolio" # Used in routes, e.g., /admin/collections/blog
     label: "Article" # Used in the UI
     folder: "src/portfolio/" # The path to the folder where the documents are stored
     path: "{{slug}}/index"
-    media_folder: 'src/portfolio/{{slug}}'
-    public_folder: '/portfolio/{{slug}}'
+    media_folder: ''
+    public_folder: ''
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
