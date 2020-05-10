@@ -104,7 +104,7 @@ h1, h2, h3 {
   .article-card:focus {
     outline-offset: .5rem;
     outline: 1rem solid #192b57; }
-  .article-card__tear, .article-card__thumb, .article-card__title {
+  .article-card__thumb, .article-card__image, .article-card__title {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -112,7 +112,7 @@ h1, h2, h3 {
     height: 100%;
     width: auto;
     min-width: 100%; }
-  .article-card__thumb {
+  .article-card__image {
     filter: brightness(15%); }
   .article-card__title {
     text-align: center;

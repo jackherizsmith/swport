@@ -10,7 +10,7 @@ collections:
     label: "Articles"
     label_singular: "Article"
     folder: "src/portfolio/articles"
-    path: "{{slug}}/index"
+    path: "{{slug}}-{{second}}{{minute}}/index"
     create: true
     media_folder: ""
     public_folder: ""

@@ -23,13 +23,13 @@ layout: base.njk
                 </div>
                 <div class="article-card__side article-card__side--back">
                     <img src="{{article.url}}{{article.data.image}}" class="article-card__image">
-                    <h3 class="article-card__title">{{article.data.title}}</h3>
-                    <a href="{{article.url}}" tabindex="-1" class="article-card__link button">Read more</a>
+                    <h3 class="article-card__title" id="articleHeading{{loop.index0}}">{{article.data.title}}</h3>
+                    <a href="{{article.url}}" tabindex="-1" class="article-card__link button" aria-labelledby="articleHeading{{loop.index0}}">Read more</a>
                 </div>
             </article>
         {%- endif -%}
     {%- endfor -%}
-    </div>
+    </div> 
     <a href="{{collections.portfolioReversed[0].url}}" class="button section-portfolio__link">Explore my portfolio</a>
 </section>
 
