@@ -9,7 +9,7 @@ collections:
   - name: "portfolio"
     label: "Articles"
     label_singular: "Article"
-    folder: "content/articles"
+    folder: "src/portfolio/articles"
     path: "{{slug}}/index"
     create: true
     media_folder: ""
