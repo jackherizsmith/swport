@@ -3,16 +3,16 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 
 display_url: "wardles.netlify.app"
-media_folder: src/media/
-public_folder: /media
+media_folder: "src/media/"
+public_folder: "/media"
 collections:
-  - name: portfolio
-    label: Articles
-    label_singular: 'Article'
-    folder: content/articles
-    path: '{{slug}}/index'
-    media_folder: ''
-    public_folder: ''
+  - name: "portfolio"
+    label: "Articles"
+    label_singular: "Article"
+    folder: "content/articles"
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "portfolio.njk"}
       - {label: "tags", name: "tags", widget: "hidden", default: "portfolio"}
