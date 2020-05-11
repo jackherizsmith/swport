@@ -35,12 +35,13 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 400; }
 
-.logo {
-  text-decoration: none;
-  font-family: "Elsie", cursive; }
-
 h1, h2, h3 {
   font-family: "Spectral", serif; }
+
+.logo {
+  text-decoration: none;
+  font-family: "Elsie", cursive;
+  height: 5.5rem; }
 
 .u-padding-bottom {
   padding-bottom: 5rem; }
@@ -109,10 +110,7 @@ h1, h2, h3 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 100%;
-    min-width: auto;
-    max-height: 100%;
-    background-size: cover; }
+    width: 100%; }
   .article-card__image {
     filter: brightness(15%); }
   .article-card__title {
@@ -165,65 +163,55 @@ h1, h2, h3 {
       background-color: #303741; }
 
 .header {
-  display: flex;
-  height: calc(100vh - 11.8rem); }
-  .header__image-wrapper {
-    width: 50%;
-    overflow-y: hidden; }
+  height: calc(100vh - 11.8rem);
+  width: 100%;
+  position: relative; }
   .header__image {
-    min-width: initial;
-    width: 100%;
-    min-height: 100%; }
-  .header__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: calc(100vh - 11.8rem);
-    width: 50%;
-    background-color: #f5f6fa;
-    text-align: center; }
-  .header__title {
-    font-size: 10rem;
-    color: #303741; }
-  .header__tag {
-    font-size: 4rem;
-    color: #363c49;
-    font-family: "Spectral", serif; }
+    position: absolute;
+    transform: translateX(-50%);
+    top: 0;
+    left: 50%;
+    object-fit: cover;
+    object-position: center;
+    min-width: 100%; }
 
 .nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: #303741;
+  background-color: #f9f3f5;
   padding: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   z-index: 1; }
   .nav__logo {
-    box-sizing: border-box;
-    text-align: center;
-    font-size: 5rem;
-    color: #f5f6fa;
-    padding: 1rem 2rem; }
+    padding: 1rem 2rem;
+    display: inline-block;
+    color: #718094; }
     .nav__logo:hover {
-      outline: .2rem solid; }
+      outline: .1rem solid; }
+    .nav__logo:active {
+      outline: .1rem solid; }
   .nav__links {
     float: right;
     margin-right: .5rem; }
   .nav__link {
     text-decoration: none;
-    color: #f5f6fa;
+    color: #222;
     padding: 0 2rem;
     font-weight: 400;
-    font-size: 2.2rem; }
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem; }
     .nav__link::after {
       content: "";
       float: left;
+      top: 2rem;
       margin-left: 50%;
       width: 0;
       height: .2rem;
-      background-color: #dbdce1;
+      background-color: #363c49;
       transition: all .4s; }
     .nav__link:hover::after {
       margin-left: 25%;
@@ -236,7 +224,7 @@ h1, h2, h3 {
 
 .footer {
   height: 10rem;
-  background-color: #363c49;
+  background-color: #f9f3f5;
   text-align: center;
   padding: 2rem 0;
   position: relative; }
