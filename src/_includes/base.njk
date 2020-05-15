@@ -17,9 +17,9 @@
         <main>
             <nav class="nav"> <!-- if (home) => links internal, else navigate -->
                 {%- if title=="Home" -%}
-                    <a class="nav__logo" href="#home"><img src="media/layout/SW_Logo_Lockup.png" class="logo" alt="Sally Wardle logo"></a>
+                    <a class="nav__logo" href="#home"><img src="/media/layout/SW_Logo_Lockup.png" class="logo" alt="Sally Wardle logo"></a>
                 {%- else -%}
-                    <a class="logo nav__logo" href="/">Sally Wardle</a>
+                    <a class="nav__logo" href="/"><img src="/media/layout/SW_Logo_Lockup.png" class="logo" alt="Sally Wardle logo"></a>
                 {%- endif -%}
                 <ul class="nav__links links"> <!-- may need to use JS to replace latest history, as with portfolio -->
                 {%- if title=="Home" -%}
