@@ -5,7 +5,7 @@ layout: base.njk
 <section class="section-about">
     <div id="about" class="u-anchor"></div>
     <div class="section-about__content u-padding-bottom">
-        <h2 class="section-about__title u-padding-top u-padding-bottom">Hi, I'm Sally.</h2>
+        <h2 class="section-about__title u-padding-top u-padding-bottom">{{collections.about[0].data.intro}}</h2>
         <p class="section-about__text u-padding-bottom">{{ collections.about[0].templateContent | safe }}</p>
         <a href="#contact" class="section-about__contact button">Get in touch</a>
     </div>
@@ -36,7 +36,7 @@ layout: base.njk
 <section class="section-testimonials">
     <div class="section-about__content u-padding-bottom">
         <h2 class="section-testimonials__title u-padding-top u-padding-bottom">Let's collaborate</h2>
-        <p class="section-about__text u-padding-bottom">Nulla ultrices nibh vel est venenatis rhoncus. Etiam pharetra tortor eget felis molestie, et suscipit ipsum luctus. Vestibulum egestas lacus lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin ligula urna, pulvinar sed faucibus sed, malesuada vel turpis. Nulla porta libero eget dui congue varius. Aenean porta consequat quam, et hendrerit arcu dignissim a. Phasellus quis sem leo.</p>
+        <p class="section-about__text u-padding-bottom">{{ collections.working[0].templateContent | safe }}</p>
     </div>
 </section>
 
