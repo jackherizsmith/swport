@@ -34,11 +34,11 @@ collections:
         name: "about"
         file: "src/about.md"
         fields:
-          - {label: "Title", name: "title", widget: "string", pattern: ['^{,20}$', "Max 20 characters"]}
+          - {label: "Title", name: "title", widget: "string"}
           - {label: "Blurb", name: "blurb", widget: "text"}
       - label: "Collab"
         name: "collab"
         file: "src/collab.md"
         fields:
-          - {label: "Title", name: "title", widget: "string", pattern: ['^{,20}$', "Max 20 characters"]}
+          - {label: "Title", name: "title", widget: "string"}
           - {label: "Blurb", name: "blurb", widget: "text"}
