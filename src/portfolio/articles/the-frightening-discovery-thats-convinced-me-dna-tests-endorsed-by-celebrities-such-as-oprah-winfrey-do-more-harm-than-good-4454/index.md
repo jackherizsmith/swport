@@ -20,7 +20,7 @@ They work by analysing genetic fragments from a simple cheek swab, or a drop of 
 
 ![An increasing number of at-home genetic testing kits are now available to buy online – a couple of the big names are AncestryDNA and 23andMe](https://i.dailymail.co.uk/1s/2020/02/01/17/24172546-7955875-image-m-23_1580576974933.jpg)
 
-An increasing number of at-home genetic testing kits are now available to buy online – a couple of the big names are AncestryDNA and 23andMe
+An increasing number of at-home genetic testing kits are now available to buy online – a couple of the big names are AncestryDNA and 23andMe.
 
 DNA kits have become popular Christmas presents and are even offered in some places as work perks.
 
