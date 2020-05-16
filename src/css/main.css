@@ -89,10 +89,11 @@ body {
     height: 100%;
     width: 100%; }
     .article-card__side--front {
-      outline: 0.4rem solid #192b57;
+      background-color: #f8f1f4;
       transform: rotateY(0deg); }
     .article-card__side--back {
       position: absolute;
+      background-color: #222;
       top: 0;
       left: 0;
       transform: rotateY(-180deg);
@@ -103,8 +104,8 @@ body {
   .article-card:hover .article-card__side--back {
     transform: rotateY(0deg); }
   .article-card:focus {
-    outline-offset: .5rem;
-    outline: 1rem solid #192b57; }
+    outline-offset: .3rem;
+    outline: 0.4rem solid #192b57; }
   .article-card__thumb, .article-card__image, .article-card__title {
     position: absolute;
     top: 50%;
@@ -112,18 +113,23 @@ body {
     transform: translate(-50%, -50%);
     width: 100%; }
   .article-card__image {
-    filter: brightness(15%); }
+    filter: brightness(35%); }
   .article-card__title {
     text-align: center;
     font-size: 3rem;
-    padding: 10% 4rem 0;
-    color: #f5f6fa; }
+    padding: 0 2rem 0;
+    top: 14rem;
+    color: #f5f6fa;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical; }
   .article-card__link {
     position: absolute;
-    width: auto;
+    color: #f5f6fa;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 4rem; }
+    bottom: 1.5rem; }
 
 .form {
   display: block;
@@ -150,8 +156,7 @@ body {
     max-width: 100%; }
     .form__input:focus {
       outline-offset: .3rem;
-      outline: 0.4rem solid #192b57;
-      -moz-outline-radius: .3rem; }
+      outline: 0.4rem solid #192b57; }
     .form__input:only-of-type {
       min-height: 15rem; }
   .form__error {

@@ -24,7 +24,7 @@ layout: base.njk
                 <div class="article-card__side article-card__side--back">
                     <img src="{{article.url}}{{article.data.image}}" class="article-card__image">
                     <h3 class="article-card__title" id="articleHeading{{loop.index0}}">{{article.data.title}}</h3>
-                    <a href="{{article.url}}" tabindex="-1" class="article-card__link button" aria-labelledby="articleHeading{{loop.index0}}">Read more</a>
+                    <a href="{{article.url}}" class="article-card__link button" aria-labelledby="articleHeading{{loop.index0}}">Read more</a>
                 </div>
             </article>
         {%- endif -%}
@@ -45,15 +45,15 @@ layout: base.njk
     <h2 class="section-contact__title u-padding-top u-padding-bottom">Get in touch</h2>
     <form name="contact" method="POST" data-netlify="true" action="/" class="form">
         <div class="form__wrapper">  
-            <label for="name" class="form__label">Name <span>*</span></label>
+            <label for="name" class="form__label">Name <span aria-label="required">*</span></label>
             <input type="text" name="name" id="name" class="form__input" required />
             <div class="form__error">-</div>
             
-            <label for="email" class="form__label">Email <span>*</span></label>
+            <label for="email" class="form__label">Email <span aria-label="required">*</span></label>
             <input type="email" name="email" id="email" class="form__input" required />
             <div class="form__error">-</div>
             
-            <label for="message" class="form__label">Message <span>*</span></label>
+            <label for="message" class="form__label">Message <span aria-label="required">*</span></label>
             <textarea name="message" id="message" class="form__input" required></textarea>
             <div class="form__error">-</div>
         </div>

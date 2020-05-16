@@ -35,7 +35,7 @@ let valid = {
 
 const errorMessage = {
   name: "Check your name doesn't contain odd characters.",
-  email: "This needs to include an @ and domain.",
+  email: "This needs to include an @ symbol and domain.",
   message: "Please include some detail of why you are reaching out."
 }
 
@@ -51,6 +51,7 @@ form.addEventListener("submit", event => {
         input.nextElementSibling.textContent = errorMessage[key];
         input.nextElementSibling.style.visibility = 'initial';
         input.nextElementSibling.style.opacity = '1';
+        input.nextElementSibling.setAttribute("role", "alert")
       }
     }
   }
@@ -60,6 +61,7 @@ function validate(input, test){
   input.nextElementSibling.textContent = '-';
   input.nextElementSibling.style.visibility = 'hidden';
   input.nextElementSibling.style.opacity = '0';
+  input.nextElementSibling.removeAttribute("role");
   if (test) {
     input.style.borderColor = "hsl(106, 100%, 30%)";
     return true;
