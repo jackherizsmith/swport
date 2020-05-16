@@ -34,11 +34,11 @@ collections:
         name: "about"
         file: "src/about.md"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Blurb", name: "blurb", widget: "text"}
+          - {label: "Title", name: "title", widget: "string", hint: "ideally fewer than 20 characters"}
+          - {label: "Blurb", name: "blurb", widget: "text", hint: "ideally fewer than 100 words"}
       - label: "Collab"
         name: "collab"
         file: "src/collab.md"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Blurb", name: "blurb", widget: "text"}
+          - {label: "Title", name: "title", widget: "string", hint: "ideally fewer than 20 characters"}
+          - {label: "Blurb", name: "blurb", widget: "text", hint: "ideally fewer than 100 words"}
