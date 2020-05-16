@@ -1,6 +1,6 @@
 ---
 tags: about
-title: Hi, I'm Sally.
+title: Geromino!
 blurb: >
   Nulla ultrices nibh vel est venenatis rhoncus. Etiam pharetra tortor eget
   felis molestie, et suscipit ipsum luctus. Vestibulum egestas lacus lorem.
