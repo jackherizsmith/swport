@@ -323,25 +323,54 @@ body {
   border-right: 0.1rem solid #192b57;
   background-color: #f5f6fa; }
   .port-nav__heading {
-    font-size: 5rem;
-    padding: 2rem 3rem 0 0;
-    text-align: center; }
+    width: 100%;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+    user-select: none; }
   .port-nav__links {
     list-style: none; }
   .port-nav__link {
     display: block;
     width: 100%;
     padding: 2rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
     text-decoration: none;
-    color: #363c49;
+    color: #303741;
     transition: all .3s; }
-    .port-nav__link:hover {
+    .port-nav__link::before, .port-nav__link::after {
+      content: "";
+      display: block;
+      margin-left: 50%;
+      width: 0;
+      height: .2rem;
       background-color: #363c49;
-      color: #f5f6fa; }
+      transition: all .4s; }
+    .port-nav__link::before {
+      margin-bottom: .5rem; }
+    .port-nav__link::after {
+      margin-top: .9rem; }
+    .port-nav__link:hover {
+      color: #222;
+      background-color: #f8f1f4; }
+      .port-nav__link:hover::before, .port-nav__link:hover::after {
+        margin-left: 0%;
+        width: 100%; }
+  .port-nav__journal, .port-nav__date {
+    letter-spacing: initial;
+    margin-top: .9rem; }
+  .port-nav__journal {
+    font-size: 1.5rem;
+    font-weight: 300; }
   .port-nav__date {
-    margin-top: .9rem;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-style: italic; }
 
 .article__image {
   width: 100%;

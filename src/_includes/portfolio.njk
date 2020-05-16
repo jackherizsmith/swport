@@ -10,6 +10,7 @@ layout: base.njk
                 <!-- if article is current page show different (selected & inactive) link -->
                 <li class="port-nav__item">
                     <a href="{{article.url}}" class="port-nav__link">{{article.data.title}}
+                    <p class="port-nav__journal">Published in {{article.data.journal}}</p>
                     <p class="port-nav__date">{{article.data.date.toDateString()}}</p></a>
                 </li>
             {%- endfor -%}
