@@ -27,10 +27,18 @@ collections:
       - {label: "Article content", name: "body", widget: "markdown"}
       - {label: "Downloadable PDF", name: "pdf", widget: "file", required: false}
   
-  - name: "about"
-    label: "About"
-    file: "src/about.md"
-    fields:
-      - {label: "Title", name: "title", widget: "string", pattern: ['^{,20}$', "Max 20 characters"]}
-      - {label: "Blurb", name: "blurb", widget: "text"}
-      
+  - name: "blurbs"
+    label: "Blurbs"
+    files:
+      - label: "About"
+        name: "about"
+        file: "src/about.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string", pattern: ['^{,20}$', "Max 20 characters"]}
+          - {label: "Blurb", name: "blurb", widget: "text"}
+      - label: "Collab"
+        name: "collab"
+        file: "src/collab.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string", pattern: ['^{,20}$', "Max 20 characters"]}
+          - {label: "Blurb", name: "blurb", widget: "text"}
