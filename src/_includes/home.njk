@@ -5,8 +5,8 @@ layout: base.njk
 <section class="section-about">
     <div id="about" class="u-anchor"></div>
     <div class="section-about__content u-padding-bottom">
-        <h2 class="section-about__title u-padding-top u-padding-bottom">{{collections.about[0].data.intro}}</h2>
-        <p class="section-about__text u-padding-bottom">{{ collections.about[0].templateContent | safe }}</p>
+        <h2 class="section-about__title u-padding-top u-padding-bottom">{{collections.about[0].data.title}}</h2>
+        <p class="section-about__text u-padding-bottom">{{collections.about[0].data.blurb}}</p>
         <a href="#contact" class="section-about__contact button">Get in touch</a>
     </div>
 </section>
@@ -36,7 +36,7 @@ layout: base.njk
 <section class="section-testimonials">
     <div class="section-about__content u-padding-bottom">
         <h2 class="section-testimonials__title u-padding-top u-padding-bottom">{{collections.collab[0].data.title}}</h2>
-        <p class="section-about__text u-padding-bottom">{{ collections.collab[0].templateContent | safe }}</p>
+        <p class="section-about__text u-padding-bottom">{{collections.collab[0].data.blurb}}</p>
     </div>
 </section>
 

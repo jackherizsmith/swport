@@ -5,6 +5,7 @@ backend:
 display_url: "wardles.netlify.app"
 media_folder: "src/media/"
 public_folder: "/media"
+
 collections:
   - name: "portfolio"
     label: "Articles"
@@ -25,3 +26,11 @@ collections:
       - {label: "Thumb", hint: "ideally under 80kb", name: "thumb", widget: "image"}
       - {label: "Article content", name: "body", widget: "markdown"}
       - {label: "Downloadable PDF", name: "pdf", widget: "file", required: false}
+  
+  - name: "about"
+    label: "About"
+    file: "src/about.md"
+    fields:
+      - {label: "Title", name: "title", widget: "string", pattern: ['^{,20}$', "Max 20 characters"]}
+      - {label: "Blurb", name: "blurb", widget: "text"}
+      
