@@ -256,7 +256,7 @@ body {
   position: relative; }
   .section-about__content {
     padding-left: 3rem;
-    width: 70%;
+    width: 65%;
     color: #dbdce1;
     display: flex;
     flex-direction: column; }
@@ -265,7 +265,8 @@ body {
     font-size: 8rem; }
   .section-about__text {
     font-size: 3rem;
-    font-weight: 300; }
+    font-weight: 300;
+    text-align: justify; }
   .section-about__contact {
     color: #f5f6fa; }
 
@@ -335,35 +336,29 @@ body {
     padding: 3rem 1rem 2rem;
     user-select: none; }
   .port-nav__links {
-    list-style: none; }
+    list-style: none;
+    padding: 0 2rem; }
   .port-nav__link {
     display: block;
     width: 100%;
-    padding: 2rem;
+    height: 10rem;
     font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: .1rem;
     text-decoration: none;
     color: #303741;
-    transition: all .3s; }
-    .port-nav__link::before, .port-nav__link::after {
-      content: "";
-      display: block;
-      margin-left: 50%;
-      width: 0;
-      height: .2rem;
-      background-color: #363c49;
-      transition: all .4s; }
-    .port-nav__link::before {
-      margin-bottom: .5rem; }
+    transition: all .3s;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; }
     .port-nav__link::after {
-      margin-top: .9rem; }
-    .port-nav__link:hover {
-      color: #222;
-      background-color: #f8f1f4; }
-      .port-nav__link:hover::before, .port-nav__link:hover::after {
-        margin-left: 0%;
-        width: 100%; }
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0; }
   .port-nav__journal, .port-nav__date {
     letter-spacing: initial;
     margin-top: .9rem; }
@@ -374,6 +369,28 @@ body {
     font-size: 1.3rem;
     font-weight: 600;
     font-style: italic; }
+  .port-nav__item {
+    position: relative; }
+    .port-nav__item::before, .port-nav__item::after {
+      content: "";
+      display: block;
+      margin-left: 50%;
+      width: 0;
+      height: .2rem;
+      background-color: #363c49;
+      transition: all .4s; }
+    .port-nav__item::before {
+      content: "";
+      margin-bottom: .5rem; }
+    .port-nav__item::after {
+      content: "";
+      margin-top: .9rem; }
+    .port-nav__item:hover {
+      color: #222;
+      background-color: #f8f1f4; }
+      .port-nav__item:hover::before, .port-nav__item:hover::after {
+        margin-left: 0%;
+        width: 100%; }
 
 .article {
   position: relative; }
