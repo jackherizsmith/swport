@@ -446,7 +446,8 @@ body {
     .article__wrapper > p {
       font-size: 1.7rem;
       letter-spacing: .1rem;
-      font-weight: 300; }
+      font-weight: 300;
+      display: block; }
       .article__wrapper > p:not(:first-child) {
         margin-top: 2rem; }
       .article__wrapper > p:not(:last-child) {
@@ -468,18 +469,19 @@ body {
         border: .3rem dotted transparent; }
         .article__wrapper > p > a:link:hover, .article__wrapper > p > a:visited:hover {
           border-color: #222; }
+      .article__wrapper > p > img {
+        display: block;
+        margin: 0 auto; }
     .article__wrapper > blockquote {
       display: block;
       letter-spacing: .2rem;
       font-weight: 200;
       padding: 3rem;
-      margin: 2rem;
+      margin: 2rem 2rem 3rem;
       text-align: center;
       background-color: #f8f1f4;
       color: #222;
       box-shadow: 0 1rem 2rem rgba(54, 60, 73, 0.15);
       font-size: 1.9rem; }
-    .article__wrapper > img {
-      width: 100%; }
     .article__wrapper > h2 {
       font-size: 4rem; }

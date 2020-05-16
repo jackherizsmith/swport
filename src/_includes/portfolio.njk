@@ -19,13 +19,13 @@ layout: base.njk
 
     <article class="portfolio__article article">
         <div class="article__image-wrapper">
-            <img src="{{thumb}}" alt="{{title}}" class="article__image">
+            <img src="{{image}}" alt="{{title}}" class="article__image">
         </div>
         <header class="article__header">
             <h1 class="article__title">{{title}}</h2>
             <div class="article__info">
                 <p class="article__detail">Published in <span class="article__journal">{{journal}}</span> on <time class="article__date">{{date.toDateString()}}</time></p>
-                <a href="{{pdf}}" class="article__pdf button" download>Download<br>PDF</a>
+                <a href="{{pdf}}" class="article__pdf button" download>Download<br>original PDF</a>
             </div>
         </header>
         <div class="article__wrapper">
