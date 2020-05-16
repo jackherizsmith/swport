@@ -35,11 +35,7 @@ body {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400; }
 
-h1, h2, h3 {
-  font-family: "Nunito Sans", sans-serif; }
-
 .logo {
-  text-decoration: none;
   height: 6rem; }
 
 .u-padding-bottom {
@@ -56,20 +52,24 @@ h1, h2, h3 {
   top: -12.4rem; }
 
 .button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  background-color: transparent;
   text-decoration: none;
+  display: block;
   text-transform: uppercase;
-  color: #f5f6fa;
   padding: 1rem 1.7rem;
   font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  width: fit-content;
   text-align: center;
   border-radius: .3rem;
   transition: all .2s; }
   .button:hover {
     background-color: #f5f6fa;
     color: #303741; }
-
-.icon {
-  height: 5rem; }
 
 .article-card {
   height: 30rem;
@@ -131,25 +131,34 @@ h1, h2, h3 {
   .form__label, .form__input {
     display: block; }
   .form__label {
-    margin: 1.5rem 0 2rem;
+    margin-bottom: 2.2rem;
     font-size: 2.3rem;
-    line-height: 1; }
+    font-weight: 400;
+    letter-spacing: .1rem;
+    line-height: .7; }
     .form__label > span {
-      color: #718094; }
+      color: #363c49; }
   .form__input {
     font-size: 2rem;
+    font-weight: 300;
     border-radius: .3rem;
-    border: 0.4rem solid #192b57;
+    border: 0.2rem solid #192b57;
     padding: 1.5rem;
-    background-color: #fafafa;
+    background-color: #fcf8f9;
     min-width: 100%;
     max-width: 100%; }
     .form__input:focus {
-      outline-offset: .5rem;
-      outline: 1rem solid #192b57; }
+      outline-offset: .3rem;
+      outline: 0.4rem solid #192b57;
+      -moz-outline-radius: .3rem; }
+    .form__input:only-of-type {
+      min-height: 15rem; }
   .form__error {
     display: inline-block;
+    visibility: hidden;
+    opacity: 0;
     height: 2rem;
+    min-height: 2rem;
     padding: 1.5rem;
     margin-bottom: 3rem;
     font-size: 1.8rem;
@@ -181,7 +190,7 @@ h1, h2, h3 {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: #f9f3f5;
+  background-color: #f8f1f4;
   padding: 2rem;
   display: flex;
   flex-direction: row;
@@ -200,10 +209,12 @@ h1, h2, h3 {
     float: right;
     margin-right: .5rem; }
   .nav__link {
+    display: inline-block;
+    height: 100%;
     text-decoration: none;
-    color: #222;
+    color: #303741;
     padding: 0 2rem;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 2.2rem;
     text-transform: uppercase;
     letter-spacing: .3rem; }
@@ -212,12 +223,14 @@ h1, h2, h3 {
       float: left;
       margin-left: 50%;
       width: 0;
-      height: .1rem;
+      height: .2rem;
       background-color: #363c49;
       transition: all .4s; }
-    .nav__link:hover::after {
-      margin-left: 25%;
-      width: 50%; }
+    .nav__link:hover {
+      color: #222; }
+      .nav__link:hover::after {
+        margin-left: 25%;
+        width: 50%; }
 
 .links {
   display: flex;
@@ -226,7 +239,7 @@ h1, h2, h3 {
 
 .footer {
   height: 10rem;
-  background-color: #f9f3f5;
+  background-color: #f8f1f4;
   text-align: center;
   padding: 2rem 0;
   position: relative;
@@ -246,12 +259,13 @@ h1, h2, h3 {
     display: flex;
     flex-direction: column; }
   .section-about__title {
-    font-size: 9rem; }
+    font-weight: 300;
+    font-size: 8rem; }
   .section-about__text {
-    font-size: 3rem; }
+    font-size: 3rem;
+    font-weight: 300; }
   .section-about__contact {
-    margin-left: 2rem;
-    width: 18rem; }
+    color: #f5f6fa; }
 
 .section-portfolio {
   background-color: #f5f6fa;
@@ -260,14 +274,13 @@ h1, h2, h3 {
     display: block;
     text-align: center;
     font-size: 6rem;
+    font-weight: 300;
     color: #303741; }
   .section-portfolio__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
   .section-portfolio__link {
-    display: block;
-    width: fit-content;
     color: #303741;
     margin: 0 auto; }
     .section-portfolio__link:hover {
@@ -278,7 +291,8 @@ h1, h2, h3 {
   background-image: linear-gradient(90deg, rgba(48, 55, 65, 0.95) 20%, rgba(48, 55, 65, 0.75) 70%, rgba(126, 142, 165, 0.3) 90%), url(../media/layout/testimonials.jpg);
   background-size: cover; }
   .section-testimonials__title {
-    font-size: 6rem; }
+    font-size: 6rem;
+    font-weight: 300; }
 
 .section-contact {
   display: block;
@@ -287,7 +301,9 @@ h1, h2, h3 {
   background-color: #f5f6fa; }
   .section-contact__title {
     font-size: 6rem;
-    text-align: center; }
+    font-weight: 300;
+    text-align: center;
+    color: #303741; }
 
 .portfolio {
   display: flex;

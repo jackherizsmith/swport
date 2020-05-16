@@ -49,18 +49,22 @@ form.addEventListener("submit", event => {
         input = document.getElementById(key);
         input.style.borderColor = "hsl(0, 100%, 45%)";
         input.nextElementSibling.textContent = errorMessage[key];
+        input.nextElementSibling.style.visibility = 'initial';
+        input.nextElementSibling.style.opacity = '1';
       }
     }
   }
 });
 
 function validate(input, test){
-  input.nextElementSibling.textContent = '';
+  input.nextElementSibling.textContent = '-';
+  input.nextElementSibling.style.visibility = 'hidden';
+  input.nextElementSibling.style.opacity = '0';
   if (test) {
     input.style.borderColor = "hsl(106, 100%, 30%)";
     return true;
   } else {
-    input.style.border = ".4rem solid hsl(223, 55%, 22%)";
+    input.style.border = ".2rem solid hsl(223, 55%, 22%)";
     return false;
   }
 }
