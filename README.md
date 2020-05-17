@@ -2,9 +2,11 @@
 
 ![hero](https://imgur.com/F1Xs7bp.jpg)
 
-This is the repository for [Sally Wardle's portfolio site](https://wardles.netlify.app) as a freelance journalist. It is deployed using [Netlify](https://www.netlify.com/) and [she has edit access](https://wardles.netlify.app/admin) using [Netlify CMS](https://www.netlifycms.org/). The site is compiled using the static site generator [Eleventy](https://www.11ty.dev/).
+This is the repository for [Sally Wardle's portfolio site](https://wardles.netlify.app) as a freelance journalist. It is deployed using [Netlify](https://www.netlify.com/) and [she has edit access](https://wardles.netlify.app/admin) using [Netlify CMS](https://www.netlifycms.org/), and can refer to [my 'how to' guide on Google Docs for updating the website](https://docs.google.com/document/d/16aOEWAyLuB59xUp-Y54rdDKkWiZdqEfOhee6QvMacJg/edit?usp=sharing). The site is compiled using the static site generator [Eleventy](https://www.11ty.dev/).
 
-If you would like to fork the repo please feel free, you can run "npm start" so that Eleventy watches your files, it will generate `_site/` locally so you can visit *localhost:8080* and see wha tt he site will look like when deployed. Obviously the form won't submit anything since it is managed in production by Netlify Forms.
+If you would like to fork the repo please feel free, you can run "npm start" so that Eleventy watches your files, it will generate `_site/` locally so you can visit *localhost:8080* and see what the site will look like when deployed. Obviously the form won't submit anything since it is managed in production by Netlify Forms.
+
+I have also set up [fire-bot from Founders Club](https://fire.fundersclub.com/) which means Sally can create issues directly should anything come up in the future that needs attention.
 
 If it's of interest, I precompiled the CSS in Sass, which is not available in the repo. This could be an oversight. There is minimal Javascript, specifically to handle form validation (although again, form submission is handled by Netlify's native Form functionality and sent straight to Sally). There needs to be a bit more, which is detailed in the open issues.
 
