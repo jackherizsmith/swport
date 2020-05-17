@@ -1,5 +1,7 @@
 # Sally Wardle, freelance journalist
 
+![hero](https://imgur.com/F1Xs7bp)
+
 This is the repository for [Sally Wardle's portfolio site](https://wardles.netlify.app) as a freelance journalist. It is deployed using [Netlify](https://www.netlify.com/) and [she has edit access](https://wardles.netlify.app/admin) using [Netlify CMS](https://www.netlifycms.org/). The site is compiled using the static site generator [Eleventy](https://www.11ty.dev/).
 
 If you would like to fork the repo please feel free, you can run "npm start" so that Eleventy watches your files, it will generate `_site/` locally so you can visit *localhost:8080* and see wha tt he site will look like when deployed. Obviously the form won't submit anything since it is managed in production by Netlify Forms.
@@ -47,7 +49,7 @@ This meant that the website was calling for content from the global public folde
 
 ## Initial concept on Miro
 
-![WardleS on Miro](https://imgur.com/83e35f31-50f5-4a0f-9a4f-35bc28bcd1b5)
+![WardleS on Miro](https://imgur.com/EwoZ5Pv)
 
 ## Next steps
 We'll see how the site develops as Sally adds more articles. I'm sure there are still bits to do, however I'm happy with its current state and so will probably get on with other projects for the immediate future.
