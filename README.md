@@ -45,5 +45,9 @@ The main challenge was that I wanted to get all associated files in to the same 
 
 This meant that the website was calling for content from the global public folder, and so the workaround I ended up using was doubling up on retrieving data from each collection - its URL *and* its media since the latter didn't have a global path i.e. `{{article.url}}{{article.data.thumb}}`.
 
+## Initial concept on Miro
+
+![WardleS on Miro](https://imgur.com/83e35f31-50f5-4a0f-9a4f-35bc28bcd1b5)
+
 ## Next steps
 We'll see how the site develops as Sally adds more articles. I'm sure there are still bits to do, however I'm happy with its current state and so will probably get on with other projects for the immediate future.
