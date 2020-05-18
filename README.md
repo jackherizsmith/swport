@@ -1,8 +1,12 @@
 # Sally Wardle, freelance journalist
 
-This is the repository for [Sally Wardle's portfolio site](https://wardles.netlify.app) as a freelance journalist. It is deployed using [Netlify](https://www.netlify.com/) and [she has edit access](https://wardles.netlify.app/admin) using [Netlify CMS](https://www.netlifycms.org/). The site is compiled using the static site generator [Eleventy](https://www.11ty.dev/).
+![hero](https://imgur.com/F1Xs7bp.jpg)
 
-If you would like to fork the repo please feel free, you can run "npm start" so that Eleventy watches your files, it will generate `_site/` locally so you can visit *localhost:8080* and see wha tt he site will look like when deployed. Obviously the form won't submit anything since it is managed in production by Netlify Forms.
+This is the repository for [Sally Wardle's portfolio site](https://wardles.netlify.app) as a freelance journalist. It is deployed using [Netlify](https://www.netlify.com/) and [she has edit access](https://wardles.netlify.app/admin) using [Netlify CMS](https://www.netlifycms.org/), and can refer to [my 'how to' guide on Google Docs for updating the website](https://docs.google.com/document/d/16aOEWAyLuB59xUp-Y54rdDKkWiZdqEfOhee6QvMacJg/edit?usp=sharing). The site is compiled using the static site generator [Eleventy](https://www.11ty.dev/).
+
+If you would like to fork the repo please feel free, you can run "npm start" so that Eleventy watches your files, it will generate `_site/` locally so you can visit *localhost:8080* and see what the site will look like when deployed. Obviously the form won't submit anything since it is managed in production by Netlify Forms.
+
+I have also set up [fire-bot from Founders Club](https://fire.fundersclub.com/) which means Sally can create issues directly should anything come up in the future that needs attention.
 
 If it's of interest, I precompiled the CSS in Sass, which is not available in the repo. This could be an oversight. There is minimal Javascript, specifically to handle form validation (although again, form submission is handled by Netlify's native Form functionality and sent straight to Sally). There needs to be a bit more, which is detailed in the open issues.
 
@@ -44,6 +48,10 @@ The other side of the site is Netlify CMS, and I had a lot of ~lost hours~ fun w
 The main challenge was that I wanted to get all associated files in to the same folder as each other, but not with any other uploads related to other articles, and also for that folder to be uniquely named - e.g. with the headline slug. With Netlify CMS you tell it where to find extra files in the source code (`media_folder`) and where to find those files from the website (`public_folder`). Then you can reset that within collections which I did, so the *portfolio* collection has its own `folder`, a `path` within that holds each article, and then `media_folder` and `public_folder` are reset locally so that the new path is kept for uploads.
 
 This meant that the website was calling for content from the global public folder, and so the workaround I ended up using was doubling up on retrieving data from each collection - its URL *and* its media since the latter didn't have a global path i.e. `{{article.url}}{{article.data.thumb}}`.
+
+## Initial concept on Miro
+
+![WardleS](https://imgur.com/EwoZ5Pv.jpg)
 
 ## Next steps
 We'll see how the site develops as Sally adds more articles. I'm sure there are still bits to do, however I'm happy with its current state and so will probably get on with other projects for the immediate future.
