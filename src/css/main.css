@@ -489,4 +489,25 @@ body {
       font-size: 4rem; }
 
 .section-e404 {
-  height: calc(100vh - 12.4rem - 10rem); }
+  min-height: calc(100vh - 12.4rem - 10rem); }
+
+.e404 {
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+  color: #192b57; }
+  .e404__heading {
+    font-size: 6rem;
+    font-weight: 700;
+    padding: 7rem 0 3rem; }
+  .e404__info {
+    font-size: 4rem;
+    font-weight: 300;
+    text-align: justify; }
+  .e404__link:link, .e404__link:visited {
+    font-size: 3rem;
+    color: #192b57;
+    margin: 3rem 0; }
+    .e404__link:link:hover, .e404__link:visited:hover {
+      background-color: #192b57;
+      color: #f5f6fa; }
