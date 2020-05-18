@@ -486,3 +486,6 @@ body {
       font-size: 1.9rem; }
     .article__wrapper > h2 {
       font-size: 4rem; }
+
+.e404 {
+  height: calc(100vh - 12.4rem - 9.7rem); }
