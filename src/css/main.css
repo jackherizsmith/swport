@@ -404,7 +404,8 @@ body {
     height: 50rem;
     width: 100%;
     background-color: #eee;
-    box-shadow: 0 0 1rem #777; }
+    box-shadow: 0 0 1rem #777;
+    overflow: hidden; }
   .article__image {
     position: absolute;
     transform: translateX(-50%);
@@ -487,5 +488,5 @@ body {
     .article__wrapper > h2 {
       font-size: 4rem; }
 
-.e404 {
-  height: calc(100vh - 12.4rem - 9.7rem); }
+.section-e404 {
+  height: calc(100vh - 12.4rem - 10rem); }
