@@ -2,10 +2,9 @@
 layout: portfolio.njk
 tags: portfolio
 featured: true
-title: The frightening discovery that's convinced me DNA tests, endorsed by
-  celebrities such as Oprah Winfrey, do more harm than good
-journal: the Mail on Sunday
-date: 2020-02-02T15:42:11.290Z
+title: AT-HOME DNA TESTING
+journal: The Mail on Sunday
+date: 2020-02-02T00:01:11.290Z
 image: whatsapp-image-2020-05-03-at-15.01.19.jpeg
 thumb: screenshot-from-2020-05-16-15-44-35.png
 pdf: cover-dna-test.pdf
