@@ -1,7 +1,7 @@
 ---
 layout: portfolio.njk
 tags: portfolio
-featured: false
+featured: true
 title: The rise of the TikTok medics
 journal: The Mail on Sunday
 date: 2020-05-10T13:43:22.968Z
