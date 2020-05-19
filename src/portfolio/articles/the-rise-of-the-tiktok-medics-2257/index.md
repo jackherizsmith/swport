@@ -9,7 +9,7 @@ image: tiktok.jpg
 thumb: tiktokjulie.jpg
 pdf: theriseoftiktokmedics.pdf
 ---
-# **[Click here to link to full online article](http://www.dailymail.co.uk/health/article-8303599/How-TikTok-help-survive-Covid-19-lockdown)**[](http://www.dailymail.co.uk/health/article-8303599/How-TikTok-help-survive-Covid-19-lockdown)
+## **[Click here to link to full online article](http://www.dailymail.co.uk/health/article-8303599/How-TikTok-help-survive-Covid-19-lockdown)**[](http://www.dailymail.co.uk/health/article-8303599/How-TikTok-help-survive-Covid-19-lockdown)
 
 IT'S the video-sharing app for attention-seekers that, until recently, will have been a mystery to anyone over the age of about 16.
 
