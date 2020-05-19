@@ -12,13 +12,13 @@ html {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #192b57;
+  background: #303741;
   border-radius: .3rem;
   transition: all 2s; }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #222; }
+  background: #3b434f; }
 
 *, *:before, *:after {
   padding: 0;
@@ -40,7 +40,7 @@ body {
   height: 6rem; }
 
 .u-padding-bottom {
-  padding-bottom: 5rem; }
+  padding-bottom: 2rem; }
 
 .u-padding-bottom-large {
   padding-bottom: 10rem; }
@@ -70,7 +70,7 @@ body {
   transition: all .2s; }
   .button:hover {
     background-color: #f5f6fa;
-    color: #303741; }
+    color: #3b434f; }
 
 .article-card {
   height: 30rem;
@@ -113,7 +113,7 @@ body {
     transform: translate(-50%, -50%);
     width: 100%; }
   .article-card__image {
-    filter: brightness(35%); }
+    filter: brightness(18%); }
   .article-card__title {
     text-align: center;
     font-size: 3rem;
@@ -149,14 +149,14 @@ body {
     font-size: 2rem;
     font-weight: 300;
     border-radius: .3rem;
-    border: 0.2rem solid #192b57;
+    border: 0.2rem solid #3b434f;
     padding: 1.5rem;
     background-color: #fcf8f9;
     min-width: 100%;
     max-width: 100%; }
     .form__input:focus {
       outline-offset: .3rem;
-      outline: 0.4rem solid #192b57; }
+      outline: 0.4rem solid #3b434f; }
     .form__input:only-of-type {
       min-height: 15rem; }
   .form__error {
@@ -170,11 +170,11 @@ body {
     font-size: 1.8rem;
     color: #a30000; }
   .form__submit {
-    color: #303741;
+    color: #3b434f;
     margin-left: 3rem; }
     .form__submit:hover {
       color: #f5f6fa;
-      background-color: #303741; }
+      background-color: #3b434f; }
 
 .header {
   height: calc(100vh - 12.4rem);
@@ -187,7 +187,7 @@ body {
     transform: translateX(-50%);
     left: 50%;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
     min-width: 100%;
     height: 100%; }
 
@@ -201,7 +201,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   z-index: 2;
-  box-shadow: 0 .2rem 1rem #777; }
+  box-shadow: 0 0rem .7rem #ccc; }
   .nav__logo {
     padding: 1rem 2rem;
     display: inline-block;
@@ -249,14 +249,14 @@ body {
   text-align: center;
   padding: 2rem 0;
   position: relative;
-  box-shadow: 0 .2rem 3rem #ccc;
+  box-shadow: 0 0rem .7rem #ccc;
   z-index: 2; }
   .footer__logo {
     color: #f5f6fa;
     font-size: 5rem; }
 
 .section-about {
-  background-image: linear-gradient(90deg, rgba(48, 55, 65, 0.95) 20%, rgba(48, 55, 65, 0.75) 70%, rgba(126, 142, 165, 0.3) 90%), url(../media/layout/papers.jpeg);
+  background-image: linear-gradient(90deg, rgba(52, 50, 51, 0.95) 20%, rgba(65, 62, 63, 0.75) 70%, rgba(168, 164, 165, 0.3) 90%), url(../media/layout/papers.jpeg);
   background-size: cover;
   position: relative; }
   .section-about__content {
@@ -267,13 +267,15 @@ body {
     flex-direction: column; }
   .section-about__title {
     font-weight: 300;
-    font-size: 8rem; }
+    letter-spacing: .3rem;
+    font-size: 5rem; }
   .section-about__text {
-    font-size: 3rem;
+    font-size: 2.9rem;
     font-weight: 300;
-    text-align: justify; }
+    text-align: left; }
   .section-about__contact {
-    color: #f5f6fa; }
+    color: #f5f6fa;
+    margin: 1rem 0; }
 
 .section-portfolio {
   background-color: #f5f6fa;
@@ -281,26 +283,29 @@ body {
   .section-portfolio__title {
     display: block;
     text-align: center;
-    font-size: 6rem;
     font-weight: 300;
+    letter-spacing: .3rem;
+    font-size: 5rem;
+    text-transform: uppercase;
     color: #303741; }
   .section-portfolio__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
   .section-portfolio__link {
-    color: #303741;
+    color: #3b434f;
     margin: 0 auto; }
     .section-portfolio__link:hover {
       color: #f5f6fa;
-      background-color: #303741; }
+      background-color: #3b434f; }
 
 .section-testimonials {
   background-image: linear-gradient(90deg, rgba(48, 55, 65, 0.95) 20%, rgba(48, 55, 65, 0.75) 70%, rgba(126, 142, 165, 0.3) 90%), url(../media/layout/testimonials.jpg);
   background-size: cover; }
   .section-testimonials__title {
-    font-size: 6rem;
-    font-weight: 300; }
+    font-weight: 300;
+    letter-spacing: .3rem;
+    font-size: 5rem; }
 
 .section-contact {
   display: block;
@@ -309,7 +314,10 @@ body {
   background-color: #f5f6fa; }
   .section-contact__title {
     font-size: 6rem;
+    text-transform: uppercase;
     font-weight: 300;
+    letter-spacing: .3rem;
+    font-size: 5rem;
     text-align: center;
     color: #303741; }
 
@@ -337,8 +345,8 @@ body {
     font-weight: 700;
     letter-spacing: .3rem;
     text-transform: uppercase;
-    text-align: center;
-    padding: 3rem 1rem 2rem;
+    text-align: left;
+    padding: 3rem 1rem 2rem 2rem;
     user-select: none; }
   .port-nav__links {
     list-style: none;
@@ -392,13 +400,14 @@ body {
       margin-top: .9rem; }
     .port-nav__item:hover {
       color: #222;
-      background-color: #f8f1f4; }
+      background-color: rgba(248, 241, 244, 0.5); }
       .port-nav__item:hover::before, .port-nav__item:hover::after {
         margin-left: 0%;
         width: 100%; }
 
 .article {
-  position: relative; }
+  position: relative;
+  background-color: #f5f6fa; }
   .article__image-wrapper {
     height: 50rem;
     max-width: 100%;
@@ -472,20 +481,22 @@ body {
           border-color: #222; }
       .article__wrapper > p > img {
         display: block;
-        margin: 0 auto;
-        max-width: 100%; }
+        margin: 3rem auto;
+        max-width: 100%;
+        box-shadow: 0rem .3rem .7rem #444; }
     .article__wrapper > blockquote {
       display: block;
       letter-spacing: .2rem;
       font-weight: 200;
       padding: 3rem;
-      margin: 2rem 2rem 3rem;
+      margin: 4rem 2rem 6rem;
       text-align: center;
-      background-color: #f8f1f4;
+      background-color: rgba(248, 241, 244, 0.5);
       color: #222;
       box-shadow: 0 1rem 2rem rgba(54, 60, 73, 0.15);
       font-size: 1.9rem; }
     .article__wrapper > h2 {
+      margin: 4rem 0 2rem;
       font-size: 4rem; }
 
 .section-e404 {

@@ -6,14 +6,14 @@ layout: base.njk
     <div id="about" class="u-anchor"></div>
     <div class="section-about__content u-padding-bottom">
         <h2 class="section-about__title u-padding-top u-padding-bottom">{{collections.about[0].data.title}}</h2>
-        <p class="section-about__text u-padding-bottom">{{collections.about[0].data.blurb}}</p>
+        <p class="section-about__text u-padding-bottom">I am associate health editor at the Mail on Sunday. I have significant experience reporting on national news, and a proven track record of landing exclusives and generating original story ideas. <br><br>I trained and spent the first four years of my career working at the Press Association, as both a general news reporter and health and science correspondent.</p>
         <a href="#contact" class="section-about__contact button">Get in touch</a>
     </div>
 </section>
 
 <section class="section-portfolio u-padding-bottom-large">
     <div id="work" class="u-anchor"></div>
-    <h2 class="section-portfolio__title u-padding-top u-padding-bottom">Things I have written</h2>
+    <h2 class="section-portfolio__title u-padding-top u-padding-bottom">My work</h2>
     <div class="section-portfolio__wrapper u-padding-bottom">
     {%- for article in collections.portfolioReversed -%}
         {%- if article.data.featured == true -%}
