@@ -1,11 +1,15 @@
 ---
 tags: about
-title: Hi, I'm Sally.
+title: ABOUT ME
 blurb: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bestiarum vero nullum
-  iudicium puto. Bonum integritas corporis: misera debilitas. Urgent tamen et
-  nihil remittunt. Easdemne res? Age sane, inquam.
+  Over the past five years, I have built a reputation as a determined and
+  reliable journalist. I have significant experience reporting on national news,
+  and a proven track record of landing exclusives and generating original story
+  ideas. 
 
 
-  Nihil opus est exemplis hoc facere longius. Tuo vero id quidem, inquam, arbitratu. Duo Reges: constructio interrete.
+  I trained and spent the first four years of my career working at the Press Association, as both a general news reporter and health and science correspondent. 
+
+
+  I am now associate health editor at the Mail on Sunday.
 ---
