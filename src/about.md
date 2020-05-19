@@ -1,6 +1,6 @@
 ---
 tags: about
-title: ABOUT ME
+title: "ABOUT "
 blurb: >-
   Over the past five years, I have built a reputation as a determined and
   reliable journalist. I have significant experience reporting on national news,
