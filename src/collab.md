@@ -1,12 +1,9 @@
 ---
 tags: collab
 title: CONTACT
-blurb: >+
-  Please contact me about anything you would like to, using my email, Twitter,
-  or the form below. 
-
+blurb: |
+  Please do get in touch by email, Twitter, or using the contact form below.
 
   Email: swardle.journalist@gmail.com
-
   Twitter: @sally_wardle
 ---
