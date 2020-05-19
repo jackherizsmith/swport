@@ -9,6 +9,8 @@ image: tiktok.jpg
 thumb: tiktokjulie.jpg
 pdf: theriseoftiktokmedics.pdf
 ---
+# **[Click here to link to full online article](http://www.dailymail.co.uk/health/article-8303599/How-TikTok-help-survive-Covid-19-lockdown)**[](http://www.dailymail.co.uk/health/article-8303599/How-TikTok-help-survive-Covid-19-lockdown)
+
 IT'S the video-sharing app for attention-seekers that, until recently, will have been a mystery to anyone over the age of about 16.
 
 But now TikTok is, all of a sudden, heading for the mainstream. It allows users to record and edit footage - often of themselves dancing, miming to music or performing pranks - into chunks of anything from 15 seconds to a minute.
