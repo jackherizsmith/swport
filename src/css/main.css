@@ -498,6 +498,30 @@ body {
     .article__wrapper > h2 {
       margin: 4rem 0 2rem;
       font-size: 4rem; }
+  .article__top-wrapper {
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    top: 110vh;
+    bottom: 3rem;
+    right: 2rem; }
+  .article__top {
+    opacity: 70%;
+    height: fit-content;
+    position: sticky;
+    top: 90vh;
+    font-size: 2.2rem;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    box-shadow: 0 0.2rem .4rem #aaa;
+    border-radius: 100rem;
+    z-index: 3;
+    background-color: #f8f1f4;
+    transition: all .4s;
+    border: .1rem solid #303741;
+    color: #303741; }
+    .article__top:hover {
+      opacity: 100%; }
 
 .section-e404 {
   height: calc(100vh - 12.4rem - 10rem); }
