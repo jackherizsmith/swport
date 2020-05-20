@@ -169,12 +169,25 @@ body {
     margin-bottom: 3rem;
     font-size: 1.8rem;
     color: #a30000; }
+  .form__submission {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
   .form__submit {
     color: #3b434f;
-    margin-left: 3rem; }
+    margin-left: 2rem; }
     .form__submit:hover {
       color: #f5f6fa;
       background-color: #3b434f; }
+  .form__thanks {
+    display: inline-block;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 2.3rem;
+    font-weight: 400;
+    margin: 0 2rem .3rem 0;
+    color: #186600;
+    transition: all .3s; }
 
 .header {
   height: calc(100vh - 12.4rem);

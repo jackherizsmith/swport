@@ -11,6 +11,8 @@ const emailRegex = (/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"
 const messageInput = form.querySelector("#message");
 const messageRegex = /^(?!\s*$).+/;
 
+const thanks = document.querySelector(".form__thanks");
+
 let valid = {
   name: false, 
   email: false, 
@@ -46,11 +48,23 @@ form.addEventListener("submit", event => {
                       emailInput.name + emailInput.value + "&" + 
                       messageInput.name + messageInput.value)
     })
-    .then(console.log)
+    .then(()=>{ // need to refactor!
+      nameInput.style.border = ".2rem solid hsl(223, 55%, 22%)";
+      nameInput.value="";
+      emailInput.style.border = ".2rem solid hsl(223, 55%, 22%)";
+      emailInput.value="";
+      messageInput.style.border = ".2rem solid hsl(223, 55%, 22%)";
+      messageInput.value="";
+      thanks.style.visibility = 'initial';
+      thanks.style.opacity = '1';
+    })
+    .catch(console.error);
   }
 });
 
 function validate(input, test){
+  thanks.style.visibility = 'hidden';
+  thanks.style.opacity = '0';
   input.nextElementSibling.textContent = '-';
   input.nextElementSibling.style.visibility = 'hidden';
   input.nextElementSibling.style.opacity = '0';
