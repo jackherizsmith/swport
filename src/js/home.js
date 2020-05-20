@@ -49,21 +49,22 @@ form.addEventListener("submit", event => {
                       messageInput.name + messageInput.value)
     })
     .then(()=>{ // need to refactor!
-      nameInput.style.border = ".2rem solid hsl(223, 55%, 22%)";
-      nameInput.value="";
-      emailInput.style.border = ".2rem solid hsl(223, 55%, 22%)";
-      emailInput.value="";
-      messageInput.style.border = ".2rem solid hsl(223, 55%, 22%)";
-      messageInput.value="";
-      thanks.style.visibility = 'initial';
-      thanks.style.opacity = '1';
+      console.log("why")
+      // nameInput.style.border = ".2rem solid hsl(223, 55%, 22%)";
+      // nameInput.value="";
+      // emailInput.style.border = ".2rem solid hsl(223, 55%, 22%)";
+      // emailInput.value="";
+      // messageInput.style.border = ".2rem solid hsl(223, 55%, 22%)";
+      // messageInput.value="";
+      // thanks.style.visibility = 'initial';
+      // thanks.style.opacity = '1';
     })
     .catch(console.error);
   }
 });
 
 function validate(input, test){
-  thanks.style.visibility = 'hidden';
+  thanks.style.visibility = 'hidden'; // maybe better in addeventlistener for user focus
   thanks.style.opacity = '0';
   input.nextElementSibling.textContent = '-';
   input.nextElementSibling.style.visibility = 'hidden';
