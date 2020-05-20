@@ -514,7 +514,7 @@ body {
     padding: 1rem 1.5rem;
     text-decoration: none;
     box-shadow: 0 0.2rem .4rem #aaa;
-    border-radius: 100rem;
+    border-radius: .3rem;
     z-index: 3;
     background-color: #f8f1f4;
     transition: all .4s;
