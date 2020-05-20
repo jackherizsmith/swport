@@ -1,19 +1,3 @@
-// let i = 0;
-// let txt = document.querySelector("h2").textContent; /* The text */
-// document.querySelector("h2").textContent = " ";
-// var speed = 80; /* The speed/duration of the effect in milliseconds */
-
-// function typeWriter() {
-//     if (i < txt.length) {
-//       document.querySelector("h2").innerHTML += txt.charAt(i);
-//       i++;
-//       setTimeout(typeWriter, speed);
-//     }
-//   }
-
-//   typeWriter();
-
-
 // form validation
 const form = document.querySelector("form");
 const inputs = form.querySelectorAll("input");
@@ -42,8 +26,8 @@ const errorMessage = {
 form.setAttribute("novalidate", "");
 
 form.addEventListener("submit", event => {
+  event.preventDefault();
   if (Object.values(valid).includes(false)) {
-    event.preventDefault();
     for (key in valid) {
       if (!valid[key]) {
         input = document.getElementById(key);
@@ -54,6 +38,14 @@ form.addEventListener("submit", event => {
         input.nextElementSibling.setAttribute("role", "alert")
       }
     }
+  } else {
+    fetch("/", {
+      method: "POST",
+      body: new URLSearchParams("form-name=contact&name="+nameInput.value+"&email="+emailInput.value+"&message=" + messageInput.value)
+    })
+    .then(()=>{
+      console.log("success")
+    })
   }
 });
 
