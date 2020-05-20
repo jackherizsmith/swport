@@ -41,11 +41,12 @@ form.addEventListener("submit", event => {
   } else {
     fetch("/", {
       method: "POST",
-      body: new URLSearchParams("form-name=contact&name="+nameInput.value+"&email="+emailInput.value+"&message=" + messageInput.value)
+      body: new URLSearchParams("form-name=contact&" + 
+                      nameInput.name + nameInput.value + "&" + 
+                      emailInput.name + emailInput.value + "&" + 
+                      messageInput.name + messageInput.value)
     })
-    .then(()=>{
-      console.log("success")
-    })
+    .then(console.log)
   }
 });
 
