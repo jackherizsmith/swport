@@ -43,21 +43,17 @@ form.addEventListener("submit", event => {
   } else {
     fetch("/", {
       method: "POST",
-      body: new URLSearchParams("form-name=contact&" + 
-                      nameInput.name + nameInput.value + "&" + 
-                      emailInput.name + emailInput.value + "&" + 
-                      messageInput.name + messageInput.value)
+      body: new URLSearchParams("form-name=contact&name=" + nameInput.value + "&email=" + emailInput.value + "&message=" + messageInput.value)
     })
     .then(()=>{ // need to refactor!
-      console.log("why")
-      // nameInput.style.border = ".2rem solid hsl(223, 55%, 22%)";
-      // nameInput.value="";
-      // emailInput.style.border = ".2rem solid hsl(223, 55%, 22%)";
-      // emailInput.value="";
-      // messageInput.style.border = ".2rem solid hsl(223, 55%, 22%)";
-      // messageInput.value="";
-      // thanks.style.visibility = 'initial';
-      // thanks.style.opacity = '1';
+      nameInput.style.border = ".2rem solid hsl(223, 55%, 22%)";
+      nameInput.value="";
+      emailInput.style.border = ".2rem solid hsl(223, 55%, 22%)";
+      emailInput.value="";
+      messageInput.style.border = ".2rem solid hsl(223, 55%, 22%)";
+      messageInput.value="";
+      thanks.style.visibility = 'initial';
+      thanks.style.opacity = '1';
     })
     .catch(console.error);
   }
