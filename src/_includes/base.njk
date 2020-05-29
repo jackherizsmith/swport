@@ -1,48 +1,68 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Sally Wardle | {{title}}</title>
+        <title>Sally Wardle |
+            {{title}}</title>
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,700;0,800;1,200;1,600&display=swap" rel="stylesheet">
         <link rel="shortcut icon" type="image/png" href="/media/favicon.png"/>
         <link rel="stylesheet" href="/css/main.css"/>
+        <meta charset="UTF-8">
+        <meta name="description" content="Sally Wardle is an experienced freelance print journalist based in London">
+        <meta name="keywords" content="freelance, print, journalist, London">
+        <meta name="author" content="Sally Wardle">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header>
             {%- if title=="Home" -%}
-            <div class="header" id="home">
+                <div class="header" id="home">
                     <img src="media/layout/SW_1920x1080.jpg" class="header__image" alt="Sally Wardle">
-            </div>
+                </div>
             {%- endif -%}
         </header>
         <main>
-            <nav class="nav"> <!-- if (home) => links internal, else navigate -->
+            <nav class="nav">
+                <!-- if (home) => links internal, else navigate -->
                 {%- if title=="Home" -%}
                     <a class="nav__logo" href="#home"><img src="/media/layout/SW_Logo_Lockup.png" class="logo" alt="Sally Wardle logo"></a>
                 {%- else -%}
                     <a class="nav__logo" href="/"><img src="/media/layout/SW_Logo_Lockup.png" class="logo" alt="Sally Wardle logo"></a>
                 {%- endif -%}
-                <ul class="nav__links links"> <!-- may need to use JS to replace latest history, as with portfolio -->
-                {%- if title=="Home" -%}
-                    <li class="link"><a class="nav__link" href="#about">About</a></li>
-                    <li class="link"><a class="nav__link" href="#work">My Work</a></li>
-                    <li class="link"><a class="nav__link" href="#contact">Contact</a></li>
-                {%-else-%}
-                    <li class="link"><a class="nav__link" href="/#about">About</a></li>
-                    <li class="link"><a class="nav__link" href="/#work">My Work</a></li>
-                    <li class="link"><a class="nav__link" href="/#contact">Contact</a></li>
-                {%-endif-%}
-                </ul>
-            </nav>
-            
-            {{ content | safe }}
-        </main>
-        <footer class="footer">
-            <p class="footer__logo"><img src="/media/layout/SW_Monogram.png" class="logo" alt="Sally Wardle logo"></p>
-        </footer>
-    </body>
-    {%- if title=="Home" -%}
-        <script src="/js/home.js"></script>
-    {%-elif title=="Portfolio"-%}
-        <script src="/js/portfolio.js"></script>
-    {%- endif -%}
-</html>
+                <ul class="nav__links links">
+                    <!-- may need to use JS to replace latest history, as with portfolio -->
+                    {%- if title=="Home" -%}
+                        <li class="link">
+                            <a class="nav__link" href="#about">About</a>
+                        </li>
+                        <li class="link">
+                            <a class="nav__link" href="#work">My Work</a>
+                        </li>
+                        <li class="link">
+                            <a class="nav__link" href="#contact">Contact</a>
+                        </li>
+                        {%-else-%}
+                        <li class="link">
+                            <a class="nav__link" href="/#about">About</a>
+                        </li>
+                        <li class="link">
+                            <a class="nav__link" href="/#work">My Work</a>
+                        </li>
+                        <li class="link">
+                            <a class="nav__link" href="/#contact">Contact</a>
+                        </li>
+                        {%-endif-%}
+                    </ul>
+                </nav>
+
+                {{ content | safe }}
+            </main>
+            <footer class="footer">
+                <p class="footer__logo"><img src="/media/layout/SW_Monogram.png" class="logo" alt="Sally Wardle logo"></p>
+            </footer>
+        </body>
+        {%- if title=="Home" -%}
+            <script src="/js/home.js"></script>
+        {%-elif title=="Portfolio"-%}
+            <script src="/js/portfolio.js"></script>
+        {%- endif -%}
+    </html>
