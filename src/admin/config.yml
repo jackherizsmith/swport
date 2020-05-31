@@ -37,9 +37,11 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string", hint: "ideally fewer than 20 characters"}
           - {label: "Blurb", name: "body", widget: "markdown", hint: "ideally fewer than 100 words"}
+          - {label: "tags", name: "tags", widget: "hidden", default: "about"}
       - label: "Collab"
         name: "collab"
         file: "src/collab.md"
         fields:
           - {label: "Title", name: "title", widget: "string", hint: "ideally fewer than 20 characters"}
           - {label: "Blurb", name: "body", widget: "markdown", hint: "ideally fewer than 100 words"}
+          - {label: "tags", name: "tags", widget: "hidden", default: "contact"}
