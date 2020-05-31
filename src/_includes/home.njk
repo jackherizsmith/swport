@@ -6,7 +6,7 @@ layout: base.njk
     <div id="about" class="u-anchor"></div>
     <div class="section-about__content u-padding-bottom">
         <h2 class="section-about__title u-padding-top u-padding-bottom">{{collections.about[0].data.title}}</h2>
-        <p class="section-about__text u-padding-bottom">{{collections.about[0].data.blurb}}</p>
+        <p class="section-about__text u-padding-bottom">{{collections.about[0].content | safe}}</p>
         <a href="#contact" class="section-about__contact button">Get in touch</a>
     </div>
 </section>

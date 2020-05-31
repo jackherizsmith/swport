@@ -36,10 +36,10 @@ collections:
         file: "src/about.md"
         fields:
           - {label: "Title", name: "title", widget: "string", hint: "ideally fewer than 20 characters"}
-          - {label: "Blurb", name: "blurb", widget: "markdown", hint: "ideally fewer than 100 words"}
+          - {label: "Blurb", name: "body", widget: "markdown", hint: "ideally fewer than 100 words"}
       - label: "Collab"
         name: "collab"
         file: "src/collab.md"
         fields:
           - {label: "Title", name: "title", widget: "string", hint: "ideally fewer than 20 characters"}
-          - {label: "Blurb", name: "blurb", widget: "markdown", hint: "ideally fewer than 100 words"}
+          - {label: "Blurb", name: "body", widget: "markdown", hint: "ideally fewer than 100 words"}
