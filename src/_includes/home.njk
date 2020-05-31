@@ -16,6 +16,7 @@ layout: base.njk
 <section class="section-portfolio u-padding-bottom-large">
     <div id="work" class="u-anchor"></div>
     <h2 class="section-portfolio__title u-padding-top u-padding-bottom">My work</h2>
+    <p class="mobile-guidance">Click a panel to view the article</p>
     <div class="section-portfolio__wrapper u-padding-bottom">
     {%- for article in collections.portfolioReversed -%}
         {%- if article.data.featured == true -%}

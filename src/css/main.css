@@ -20,7 +20,9 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #3b434f; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   padding: 0;
   margin: 0;
   box-sizing: inherit; }
@@ -31,6 +33,19 @@ html {
 
 body {
   box-sizing: border-box; }
+
+.mobile-guidance {
+  display: none;
+  font-size: 4rem;
+  text-align: center;
+  margin-left: 9rem;
+  font-weight: 300; }
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: fit-content; }
+  .mobile-guidance {
+    display: initial; } }
 
 * {
   font-family: "Nunito Sans", sans-serif;
@@ -94,6 +109,10 @@ body {
     background-color: #f5f6fa;
     color: #3b434f; }
 
+@media only screen and (max-width: 600px) {
+  .button {
+    font-size: 3.3rem; } }
+
 .article-card {
   height: 30rem;
   width: 35rem;
@@ -152,6 +171,16 @@ body {
     left: 50%;
     transform: translateX(-50%);
     bottom: 1.5rem; }
+
+@media only screen and (max-width: 600px) {
+  .article-card {
+    width: 50rem;
+    height: 40rem; }
+    .article-card__title {
+      top: 15rem;
+      font-size: 4rem; }
+    .article-card__link {
+      bottom: 4rem; } }
 
 .form {
   display: block;
@@ -226,6 +255,11 @@ body {
     min-width: 100%;
     height: 100%; }
 
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+  .header {
+    width: 20vw;
+    background-color: red; } }
+
 .nav {
   position: -webkit-sticky;
   position: sticky;
@@ -289,6 +323,10 @@ body {
   .footer__logo {
     color: #f5f6fa;
     font-size: 5rem; }
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    padding-left: 10rem; } }
 
 .section-about {
   background-image: linear-gradient(90deg, rgba(168, 164, 165, 0.3) 0%, rgba(65, 62, 63, 0.75) 18%, rgba(65, 62, 63, 0.75) 80%, rgba(168, 164, 165, 0.1) 100%), url(../media/layout/papers.jpeg);
@@ -371,6 +409,11 @@ body {
     .section-contact__text > p {
       margin-bottom: 4rem; }
 
+@media only screen and (max-width: 600px) {
+  .section-contact__header, .section-about {
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(168, 164, 165, 0) 0%, rgba(168, 164, 165, 0.3) 10%, rgba(65, 62, 63, 0.8) 18%, rgba(65, 62, 63, 0.8) 82%, rgba(168, 164, 165, 0.1) 90%, rgba(168, 164, 165, 0) 100%), url(../media/layout/papers.jpeg); } }
+
 .portfolio {
   display: flex;
   flex-direction: row;
@@ -384,6 +427,10 @@ body {
   .portfolio__article {
     margin-left: 30rem;
     width: calc(100% - 30rem); }
+
+@media only screen and (max-width: 600px) {
+  .portfolio__nav {
+    height: 100%; } }
 
 .port-nav {
   border-right: 0.1rem solid #192b57;
@@ -579,6 +626,10 @@ body {
     color: #303741; }
     .article__top:hover {
       opacity: 100%; }
+
+@media only screen and (max-width: 600px) {
+  .article__top {
+    top: 90%; } }
 
 .section-e404 {
   min-height: calc(100vh - 12.4rem - 10rem);
