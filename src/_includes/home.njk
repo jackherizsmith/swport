@@ -33,16 +33,12 @@ layout: base.njk
     <a href="{{collections.portfolioReversed[0].url}}" class="button section-portfolio__link">Explore my portfolio</a>
 </section>
 
-<section class="section-testimonials">
-    <div class="section-about__content u-padding-bottom">
-        <h2 class="section-testimonials__title u-padding-top u-padding-bottom">{{collections.collab[0].data.title}}</h2>
-        <p class="section-about__text u-padding-bottom">{{collections.collab[0].data.blurb}}</p>
-    </div>
-</section>
-
 <section class="section-contact u-padding-bottom-large">
     <div id="contact" class="u-anchor"></div>
-    <h2 class="section-contact__title u-padding-top u-padding-bottom">Get in touch</h2>
+    <div class="section-about__content u-padding-bottom contact__header">
+        <h2 class="contact__title u-padding-top u-padding-bottom">{{collections.collab[0].data.title}}</h2>
+        <p class="section-about__text contact__text u-padding-bottom">{{collections.collab[0].data.blurb}}</p>
+    </div>
     <form name="contact" method="POST" data-netlify="true" action="/" class="form">
         <div class="form__wrapper">  
             <label for="name" class="form__label">Name <span aria-label="required">*</span></label>

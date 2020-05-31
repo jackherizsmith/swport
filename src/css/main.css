@@ -274,7 +274,7 @@ body {
   position: relative; }
   .section-about__content {
     padding-left: 3rem;
-    width: 65%;
+    width: 70%;
     color: #dbdce1;
     display: flex;
     flex-direction: column; }
@@ -312,13 +312,19 @@ body {
       color: #f5f6fa;
       background-color: #3b434f; }
 
-.section-testimonials {
-  background-image: linear-gradient(90deg, rgba(48, 55, 65, 0.95) 20%, rgba(48, 55, 65, 0.75) 70%, rgba(126, 142, 165, 0.3) 90%), url(../media/layout/testimonials.jpg);
-  background-size: cover; }
-  .section-testimonials__title {
-    font-weight: 300;
-    letter-spacing: .3rem;
-    font-size: 5rem; }
+.contact__header {
+  width: 100vw;
+  background-image: linear-gradient(90deg, rgba(48, 55, 65, 0.95) 20%, rgba(48, 55, 65, 0.75) 70%, rgba(126, 142, 165, 0.3) 90%), url(../media/layout/papers.jpeg);
+  background-size: cover;
+  margin-bottom: 10rem; }
+
+.contact__title {
+  font-weight: 300;
+  letter-spacing: .3rem;
+  font-size: 5rem; }
+
+.contact__text {
+  width: 70%; }
 
 .section-contact {
   display: block;
