@@ -35,12 +35,12 @@ layout: base.njk
     <a href="{{collections.portfolioReversed[0].url}}" class="button section-portfolio__link">Explore my portfolio</a>
 </section>
 
-<section class="contact u-padding-bottom-large">
+<section class="section-contact u-padding-bottom-large">
     <div id="contact" class="u-anchor"></div>
-    <div class="section-about__content u-padding-bottom contact__header">
+    <div class="section-contact__header u-padding-bottom">
         {%- for info in collections.contact -%}
-            <h2 class="contact__title u-padding-top u-padding-bottom">{{info.data.title}}</h2>
-            <span class="section-about__text contact__text u-padding-bottom">{{info.templateContent | safe}}</span>
+            <h2 class="section-contact__title u-padding-top u-padding-bottom">{{info.data.title}}</h2>
+            <span class="section-contact__text contact__text u-padding-bottom">{{info.templateContent | safe}}</span>
         {%- endfor -%}
     </div>
     <form name="contact" method="POST" data-netlify="true" action="/" class="form">
