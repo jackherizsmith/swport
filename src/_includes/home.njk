@@ -5,9 +5,9 @@ layout: base.njk
 <section class="section-about">
     <div id="about" class="u-anchor"></div>
     <div class="section-about__content u-padding-bottom">
-        {%- for about in collections.about -%}
-            <h2 class="section-about__title u-padding-top u-padding-bottom">{{about.data.title}}</h2>
-            <p class="section-about__text u-padding-bottom">{{about | safe}}</p>
+        {%- for info in collections.about -%}
+            <h2 class="section-about__title u-padding-top u-padding-bottom">{{info.data.title}}</h2>
+            <span class="section-about__text"> {{info.templateContent | safe}}</span></p>
         {%- endfor -%}
         <a href="#contact" class="section-about__contact button">Get in touch</a>
     </div>
@@ -38,8 +38,10 @@ layout: base.njk
 <section class="section-contact u-padding-bottom-large">
     <div id="contact" class="u-anchor"></div>
     <div class="section-about__content u-padding-bottom contact__header">
-        <h2 class="contact__title u-padding-top u-padding-bottom">{{collections.collab[0].data.title}}</h2>
-        <p class="section-about__text contact__text u-padding-bottom">{{collections.collab[0].data.blurb}}</p>
+        {%- for info in collections.contact -%}
+            <h2 class="contact__title u-padding-top u-padding-bottom">{{info.data.title}}</h2>
+            <span class="section-about__text contact__text u-padding-bottom">{{info.templateContent | safe}}</span>
+        {%- endfor -%}
     </div>
     <form name="contact" method="POST" data-netlify="true" action="/" class="form">
         <div class="form__wrapper">  
