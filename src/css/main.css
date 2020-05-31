@@ -255,10 +255,9 @@ body {
     min-width: 100%;
     height: 100%; }
 
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (max-width: 600px) {
   .header {
-    width: 20vw;
-    background-color: red; } }
+    height: calc(185vh - 12.4rem); } }
 
 .nav {
   position: -webkit-sticky;
