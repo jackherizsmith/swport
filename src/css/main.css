@@ -478,12 +478,6 @@ body {
     font-size: 3.7rem;
     font-weight: 700;
     padding: 4rem 0 3rem; }
-  .article__journal, .article__date {
-    white-space: nowrap;
-    font-weight: 600; }
-  .article__detail {
-    letter-spacing: .08rem;
-    font-size: 1.8rem; }
   .article__info {
     display: flex;
     flex-direction: row;
@@ -491,6 +485,17 @@ body {
     font-size: 1.3rem;
     align-items: center;
     justify-content: space-between; }
+  .article__journal, .article__date {
+    white-space: nowrap;
+    font-weight: 600; }
+  .article__journal:link, .article__journal:visited {
+    color: #303741;
+    font-size: 2rem; }
+  .article__journal:hover {
+    color: #f05c8d; }
+  .article__detail {
+    letter-spacing: .08rem;
+    font-size: 1.8rem; }
   .article__pdf {
     margin: -.5rem 1.5rem 0;
     font-size: 1.3rem;
