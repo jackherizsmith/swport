@@ -269,7 +269,7 @@ body {
     font-size: 5rem; }
 
 .section-about {
-  background-image: linear-gradient(90deg, rgba(168, 164, 165, 0.3) 0%, rgba(65, 62, 63, 0.75) 18%, rgba(65, 62, 63, 0.75) 80%, rgba(168, 164, 165, 0.3) 100%), url(../media/layout/papers.jpeg);
+  background-image: linear-gradient(90deg, rgba(168, 164, 165, 0.3) 0%, rgba(65, 62, 63, 0.75) 18%, rgba(65, 62, 63, 0.75) 80%, rgba(168, 164, 165, 0.1) 100%), url(../media/layout/papers.jpeg);
   background-size: cover;
   position: relative;
   padding-bottom: 2rem; }
@@ -322,7 +322,7 @@ body {
   background-color: #f5f6fa; }
   .section-contact__header {
     width: 100vw;
-    background-image: linear-gradient(90deg, rgba(168, 164, 165, 0.3) 0%, rgba(65, 62, 63, 0.75) 18%, rgba(65, 62, 63, 0.75) 80%, rgba(168, 164, 165, 0.3) 100%), url(../media/layout/papers.jpeg);
+    background-image: linear-gradient(90deg, rgba(168, 164, 165, 0.3) 0%, rgba(65, 62, 63, 0.75) 18%, rgba(65, 62, 63, 0.75) 80%, rgba(168, 164, 165, 0.1) 100%), url(../media/layout/papers.jpeg);
     background-size: cover;
     padding: 0 20% 2rem;
     margin-bottom: 12rem;
