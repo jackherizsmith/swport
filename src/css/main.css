@@ -327,20 +327,16 @@ body {
 
 .contact__text {
   width: 70%; }
+  .contact__text > p > a:link, .contact__text > p > a:visited {
+    color: #f8f1f4; }
+  .contact__text > p > a:hover {
+    color: #f8b9ce; }
 
 .section-contact {
   display: block;
   position: relative;
   width: 100%;
   background-color: #f5f6fa; }
-  .section-contact__title {
-    font-size: 6rem;
-    text-transform: uppercase;
-    font-weight: 300;
-    letter-spacing: .3rem;
-    font-size: 5rem;
-    text-align: center;
-    color: #303741; }
 
 .portfolio {
   display: flex;
