@@ -2,13 +2,14 @@
 tags: about
 title: "ABOUT "
 blurb: >-
-  I am associate health editor at the Mail on Sunday. 
+  I am associate health editor at the Mail on Sunday.
 
 
-  <br/>
+  <br/> 
 
 
   I have significant experience reporting on national news, and a proven track record of landing exclusives and generating original story ideas. 
+
 
 
   <br/>
