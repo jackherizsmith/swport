@@ -43,6 +43,7 @@ form.addEventListener("submit", event => {
   } else {
     fetch("/", {
       method: "POST",
+      headers: {"Content-Type": "application/x-www-form-urlencoded"},
       body: new URLSearchParams("form-name=contact&" + 
                       nameInput.name + "=" + nameInput.value + "&" + 
                       emailInput.name + "="  + emailInput.value + "&" + 
