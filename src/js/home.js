@@ -44,9 +44,9 @@ form.addEventListener("submit", event => {
     fetch("/", {
       method: "POST",
       body: new URLSearchParams("form-name=contact&" + 
-                      nameInput.name + nameInput.value + "&" + 
-                      emailInput.name + emailInput.value + "&" + 
-                      messageInput.name + messageInput.value)
+                      nameInput.name + "=" + nameInput.value + "&" + 
+                      emailInput.name + "="  + emailInput.value + "&" + 
+                      messageInput.name + "="  + messageInput.value)
     })
     .then(()=>{ // need to refactor!
       nameInput.style.border = ".2rem solid hsl(223, 55%, 22%)";
