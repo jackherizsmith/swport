@@ -16,7 +16,11 @@
         <header>
             {%- if title=="Home" -%}
                 <div class="header" id="home">
-                    <img src="media/layout/SW_1920x1080.jpg" class="header__image" alt="Sally Wardle">
+                    <picture>
+                        <source srcset="media/layout/SW_1920x1080.webp" type="image/webp" class="header__image" alt="Sally Wardle">
+                        <source srcset="media/layout/SW_1920x1080.jpg" type="image/jpeg" class="header__image" alt="Sally Wardle">
+                        <img src="media/layout/SW_1920x1080.jpg" class="header__image" alt="Sally Wardle">
+                    </picture>
                 </div>
             {%- endif -%}
         </header>
