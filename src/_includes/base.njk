@@ -10,7 +10,7 @@
         <meta name="description" content="Sally Wardle is an experienced freelance print journalist based in London">
         <meta name="keywords" content="freelance, print, journalist, London">
         <meta name="author" content="Sally Wardle">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
     </head>
     <body>
         <header>
@@ -28,9 +28,9 @@
             <nav class="nav">
                 <!-- if (home) => links internal, else navigate -->
                 {%- if title=="Home" -%}
-                    <a class="nav__logo" href="#home"><img src="/media/layout/SW_Monogram.png" class="logo" alt="Sally Wardle logo"><h1 class="logo__text-name">Sally Wardle<br><span class="logo__text-journo">journalist</span></h1></a>
+                    <a class="nav__logo" href="#home"><img src="/media/layout/SW_Monogram.png" class="logo-w-text" alt="Sally Wardle logo"><h1 class="logo-w-text__text-name">Sally Wardle<br><span class="logo-w-text__text-journo">journalist</span></h1></a>
                 {%- else -%}
-                    <a class="nav__logo" href="/"><img src="/media/layout/SW_Monogram.png" class="logo" alt="Sally Wardle logo"><h1 class="logo__text-name">Sally Wardle<br><span class="logo__text-journo">journalist</span></h1></a>
+                    <a class="nav__logo" href="/"><img src="/media/layout/SW_Monogram.png" class="logo-w-text" alt="Sally Wardle logo"><h1 class="logo-w-text__text-name">Sally Wardle<br><span class="logo-w-text__text-journo">journalist</span></h1></a>
                 {%- endif -%}
                 <ul class="nav__links links">
                     <!-- may need to use JS to replace latest history, as with portfolio -->
