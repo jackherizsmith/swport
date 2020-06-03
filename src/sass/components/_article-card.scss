@@ -82,16 +82,17 @@
 
 @media only screen and (max-width: 600px) {
     .article-card{
-        width: 50rem;
-        height:40rem;
+        width: 30rem;
+        height:20rem;
 
         &__title{
-            top:15rem;
-            font-size: 4rem;
+            top:8rem;
+            font-size: 3rem;
         }
 
         &__link{
-            bottom:4rem;
+            font-size: 2.3rem;
+            bottom:1.5rem;
         }
     }
 }

@@ -1,6 +1,6 @@
 .header {
     height: calc(100vh - #{$nav-height});
-    width: 100%;
+    max-width: 100%;
     position: relative;
     overflow-x: hidden;
     box-shadow: 0 .2rem 3rem #ccc;
@@ -16,8 +16,7 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .header{
-    height: calc(185vh - #{$nav-height});
-    }
+@media only screen and (max-width: 600px){
+    
 }
+  

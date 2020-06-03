@@ -14,3 +14,14 @@
     position: absolute;
     top: -$nav-height;
 }
+
+@media only screen and (max-width: 600px) {
+    .mob-hide{
+        display:none;
+    }
+
+    .u-anchor {
+        position: absolute;
+        top: -7rem;
+    }
+}

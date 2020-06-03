@@ -78,3 +78,18 @@
         transition: all .3s;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .form {
+        max-width: 30rem;
+        &__error{
+            margin-bottom: 5rem;
+        }
+        &__submit{
+            font-size: 2rem;
+        }
+        &__thanks{
+            margin: 0 2rem;
+        }
+    }
+}

@@ -34,3 +34,21 @@
         text-transform: uppercase;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        height:4rem;
+    }
+    .logo-w-text {
+        height:4rem;
+        padding:0 .5rem;
+        &__text-name{
+            font-size: .8rem;
+            left:8.4rem;
+            bottom:2.8rem;
+        }
+        &__text-journo{
+            font-size: .7rem;
+        }
+    }
+}

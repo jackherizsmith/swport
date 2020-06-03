@@ -41,7 +41,7 @@ layout: base.njk
     <div class="section-contact__header u-padding-bottom">
         {%- for info in collections.contact -%}
             <h2 class="section-contact__title u-padding-top u-padding-bottom">{{info.data.title}}</h2>
-            <span class="section-contact__text contact__text u-padding-bottom">{{info.templateContent | safe}}</span>
+            <span class="section-contact__text">{{info.templateContent | safe}}</span>
         {%- endfor -%}
     </div>
     <form name="contact" method="POST" data-netlify="true" action="/" class="form">

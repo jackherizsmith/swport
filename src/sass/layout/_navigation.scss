@@ -7,6 +7,7 @@
   padding: 2rem;
   display: flex;
   flex-direction: row;
+  max-width: 100%;
   justify-content: space-between;
   z-index: 2;
   box-shadow: 0 0rem .7rem #ccc;
@@ -25,7 +26,6 @@
   }
 
   &__links{
-    float: right;
     margin-right: .5rem;
   }
 
@@ -43,7 +43,7 @@
 
     &::after {
       content: "";
-      float: left;
+      float:left;
       margin-left:50%;
       width: 0;
       height: .2rem;
@@ -66,4 +66,19 @@
   display: flex;
   align-items: center;
   list-style: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav {
+      margin:0rem 0rem;
+      padding: 1rem;
+      &__logo{
+        padding: .5rem 8rem .5rem 0;
+      }
+      &__link{
+        font-size: 1rem;
+        padding: 0 .5rem;
+        font-weight: 600;
+      }
+    }
 }

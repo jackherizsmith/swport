@@ -12,8 +12,7 @@
   padding-bottom: 2rem;
 
   &__content {
-    margin: 0 20%;
-    width: 60%;
+    margin: 0 15rem;
     color: $colour-white-dark;
     display: flex;
     flex-direction: column;
@@ -77,22 +76,22 @@
 .section-contact {
   display: block;
   position: relative;
-  width: 100%;
+  max-width: 100%;
   background-color: $colour-white-light;
 
   &__header {
-    width: 100vw;
+    max-width: 100%;
 
     background-image: linear-gradient(
         90deg,
         hsla(340, 2%, 65%, 0.3) 0%,
-        hsla(340, 2%, 25%, 0.75) 18%,
+        hsla(340, 2%, 25%, 0.75) 20%,
         hsla(340, 2%, 25%, 0.75) 80%,
         hsla(340, 2%, 65%, 0.1) 100%
       ),
       url(../media/layout/papers.jpg);
     background-size: cover;
-    padding: 0 20% 2rem;
+    padding: 0 15rem 2rem;
     margin-bottom: 12rem;
     color: $colour-grey-pink;
   }
@@ -100,22 +99,6 @@
     font-weight: 300;
     letter-spacing: 0.3rem;
     font-size: 5rem;
-  }
-  &__title {
-    font-weight: 300;
-    letter-spacing: 0.3rem;
-    font-size: 5rem;
-  }
-  &__text {
-    width: 70%;
-
-    & > p > a:link,
-    & > p > a:visited {
-      color: $colour-grey-pink;
-    }
-    & > p > a:hover {
-      color: hsl(340, 83%, 85%);
-    }
   }
   &__text {
     font-size: 2.9rem;
@@ -125,22 +108,69 @@
     & > p {
       margin-bottom: 4rem;
     }
+
+    & > p > a:link,
+    & > p > a:visited {
+      color: $colour-grey-pink;
+    }
+    & > p > a:hover {
+      color: hsl(340, 83%, 85%);
+    }
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .section-contact__header,.section-about{
-        width:100%;
-        background-image: linear-gradient(
-          90deg,
-          hsla(340, 2%, 65%, 0) 0%,
-          hsla(340, 2%, 65%, 0.3) 10%,
-          hsla(340, 2%, 25%, 0.80) 18%,
-          hsla(340, 2%, 25%, 0.80) 82%,
-          hsla(340, 2%, 65%, 0.1) 90%,
-          hsla(340, 2%, 65%, 0s) 100%
-        ),
-        url(../media/layout/papers.jpg);
+  .section-contact__header,
+  .section-about {
+    max-width: 100%;
+    background-image: linear-gradient(
+        90deg,
+        hsla(340, 2%, 25%, 0.75) 0%,
+        hsla(340, 2%, 25%, 0.75) 20%,
+        hsla(340, 2%, 25%, 0.75) 80%,
+        hsla(340, 2%, 25%, 0.75) 100%
+      ),
+      url(../media/layout/papers.jpg);
+  }
+
+  .section-about {
+    &__content {
+      margin: 0;
     }
-    
+    &__title {
+      padding-left: 3rem;
+      font-size: 4rem;
+    }
+    &__text {
+      padding: 0 2rem;
+      font-size: 2rem;
+    }
+    &__contact {
+      margin-left: 3rem;
+      font-size: 2rem;
+    }
+  }
+
+  .section-portfolio {
+    &__title {
+      font-size: 4rem;
+    }
+    &__link {
+      font-size: 2rem;
+    }
+  }
+
+  .section-contact {
+    &__header {
+      padding: 0;
+      margin-bottom: 6rem;
+    }
+    &__title {
+      padding-left: 3rem;
+      font-size: 4rem;
+    }
+    &__text {
+      font-size: 2rem;
+    }
+  }
 }
