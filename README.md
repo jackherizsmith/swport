@@ -8,7 +8,7 @@ Feel free to clone the repo, you can run "npm start" so that Eleventy watches yo
 
 I have also set up [fire-bot from Founders Club](https://fire.fundersclub.com/) which means Sally can create issues directly should anything come up in the future that needs attention.
 
-If it's of interest, I precompiled the CSS in Sass, which is not available in the repo. This could be an oversight. There is minimal Javascript, specifically to handle form validation (although again, form submission is handled by Netlify's native Form functionality and sent straight to Sally). There needs to be a bit more, which is detailed in the open issues.
+I precompiled the CSS in Sass. There is minimal Javascript, specifically to handle form validation (although again, form submission is handled by Netlify's native Form functionality and sent straight to Sally). There could be a bit more, which is detailed in the open issues.
 
 You are free to peruse the issues and project board, and feel free to suggest any fixes or enhancements - I'm open to code reviews, just please tag them accordingly.
 
