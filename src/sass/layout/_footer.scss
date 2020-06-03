@@ -1,0 +1,21 @@
+.footer {
+    height: 10rem;
+    background-color: $colour-grey-pink;
+    text-align: center;
+    padding:2rem 0;
+    position: relative;
+    box-shadow: 0 0rem .7rem #ccc;
+    z-index: 2;
+
+    &__logo {
+        color:$colour-white-light;
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer{
+        padding-left:10rem;
+
+    }
+}

@@ -1,0 +1,32 @@
+* {
+    font-family: $font-default, sans-serif;
+    font-weight: 400;
+}
+
+.logo {
+    height:6rem;
+    position:relative;
+    padding-right:12.4rem;
+    &__text-name{
+        position:absolute;
+        display: inline-block;
+        font-weight: 800;
+        font-size: 1.5rem;
+        color:black;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+        line-height: 1.1;
+        left:14.3rem;
+        bottom:5rem;
+    }
+    &__text-journo{
+        position:absolute;
+        display: inline-block;
+        font-weight: 400;
+        font-size: 1.5rem;
+        color:black;
+        letter-spacing: .3rem;
+        line-height: 1.1;
+        text-transform: uppercase;
+    }
+}

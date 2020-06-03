@@ -1,0 +1,27 @@
+// FONT
+$default-font-size: 1.6rem;
+$font-default: 'Nunito Sans'; 
+// 200, 200i, 300, 400, 600i, 700, 800
+
+// COLOURS
+$colour-primary: hsl(223, 55%, 22%);
+$colour-secondary: hsl(224, 50%, 31%);
+
+$colour-white-light: hsl(228, 33%, 97%);
+$colour-white-dark: hsl(228, 8%, 87%);
+
+$colour-grey-pink: hsl(340, 33%, 96%);
+
+$colour-grey-light: hsl(215, 18%, 57%);
+$colour-grey-dark: hsl(214, 14%, 51%);
+
+$colour-black-light: hsl(221, 15%, 25%);
+$colour-black-dark: hsl(215, 15%, 22%);
+
+// ENVIRONMENT
+$shadow-shallow: 0 1rem 2rem rgba($colour-black-light, .15);
+$shadow-deep: 0 1.5rem 3rem rgba($colour-black-dark, .15);
+
+// DIMENSIONS
+$nav-height: 12.4rem;
+$foot-height: 10rem;

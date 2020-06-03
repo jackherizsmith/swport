@@ -1,0 +1,146 @@
+.section-about {
+  background-image: linear-gradient(
+      90deg,
+      hsla(340, 2%, 65%, 0.3) 0%,
+      hsla(340, 2%, 25%, 0.75) 18%,
+      hsla(340, 2%, 25%, 0.75) 80%,
+      hsla(340, 2%, 65%, 0.1) 100%
+    ),
+    url(../media/layout/papers.jpeg);
+  background-size: cover;
+  position: relative;
+  padding-bottom: 2rem;
+
+  &__content {
+    margin: 0 20%;
+    width: 60%;
+    color: $colour-white-dark;
+    display: flex;
+    flex-direction: column;
+  }
+
+  //break point 774
+  &__title {
+    font-weight: 300;
+    letter-spacing: 0.3rem;
+    font-size: 5rem;
+  }
+
+  &__text {
+    font-size: 2.9rem;
+    font-weight: 300;
+    text-align: left;
+
+    & > p {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__contact {
+    color: $colour-white-light;
+    // indent?
+    margin: 1rem 0;
+  }
+}
+
+.section-portfolio {
+  background-color: $colour-white-light;
+  position: relative;
+
+  &__title {
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 0.3rem;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: $colour-black-dark;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__link {
+    color: hsl(215, 15%, 27%);
+    margin: 0 auto;
+
+    &:hover {
+      color: $colour-white-light;
+      background-color: hsl(215, 15%, 27%);
+    }
+  }
+}
+
+.section-contact {
+  display: block;
+  position: relative;
+  width: 100%;
+  background-color: $colour-white-light;
+
+  &__header {
+    width: 100vw;
+
+    background-image: linear-gradient(
+        90deg,
+        hsla(340, 2%, 65%, 0.3) 0%,
+        hsla(340, 2%, 25%, 0.75) 18%,
+        hsla(340, 2%, 25%, 0.75) 80%,
+        hsla(340, 2%, 65%, 0.1) 100%
+      ),
+      url(../media/layout/papers.jpg);
+    background-size: cover;
+    padding: 0 20% 2rem;
+    margin-bottom: 12rem;
+    color: $colour-grey-pink;
+  }
+  &__title {
+    font-weight: 300;
+    letter-spacing: 0.3rem;
+    font-size: 5rem;
+  }
+  &__title {
+    font-weight: 300;
+    letter-spacing: 0.3rem;
+    font-size: 5rem;
+  }
+  &__text {
+    width: 70%;
+
+    & > p > a:link,
+    & > p > a:visited {
+      color: $colour-grey-pink;
+    }
+    & > p > a:hover {
+      color: hsl(340, 83%, 85%);
+    }
+  }
+  &__text {
+    font-size: 2.9rem;
+    font-weight: 300;
+    text-align: left;
+
+    & > p {
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .section-contact__header,.section-about{
+        width:100%;
+        background-image: linear-gradient(
+          90deg,
+          hsla(340, 2%, 65%, 0) 0%,
+          hsla(340, 2%, 65%, 0.3) 10%,
+          hsla(340, 2%, 25%, 0.80) 18%,
+          hsla(340, 2%, 25%, 0.80) 82%,
+          hsla(340, 2%, 65%, 0.1) 90%,
+          hsla(340, 2%, 65%, 0s) 100%
+        ),
+        url(../media/layout/papers.jpg);
+    }
+    
+}
