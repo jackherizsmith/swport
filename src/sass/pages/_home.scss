@@ -6,15 +6,16 @@
       hsla(340, 2%, 25%, 0.75) 80%,
       hsla(340, 2%, 65%, 0.1) 100%
     ),
-    url(../media/layout/papers.jpeg);
+    url(../media/layout/papers.jpg);
   background-size: cover;
   position: relative;
   padding-bottom: 2rem;
 
   &__content {
-    margin: 0 15rem;
+    margin: 0 auto;
     color: $colour-white-dark;
     display: flex;
+    max-width:60%;
     flex-direction: column;
   }
 
@@ -135,7 +136,8 @@
 
   .section-about {
     &__content {
-      margin: 0;
+      margin:0 auto;
+      max-width: 80%;
     }
     &__title {
       padding-left: 3rem;
@@ -162,8 +164,8 @@
 
   .section-contact {
     &__header {
-      padding: 0;
-      margin-bottom: 6rem;
+      padding: 0 3rem 1.5rem;
+      margin: 0 auto 6rem;
     }
     &__title {
       padding-left: 3rem;

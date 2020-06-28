@@ -369,9 +369,10 @@ body {
   position: relative;
   padding-bottom: 2rem; }
   .section-about__content {
-    margin: 0 15rem;
+    margin: 0 auto;
     color: #dbdce1;
     display: flex;
+    max-width: 60%;
     flex-direction: column; }
   .section-about__title {
     font-weight: 300;
@@ -443,7 +444,8 @@ body {
     max-width: 100%;
     background-image: linear-gradient(90deg, rgba(65, 62, 63, 0.75) 0%, rgba(65, 62, 63, 0.75) 20%, rgba(65, 62, 63, 0.75) 80%, rgba(65, 62, 63, 0.75) 100%), url(../media/layout/papers.jpg); }
   .section-about__content {
-    margin: 0; }
+    margin: 0 auto;
+    max-width: 80%; }
   .section-about__title {
     padding-left: 3rem;
     font-size: 4rem; }
@@ -458,8 +460,8 @@ body {
   .section-portfolio__link {
     font-size: 2rem; }
   .section-contact__header {
-    padding: 0;
-    margin-bottom: 6rem; }
+    padding: 0 3rem 1.5rem;
+    margin: 0 auto 6rem; }
   .section-contact__title {
     padding-left: 3rem;
     font-size: 4rem; }
@@ -478,11 +480,15 @@ body {
     margin-bottom: 10rem; }
   .portfolio__article {
     margin-left: 30rem;
-    width: calc(100% - 30rem); }
+    max-width: calc(100% - 30rem); }
 
 @media only screen and (max-width: 600px) {
   .portfolio__nav {
-    height: 100%; } }
+    height: 100%;
+    max-width: 12rem; }
+  .portfolio__article {
+    max-width: calc(100vw - 12rem);
+    margin-left: 12rem; } }
 
 .port-nav {
   border-right: 0.1rem solid #192b57;
@@ -555,6 +561,22 @@ body {
     font-weight: 600;
     font-style: italic;
     padding-bottom: 1rem; }
+
+@media only screen and (max-width: 600px) {
+  .port-nav__heading {
+    font-size: 1rem;
+    padding: 2rem 1rem; }
+  .port-nav__links {
+    padding: 0 1rem; }
+  .port-nav__link {
+    height: 3rem;
+    padding: .4rem 0;
+    font-size: .8rem; }
+  .port-nav__journal {
+    font-size: .6rem; }
+  .port-nav__date {
+    font-size: .5rem;
+    padding-bottom: .3rem; } }
 
 .article {
   position: relative;
@@ -680,6 +702,15 @@ body {
       opacity: 100%; }
 
 @media only screen and (max-width: 600px) {
+  .article__image-wrapper {
+    height: 10rem; }
+  .article__image {
+    height: fit-content; }
+  .article__header {
+    padding: 0 1rem;
+    margin-top: 7rem; }
+  .article__title {
+    font-size: 1.75rem; }
   .article__top {
     top: 90%; }
     .article__top-wrapper {
