@@ -6,7 +6,7 @@ title: AT-HOME DNA TESTING
 journal: The Mail on Sunday
 date: 2020-02-02T00:01:11.290Z
 link: https://www.dailymail.co.uk/health/article-8303599/How-TikTok-help-survive-Covid-19-lockdown
-image: 24172546-7955875-image-m-23_1580576974933.jpg
+image: 24173312-7955875-image-a-36_1580577859373.jpg
 thumb: screenshot-from-2020-05-16-15-44-35.png
 pdf: cover-dna-test.pdf
 ---
