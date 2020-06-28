@@ -4,9 +4,9 @@ tags: portfolio
 featured: true
 title: AT-HOME DNA TESTING
 journal: The Mail on Sunday
-link: https://www.dailymail.co.uk/health/article-8303599/How-TikTok-help-survive-Covid-19-lockdown
 date: 2020-02-02T00:01:11.290Z
-image: whatsapp-image-2020-05-03-at-15.01.19.jpeg
+link: https://www.dailymail.co.uk/health/article-8303599/How-TikTok-help-survive-Covid-19-lockdown
+image: 24172546-7955875-image-m-23_1580576974933.jpg
 thumb: screenshot-from-2020-05-16-15-44-35.png
 pdf: cover-dna-test.pdf
 ---
