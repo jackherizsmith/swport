@@ -14,11 +14,11 @@ IT'S the video-sharing app for attention-seekers that, until recently, will have
 
 But now TikTok is, all of a sudden, heading for the mainstream. It allows users to record and edit footage - often of themselves dancing, miming to music or performing pranks - into chunks of anything from 15 seconds to a minute.
 
-## They then upload them for other users to watch, 'like' and comment on.
+They then upload them for other users to watch, 'like' and comment on.
 
-**And there are a lot of other users: the app has been downloaded two billion times worldwide, according to a recent count.**
+And there are a lot of other users: the app has been downloaded two billion times worldwide, according to a recent count.
 
-> In the first week of the lockdown alone, TikTok was installed by more than 300,000 Britons, and one in three of us has, apparently, got it on a smartphone or tablet, no doubt in an effort to alleviate some of the boredom of enforced social distancing.
+In the first week of the lockdown alone, TikTok was installed by more than 300,000 Britons, and one in three of us has, apparently, got it on a smartphone or tablet, no doubt in an effort to alleviate some of the boredom of enforced social distancing.
 
 But not all of the attention gained has been positive.
 
@@ -74,6 +74,6 @@ Dr Smith says the secret of her TikTok success is making people feel a human con
 
 All the medics stress that, while TikTok might be useful during lockdown, it's not a replacement for the real thing. 'It's hard to fully explain the nuances of medicine in a 15-second clip,' says Dr Chiang.
 
-And Dr Smith adds: 'I have to be clear, I can't provide therapy on social media. These educational tips are one small slice of what a full package of therapy might be.
+And Dr Smith adds: 'I have to be clear, I can't provide therapy on social media. These educational tips are one small slice of what a full package of therapy might be.'
 
 'I hope each video can be valuable to someone.'
