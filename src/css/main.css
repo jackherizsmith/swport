@@ -215,7 +215,7 @@ body {
   .form__label {
     margin-bottom: 2.2rem;
     font-size: 2.3rem;
-    font-weight: 400;
+    font-weight: 200;
     letter-spacing: .1rem;
     line-height: .7; }
     .form__label > span {
@@ -245,23 +245,25 @@ body {
     font-size: 1.8rem;
     color: #a30000; }
   .form__submission {
-    display: flex;
     align-items: center;
     justify-content: space-between; }
   .form__submit {
     color: #3b434f;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-bottom: 2.5rem; }
     .form__submit:hover {
       color: #f5f6fa;
-      background-color: #3b434f; }
+      background-color: #3b434f;
+      cursor: pointer; }
   .form__thanks {
     display: inline-block;
     visibility: hidden;
     opacity: 0;
     font-size: 2.3rem;
-    font-weight: 400;
+    font-weight: 200;
+    letter-spacing: .1rem;
     margin: 0 2rem .3rem 0;
-    color: #186600;
+    color: #303741;
     transition: all .3s; }
 
 @media only screen and (max-width: 600px) {
@@ -368,7 +370,7 @@ body {
   background-color: #f5f6fa;
   background-size: cover;
   position: relative;
-  padding-bottom: 2rem; }
+  padding: 3rem 0 10rem; }
   .section-about__content {
     margin: 0 auto;
     color: #303741;
@@ -399,7 +401,8 @@ hr {
 
 .section-portfolio {
   background-color: #f5f6fa;
-  position: relative; }
+  position: relative;
+  padding: 3rem 0 10rem; }
   .section-portfolio__title {
     display: block;
     text-align: center;
@@ -423,13 +426,14 @@ hr {
   display: block;
   position: relative;
   max-width: 100%;
+  padding: 3rem 0 10rem;
   background-color: #f5f6fa; }
   .section-contact__header {
     max-width: 100%;
     background-color: #f5f6fa;
     background-size: cover;
     padding: 0 15rem 2rem;
-    margin-bottom: 12rem;
+    margin-bottom: 5rem;
     color: #303741; }
   .section-contact__title {
     font-weight: 300;
@@ -437,7 +441,7 @@ hr {
     font-size: 5rem;
     text-align: center; }
   .section-contact__text {
-    font-size: 2.9rem;
+    font-size: 3rem;
     text-align: center; }
     .section-contact__text > p {
       margin-bottom: 2.5rem; }
@@ -468,8 +472,8 @@ hr {
   .section-portfolio__link {
     font-size: 2rem; }
   .section-contact__header {
-    padding: 0 3rem 1.5rem;
-    margin: 0 auto 6rem; }
+    padding: 0 3rem;
+    margin: 0 auto; }
   .section-contact__title {
     padding-left: 3rem;
     font-size: 4rem; }

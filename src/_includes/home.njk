@@ -15,7 +15,7 @@ layout: base.njk
 
 <hr>
 
-<section class="section-portfolio u-padding-bottom-large">
+<section class="section-portfolio">
     <div id="work" class="u-anchor"></div>
     <h2 class="section-portfolio__title u-padding-top u-padding-bottom">My work</h2>
     <p class="mobile-guidance">Click a panel to view the article</p>
@@ -42,7 +42,7 @@ layout: base.njk
 
 <section class="section-contact u-padding-bottom-large">
     <div id="contact" class="u-anchor"></div>
-    <div class="section-contact__header u-padding-bottom">
+    <div class="section-contact__header">
         {%- for info in collections.contact -%}
             <h2 class="section-contact__title u-padding-top u-padding-bottom">{{info.data.title}}</h2>
             <span class="section-contact__text">{{info.templateContent | safe}}</span>

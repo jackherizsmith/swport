@@ -2,7 +2,7 @@
   background-color: $colour-white-light;
   background-size: cover;
   position: relative;
-  padding-bottom: 2rem;
+  padding: 3rem 0 10rem;
 
   &__content {
     margin: 0 auto;
@@ -48,6 +48,7 @@ hr {
 .section-portfolio {
   background-color: $colour-white-light;
   position: relative;
+  padding: 3rem 0 10rem;
 
   &__title {
     display: block;
@@ -80,6 +81,7 @@ hr {
   display: block;
   position: relative;
   max-width: 100%;
+  padding: 3rem 0 10rem;
   background-color: $colour-white-light;
 
   &__header {
@@ -87,7 +89,7 @@ hr {
     background-color: $colour-white-light;
     background-size: cover;
     padding: 0 15rem 2rem;
-    margin-bottom: 12rem;
+    margin-bottom: 5rem;
     color: $colour-black-dark;
   }
   &__title {
@@ -97,7 +99,7 @@ hr {
     text-align: center;
   }
   &__text {
-    font-size: 2.9rem;
+    font-size: 3rem;
     text-align: center;
 
     & > p {
@@ -150,8 +152,8 @@ hr {
 
   .section-contact {
     &__header {
-      padding: 0 3rem 1.5rem;
-      margin: 0 auto 6rem;
+      padding: 0 3rem;
+      margin: 0 auto;
     }
     &__title {
       padding-left: 3rem;
