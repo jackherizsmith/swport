@@ -6,6 +6,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/js");;
   eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addPassthroughCopy("src/portfolio");
+  eleventyConfig.addPassthroughCopy("src/_redirects");
 
   eleventyConfig.addCollection("portfolioReversed", collection => {
     return collection.getFilteredByTag("portfolio").reverse(); // filter by featured
