@@ -2,6 +2,7 @@
     display: block;
     max-width: 50rem;
     margin: 0 auto;
+    text-align: center;
 
     &__label, &__input {
         display: block;
@@ -59,7 +60,7 @@
 
     &__submit {
         color:hsl(215, 15%, 27%);
-        margin-left: 2rem;
+        margin: 0 auto;
 
         &:hover {
             color:$colour-white-light;

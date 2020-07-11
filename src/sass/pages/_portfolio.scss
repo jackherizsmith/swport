@@ -316,6 +316,8 @@
 
     &__top {
         opacity: 70%;
+        text-transform: uppercase;
+        font-weight: 300;
         height: fit-content;
         position: sticky;
         top:90vh;

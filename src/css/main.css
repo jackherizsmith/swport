@@ -48,7 +48,7 @@ body {
 
 * {
   font-family: "Nunito Sans", sans-serif;
-  font-weight: 400; }
+  font-weight: 200; }
 
 .logo {
   height: 6rem; }
@@ -208,7 +208,8 @@ body {
 .form {
   display: block;
   max-width: 50rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
   .form__label, .form__input {
     display: block; }
   .form__label {
@@ -249,7 +250,7 @@ body {
     justify-content: space-between; }
   .form__submit {
     color: #3b434f;
-    margin-left: 2rem; }
+    margin: 0 auto; }
     .form__submit:hover {
       color: #f5f6fa;
       background-color: #3b434f; }
@@ -364,29 +365,37 @@ body {
     font-size: 5rem; }
 
 .section-about {
-  background-image: linear-gradient(90deg, rgba(168, 164, 165, 0.3) 0%, rgba(65, 62, 63, 0.75) 18%, rgba(65, 62, 63, 0.75) 80%, rgba(168, 164, 165, 0.1) 100%), url(../media/layout/papers.jpg);
+  background-color: #f5f6fa;
   background-size: cover;
   position: relative;
   padding-bottom: 2rem; }
   .section-about__content {
     margin: 0 auto;
-    color: #dbdce1;
+    color: #303741;
     display: flex;
     max-width: 60%;
     flex-direction: column; }
   .section-about__title {
+    text-align: center;
     font-weight: 300;
     letter-spacing: 0.3rem;
     font-size: 5rem; }
   .section-about__text {
     font-size: 2.9rem;
-    font-weight: 300;
-    text-align: left; }
+    text-align: center; }
     .section-about__text > p {
-      margin-bottom: 4rem; }
+      margin-bottom: 2.5rem; }
   .section-about__contact {
-    color: #f5f6fa;
-    margin: 1rem 0; }
+    color: #3b434f;
+    margin: 0 auto; }
+    .section-about__contact:hover {
+      color: #f5f6fa;
+      background-color: #3b434f; }
+
+hr {
+  width: 80%;
+  margin-left: 10%;
+  border-top: 0.1rem solid #303741; }
 
 .section-portfolio {
   background-color: #f5f6fa;
@@ -417,32 +426,31 @@ body {
   background-color: #f5f6fa; }
   .section-contact__header {
     max-width: 100%;
-    background-image: linear-gradient(90deg, rgba(168, 164, 165, 0.3) 0%, rgba(65, 62, 63, 0.75) 20%, rgba(65, 62, 63, 0.75) 80%, rgba(168, 164, 165, 0.1) 100%), url(../media/layout/papers.jpg);
+    background-color: #f5f6fa;
     background-size: cover;
     padding: 0 15rem 2rem;
     margin-bottom: 12rem;
-    color: #f8f1f4; }
+    color: #303741; }
   .section-contact__title {
     font-weight: 300;
     letter-spacing: 0.3rem;
-    font-size: 5rem; }
+    font-size: 5rem;
+    text-align: center; }
   .section-contact__text {
     font-size: 2.9rem;
-    font-weight: 300;
-    text-align: left; }
+    text-align: center; }
     .section-contact__text > p {
-      margin-bottom: 4rem; }
+      margin-bottom: 2.5rem; }
     .section-contact__text > p > a:link,
     .section-contact__text > p > a:visited {
-      color: #f8f1f4; }
+      color: #303741; }
     .section-contact__text > p > a:hover {
-      color: #f8b9ce; }
+      color: #f48aae; }
 
 @media only screen and (max-width: 600px) {
   .section-contact__header,
   .section-about {
-    max-width: 100%;
-    background-image: linear-gradient(90deg, rgba(65, 62, 63, 0.75) 0%, rgba(65, 62, 63, 0.75) 20%, rgba(65, 62, 63, 0.75) 80%, rgba(65, 62, 63, 0.75) 100%), url(../media/layout/papers.jpg); }
+    max-width: 100%; }
   .section-about__content {
     margin: 0 auto;
     max-width: 80%; }
@@ -685,6 +693,8 @@ body {
     right: 2rem; }
   .article__top {
     opacity: 70%;
+    text-transform: uppercase;
+    font-weight: 300;
     height: fit-content;
     position: sticky;
     top: 90vh;
@@ -730,16 +740,18 @@ body {
   color: #192b57; }
   .e404__heading {
     font-size: 6rem;
-    font-weight: 700;
-    padding: 7rem 0 3rem; }
+    font-weight: 300;
+    padding: 7rem 0 3rem;
+    text-transform: uppercase; }
   .e404__info {
     font-size: 4rem;
-    font-weight: 300;
-    text-align: justify; }
+    font-weight: 200;
+    padding-bottom: 2.5rem; }
   .e404__link:link, .e404__link:visited {
     font-size: 3rem;
     color: #192b57;
-    margin: 3rem 0; }
+    margin: 0 auto;
+    padding-bottom: 2.5rem; }
     .e404__link:link:hover, .e404__link:visited:hover {
       background-color: #192b57;
       color: #f5f6fa; }
