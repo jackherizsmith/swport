@@ -10,13 +10,13 @@ image: tiktok.jpg
 thumb: tiktokjulie.jpg
 pdf: theriseoftiktokmedics.pdf
 ---
-## IT'S the video-sharing app for attention-seekers that, until recently, will have been a mystery to anyone over the age of about 16.
+IT'S the video-sharing app for attention-seekers that, until recently, will have been a mystery to anyone over the age of about 16.
 
-> But now TikTok is, all of a sudden, heading for the mainstream. It allows users to record and edit footage - often of themselves dancing, miming to music or performing pranks - into chunks of anything from 15 seconds to a minute.
+But now TikTok is, all of a sudden, heading for the mainstream. It allows users to record and edit footage - often of themselves dancing, miming to music or performing pranks - into chunks of anything from 15 seconds to a minute.
 
 They then upload them for other users to watch, 'like' and comment on.
 
-*And there are a lot of other users: the app has been downloaded two billion times worldwide, according to a recent count.*
+And there are a lot of other users: the app has been downloaded two billion times worldwide, according to a recent count.
 
 In the first week of the lockdown alone, TikTok was installed by more than 300,000 Britons, and one in three of us has, apparently, got it on a smartphone or tablet, no doubt in an effort to alleviate some of the boredom of enforced social distancing.
 
