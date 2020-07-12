@@ -32,19 +32,25 @@ html {
   overflow-x: hidden; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #f5f6fa; }
+
+hr {
+  width: 80%;
+  margin-left: 10%;
+  border-top: 0.1rem solid #303741; }
 
 .mobile-guidance {
   display: none;
   font-size: 2rem;
-  padding-left: 5.5rem;
   font-weight: 300; }
 
 @media only screen and (max-width: 600px) {
   body {
     width: fit-content; }
   .mobile-guidance {
-    display: initial; } }
+    display: block;
+    text-align: center; } }
 
 * {
   font-family: "Nunito Sans", sans-serif;
@@ -291,6 +297,10 @@ body {
     min-width: 100%;
     height: 100%; }
 
+@media only screen and (max-width: 600px) {
+  .header {
+    height: calc(100vh - 7.4rem); } }
+
 .nav {
   position: -webkit-sticky;
   position: sticky;
@@ -367,7 +377,6 @@ body {
     font-size: 5rem; }
 
 .section-about {
-  background-color: #f5f6fa;
   background-size: cover;
   position: relative;
   padding: 3rem 0 10rem; }
@@ -394,13 +403,7 @@ body {
       color: #f5f6fa;
       background-color: #3b434f; }
 
-hr {
-  width: 80%;
-  margin-left: 10%;
-  border-top: 0.1rem solid #303741; }
-
 .section-portfolio {
-  background-color: #f5f6fa;
   position: relative;
   padding: 3rem 0 10rem; }
   .section-portfolio__title {
@@ -426,11 +429,9 @@ hr {
   display: block;
   position: relative;
   max-width: 100%;
-  padding: 3rem 0 10rem;
-  background-color: #f5f6fa; }
+  padding: 3rem 0 10rem; }
   .section-contact__header {
     max-width: 100%;
-    background-color: #f5f6fa;
     background-size: cover;
     padding: 0 15rem 2rem;
     margin-bottom: 5rem;
@@ -465,7 +466,6 @@ hr {
     padding: 0 2rem;
     font-size: 2rem; }
   .section-about__contact {
-    margin-left: 3rem;
     font-size: 2rem; }
   .section-portfolio__title {
     font-size: 4rem; }
@@ -495,16 +495,12 @@ hr {
     max-width: calc(100% - 30rem); }
 
 @media only screen and (max-width: 600px) {
-  .portfolio__nav {
-    height: 100%;
-    max-width: 12rem; }
   .portfolio__article {
-    max-width: calc(100vw - 12rem);
-    margin-left: 12rem; } }
+    max-width: calc(100vw);
+    margin-left: 0; } }
 
 .port-nav {
   border-right: 0.1rem solid #192b57;
-  background-color: #f5f6fa;
   z-index: 1; }
   .port-nav__heading {
     width: 100%;
@@ -575,24 +571,11 @@ hr {
     padding-bottom: 1rem; }
 
 @media only screen and (max-width: 600px) {
-  .port-nav__heading {
-    font-size: 1rem;
-    padding: 2rem 1rem; }
-  .port-nav__links {
-    padding: 0 1rem; }
-  .port-nav__link {
-    height: 3rem;
-    padding: .4rem 0;
-    font-size: .8rem; }
-  .port-nav__journal {
-    font-size: .6rem; }
-  .port-nav__date {
-    font-size: .5rem;
-    padding-bottom: .3rem; } }
+  .port-nav {
+    display: none; } }
 
 .article {
-  position: relative;
-  background-color: #f5f6fa; }
+  position: relative; }
   .article__image-wrapper {
     height: 50rem;
     width: 100%;
@@ -632,11 +615,11 @@ hr {
     letter-spacing: .08rem;
     font-size: 1.8rem; }
   .article__pdf {
-    margin: -.5rem 1.5rem 0;
     font-size: 1.3rem;
     white-space: nowrap;
     border: 0.1rem solid #303741;
-    color: #303741; }
+    color: #303741;
+    margin-left: .5rem; }
     .article__pdf:hover {
       color: #f5f6fa;
       background-color: #303741; }
@@ -686,7 +669,6 @@ hr {
       box-shadow: 0 1rem 2rem rgba(54, 60, 73, 0.15);
       font-size: 1.9rem; }
     .article__wrapper > h2 {
-      margin: 4rem 0 2rem;
       font-size: 4rem; }
   .article__top-wrapper {
     display: flex;
@@ -716,22 +698,19 @@ hr {
       opacity: 100%; }
 
 @media only screen and (max-width: 600px) {
-  .article__image-wrapper {
-    height: 10rem; }
   .article__image {
-    height: fit-content; }
+    max-height: fit-content; }
   .article__header {
-    padding: 0 1rem;
-    margin-top: 7rem; }
+    padding: 0 4rem; }
   .article__title {
-    font-size: 1.75rem; }
+    font-size: 2.9rem; }
   .article__top {
     top: 90%; }
     .article__top-wrapper {
       top: 220vh; }
   .article__wrapper > p {
-    font-size: 2.5rem;
-    font-weight: 400; } }
+    font-size: 2rem;
+    font-weight: 200; } }
 
 .section-e404 {
   min-height: calc(100vh - 12.4rem - 10rem);

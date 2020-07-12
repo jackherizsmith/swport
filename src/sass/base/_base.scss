@@ -13,12 +13,18 @@ html {
 
 body {
   box-sizing: border-box;
+  background-color: $colour-white-light;
+}
+
+hr {
+  width: 80%;
+  margin-left: 10%;
+  border-top: .1rem solid $colour-black-dark;
 }
 
 .mobile-guidance{
     display: none;
     font-size: 2rem;
-    padding-left: 5.5rem;
     font-weight: 300;
 }
 
@@ -28,6 +34,7 @@ body {
     }
 
     .mobile-guidance{
-        display: initial;
+        display: block;
+        text-align: center;
     }
 }

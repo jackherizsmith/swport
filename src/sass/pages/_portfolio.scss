@@ -19,13 +19,9 @@
 
 @media only screen and (max-width: 600px) {
     .portfolio{
-        &__nav{
-            height: 100%;
-            max-width:12rem;
-        }
         &__article{
-            max-width: calc(100vw - #{12rem});
-            margin-left:12rem;
+            max-width: calc(100vw);
+            margin-left:0;
         }
     }
 
@@ -34,7 +30,6 @@
 .port-nav {
 
     border-right: .1rem solid $colour-primary;
-    background-color: $colour-white-light;
     z-index: 1;
 
     &__heading {
@@ -133,33 +128,12 @@
 
 @media only screen and (max-width: 600px) {
     .port-nav{
-        &__heading{
-            font-size:1rem;
-            padding:2rem 1rem;
-        }
-        &__links{
-            padding: 0 1rem;
-        }
-        &__link{
-            height: 3rem;
-            padding: .4rem 0;
-            font-size: .8rem;
-        }
-
-        &__journal {
-            font-size: .6rem;
-        }
-    
-        &__date {
-            font-size: .5rem;
-            padding-bottom: .3rem;
-        }
+        display: none;
     }
 }
 
 .article {
     position: relative;
-    background-color: $colour-white-light;
 
     &__image-wrapper{
         height:50rem;
@@ -219,11 +193,11 @@
     }
     
     &__pdf {
-        margin: -.5rem 1.5rem 0;
         font-size: 1.3rem;
         white-space: nowrap;
         border: .1rem solid $colour-black-dark;
         color:$colour-black-dark;
+        margin-left: .5rem;
 
         &:hover {
             color:$colour-white-light;
@@ -300,7 +274,6 @@
         }
 
         & > h2 {
-            margin:4rem 0 2rem;
             font-size: 4rem;
         }
     }
@@ -340,18 +313,14 @@
 
 @media only screen and (max-width: 600px) {
     .article {
-        &__image-wrapper{
-            height:10rem;
-        }
         &__image{
-            height:fit-content;
+            max-height:fit-content;
         }
         &__header{
-            padding:0 1rem;
-            margin-top:7rem;
+            padding:0 4rem;
         }
         &__title{
-            font-size: 1.75rem;
+            font-size: 2.9rem;
         }
         &__top{
             top:90%;
@@ -360,8 +329,8 @@
             }
         }
         &__wrapper>p{
-            font-size: 2.5rem;
-            font-weight: 400;
+            font-size: 2rem;
+            font-weight: 200;
         }
     }
 }
