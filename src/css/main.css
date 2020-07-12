@@ -702,6 +702,12 @@ hr {
     max-height: fit-content; }
   .article__header {
     padding: 0 4rem; }
+  .article__info {
+    display: block;
+    text-align: center; }
+  .article__pdf {
+    margin-top: 3rem;
+    margin: 3rem auto 0; }
   .article__title {
     font-size: 2.9rem; }
   .article__top {
