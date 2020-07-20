@@ -21,6 +21,10 @@ layout: base.njk
         <div class="article__image-wrapper">
             <img src="{{image}}" alt="{{title}}" class="article__image">
         </div>
+        <nav class="article__phone-nav">
+            {%- if prevPost.url -%} <a href="{{ prevPost.url }}" class="article__phone-nav--left">< {{prevPost.data.title}}</a> {%-endif-%}
+            {%- if nextPost.url -%} <a href="{{ nextPost.url }}" class="article__phone-nav--right">{{nextPost.data.title}} ></a> {%-endif-%}
+        </nav>
         <header class="article__header">
             <h1 class="article__title">{{title}}</h2>
             <div class="article__info">
@@ -28,13 +32,13 @@ layout: base.njk
                 <a href="{{pdf}}" class="article__pdf button" download>Download<br>original PDF</a>
             </div>
         </header>
-        <nav class="article__phone-nav">
-            {%- if prevPost.url -%} <a href="{{ prevPost.url }}" class="article__phone-nav--left">Previous</a> {%-endif-%}
-            {%- if nextPost.url -%} <a href="{{ nextPost.url }}" class="article__phone-nav--right">Next</a> {%-endif-%}
-        </nav>
         <div class="article__wrapper">
             {{ content | safe }}
         </div>
+        <nav class="article__phone-nav">
+            {%- if prevPost.url -%} <a href="{{ prevPost.url }}" class="article__phone-nav--left">< {{prevPost.data.title}}</a> {%-endif-%}
+            {%- if nextPost.url -%} <a href="{{ nextPost.url }}" class="article__phone-nav--right">{{nextPost.data.title}} ></a> {%-endif-%}
+        </nav>
         <div class="article__top-wrapper">
             <a class="article__top" href="#">Back to top</a>
         </div>
