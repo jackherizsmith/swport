@@ -28,6 +28,10 @@ layout: base.njk
                 <a href="{{pdf}}" class="article__pdf button" download>Download<br>original PDF</a>
             </div>
         </header>
+        <nav class="article__phone-nav">
+            {%- if prevPost.url -%} <a href="{{ prevPost.url }}" class="article__phone-nav--left">Previous</a> {%-endif-%}
+            {%- if nextPost.url -%} <a href="{{ nextPost.url }}" class="article__phone-nav--right">Next</a> {%-endif-%}
+        </nav>
         <div class="article__wrapper">
             {{ content | safe }}
         </div>
