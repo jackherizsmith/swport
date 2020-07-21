@@ -12,6 +12,8 @@ pdf: hifu-october-cover-story-.pdf
 ---
 ## ***There's a prostate cancer cure that can spare a man's sex life. So why won't doctors tell us about it?***
 
+
+
 It was an agonising decision - and one faced by thousands of British men each year. 
 
 Paul Sayer had been given the devastating news that he had prostate cancer. It was aggressive - and his surgeon said the best chance was a major operation.
