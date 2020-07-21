@@ -1,7 +1,7 @@
 ---
 layout: portfolio.njk
 tags: portfolio
-featured: false
+featured: true
 title: "The Covid-19 'super survivors' "
 journal: The Mail on Sunday
 date: 2020-05-03T16:53:43.621Z
