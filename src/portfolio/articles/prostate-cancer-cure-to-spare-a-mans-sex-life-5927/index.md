@@ -93,7 +93,7 @@ Mr Koupparis agrees that HIFU is an appropriate, safe option for some men. But h
 
 **IT DIDN'T WORK FOR ME BUT BOUGHT ME TIME**
 
-THE downsides to focal therapy are all too familiar to 55-year-old journalist James, from London, who agreed to speak anonymously about his experience. 
+The downsides to focal therapy are all too familiar to 55-year-old journalist James, from London, who agreed to speak anonymously about his experience. 
 
 He was diagnosed with prostate cancer in 2012, aged 48, following a worrying PSA test result which he'd had as part of a general private health check. James has since undergone HIFU twice, cryotherapy and, finally, in March this year a radical prostatectomy.
 
