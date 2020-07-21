@@ -2,13 +2,15 @@
 layout: portfolio.njk
 tags: portfolio
 featured: true
-title: Prostate cancer cure to spare a man's sex life
+title: Prostate cancer HIFU (October 2019)
 journal: The Mail on Sunday
 date: 2019-10-13T15:58:37.976Z
 link: https://www.dailymail.co.uk/health/article-7565919/Why-wont-doctors-tell-prostate-cancer-cure-spare-mans-sex-life.html
 image: prostatecancer.jpg
 thumb: prostatethumbnail.jpg
 ---
+## There's a prostate cancer cure that can spare a man's sex life. So why won't doctors tell us about it?
+
 It was an agonising decision - and one faced by thousands of British men each year. 
 
 Paul Sayer had been given the devastating news that he had prostate cancer. It was aggressive - and his surgeon said the best chance was a major operation.
@@ -21,7 +23,7 @@ They could get him into theatre within ten days. And yet, possibly more frighten
 
 During tense discussions with his consultant, Paul mentioned that he had read about another option: high-intensity focused ultrasound, or HIFU. The scalpel-free treatment involves energy beams that blast tumour cells with pinpoint accuracy. Afterwards, few patients suffer the incontinence or sexual problems that often go hand-in-hand with a more major operation.
 
-Paul says: 'The way I understood it, HIFU attacks the tumour directly without damaging anything else. AnS d because of this, there was less chance of damaging the nerves round the prostate that control continence and erections, which appealed to me. But my doctors shut down the conversation. They said the HIFU was not a suitable treatment for my cancer.' 
+Paul says: 'The way I understood it, HIFU attacks the tumour directly without damaging anything else. And because of this, there was less chance of damaging the nerves round the prostate that control continence and erections, which appealed to me. But my doctors shut down the conversation. They said the HIFU was not a suitable treatment for my cancer.' 
 
 Undeterred, Paul decided to contact and meet the HIFU surgeon he'd read about. Professor Hashim Ahmed, a consultant surgeon at Imperial College Healthcare NHS Trust, told him he was 'a perfect candidate' for HIFU. 
 
