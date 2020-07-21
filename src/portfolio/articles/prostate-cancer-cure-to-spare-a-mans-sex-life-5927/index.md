@@ -2,7 +2,7 @@
 layout: portfolio.njk
 tags: portfolio
 featured: true
-title: Prostate cancer cure to spare a man's sex life
+title: Prostate cancer HIFU
 journal: The Mail on Sunday
 date: 2019-10-13T15:58:37.976Z
 link: https://www.dailymail.co.uk/health/article-7565919/Why-wont-doctors-tell-prostate-cancer-cure-spare-mans-sex-life.html
