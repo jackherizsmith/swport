@@ -7,7 +7,7 @@ journal: The Mail on Sunday
 date: 2020-05-03T16:53:43.621Z
 link: https://www.dailymail.co.uk/health/article-8280547/What-learn-100-year-old-super-survivors-caught-coronavirus-lived.html
 image: supersurvivors.jpg
-thumb: supersurvivorsthumbnail.jpg
+thumb: thumbnail.jpg
 pdf: super-survivors-may-cover-story.pdf
 ---
 ## ***What we can all learn from the 100-year-old super survivors who got the virus – and lived...***
