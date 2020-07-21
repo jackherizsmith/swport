@@ -10,7 +10,9 @@ image: supersurvivors.jpg
 thumb: supersurvivorsthumbnail.jpg
 pdf: super-survivors-may-cover-story.pdf
 ---
-## ***What we can all learn from the 100-year-old super survivors who got the virus – and lived...*** 
+## ***What we can all learn from the 100-year-old super survivors who got the virus – and lived...***
+
+
 
 The odds were stacked against 100-year-old Elsie Kelsall. 
 
