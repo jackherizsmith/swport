@@ -2,8 +2,6 @@
 title: ABOUT
 tags: about
 ---
-I am associate health editor with the Mail on Sunday.
+Associate Health Editor at the Mail on Sunday. 
 
-I have significant experience reporting on national news, and a proven track record of landing exclusives and generating original story ideas. 
-
-I trained and spent the first four years of my career working at the Press Association, as both a general news reporter and health and science correspondent.
+Previously Health Correspondent and General News Reporter at the Press Association.
