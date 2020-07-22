@@ -489,8 +489,9 @@ hr {
     width: 30rem;
     height: 100vh;
     position: fixed;
+    -webkit-overflow-scrolling: touch;
     overflow-y: scroll;
-    margin-bottom: 10rem; }
+    padding-bottom: 23rem; }
   .portfolio__article {
     margin-left: 30rem;
     max-width: calc(100% - 30rem); }
