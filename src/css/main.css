@@ -514,8 +514,7 @@ hr {
     padding: 3rem 1rem 2rem 2rem;
     user-select: none; }
   .port-nav__links {
-    list-style: none;
-    padding: 0 2rem; }
+    list-style: none; }
   .port-nav__item {
     position: relative; }
     .port-nav__item::before, .port-nav__item::after {
@@ -526,6 +525,12 @@ hr {
       height: .2rem;
       background-color: #363c49;
       transition: all .4s; }
+    .port-nav__item--current {
+      position: relative;
+      background-color: #303741;
+      color: #f5f6fa; }
+      .port-nav__item--current > p {
+        color: #f5f6fa; }
     .port-nav__item::before {
       content: "";
       margin-bottom: .5rem; }
@@ -542,7 +547,7 @@ hr {
     display: block;
     width: 100%;
     height: 9rem;
-    padding: 1.4rem 0;
+    padding: 1.4rem 2rem;
     font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: .1rem;
@@ -562,7 +567,7 @@ hr {
       right: 0; }
   .port-nav__journal, .port-nav__date {
     letter-spacing: initial;
-    margin-top: .2rem; }
+    margin: .2rem 2rem 0; }
   .port-nav__journal {
     font-size: 1.5rem;
     font-weight: 300; }
