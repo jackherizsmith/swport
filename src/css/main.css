@@ -365,17 +365,29 @@ hr {
       font-weight: 600; } }
 
 .footer {
+  position: relative;
   height: 10rem;
   background-color: #f8f1f4;
-  text-align: center;
   padding: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
   margin-top: 2rem;
-  position: relative;
-  box-shadow: 0 0rem .7rem #ccc;
+  box-shadow: 0 0rem 0.7rem #ccc;
   z-index: 2; }
   .footer__logo {
-    color: #f5f6fa;
-    font-size: 5rem; }
+    height: 6rem;
+    grid-column-start: 2; }
+  .footer__jack {
+    padding-right: 4rem;
+    font-size: 2rem;
+    text-align: end;
+    align-self: center; }
+    .footer__jack > a {
+      text-decoration: none;
+      font-weight: 700;
+      color: #303741; }
+      .footer__jack > a:hover {
+        color: #ff33b1; }
 
 .section-about {
   background-size: cover;
