@@ -6,8 +6,8 @@ title: Vaginal mesh
 journal: The Mail on Sunday
 date: 2020-07-05T17:24:25.061Z
 link: https://www.dailymail.co.uk/health/article-8489535/VINDICATED-women-left-agony-vaginal-mesh-told-imagining-it.html
-image: meshmain.jpg
-thumb: meshthumbnail.jpg
+image: vaginalmeshspread.jpg
+thumb: vaginalmesh.jpg
 pdf: mesh-july-cover-story.pdf
 ---
 They were questioned, doubted, ignored and sidelined - often by the very doctors they begged for help.
