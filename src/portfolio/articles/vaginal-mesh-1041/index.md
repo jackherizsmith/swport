@@ -2,7 +2,7 @@
 layout: portfolio.njk
 tags: portfolio
 featured: true
-title: The vaginal mesh scandal
+title: Vaginal mesh
 journal: The Mail on Sunday
 date: 2020-07-05T17:24:25.061Z
 link: https://www.dailymail.co.uk/health/article-8489535/VINDICATED-women-left-agony-vaginal-mesh-told-imagining-it.html
