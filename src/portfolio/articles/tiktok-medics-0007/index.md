@@ -2,11 +2,11 @@
 layout: portfolio.njk
 tags: portfolio
 featured: false
-title: TIKTOK MEDICS
+title: RISE OF THE TIKTOK MEDICS
 journal: The Mail on Sunday
 date: 2020-05-10T14:00:48.213Z
 link: https://www.dailymail.co.uk/health/article-8303599/How-TikTok-help-survive-Covid-19-lockdown.html
-image: tiktok.jpg
+image: tiktok3.jpg
 thumb: tiktok2.jpg
 pdf: theriseoftiktokmedics.pdf
 ---
