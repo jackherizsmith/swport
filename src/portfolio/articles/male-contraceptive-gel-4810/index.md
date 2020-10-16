@@ -6,8 +6,8 @@ title: Male contraceptive gel
 journal: The Mail on Sunday
 date: 2020-01-19T18:43:34.817Z
 link: https://www.dailymail.co.uk/health/article-7902311/The-new-male-birth-control-gel-rub-shoulder-boost-sex-life.html
-image: gelmain.jpg
-thumb: gelthumbnail.jpg
+image: malecontraceptivespread.jpg
+thumb: malecontraceptive.jpg
 pdf: contraceptive-january-cover.pdf
 ---
 It is a breakthrough many hope will herald a new era for modern relationships and transform sex lives across the world.
