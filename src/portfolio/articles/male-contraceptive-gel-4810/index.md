@@ -2,7 +2,7 @@
 layout: portfolio.njk
 tags: portfolio
 featured: true
-title: Male contraceptive gel
+title: NEW CONTRACEPTIVE FOR MEN
 journal: The Mail on Sunday
 date: 2020-01-19T18:43:34.817Z
 link: https://www.dailymail.co.uk/health/article-7902311/The-new-male-birth-control-gel-rub-shoulder-boost-sex-life.html
