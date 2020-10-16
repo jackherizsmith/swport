@@ -10,10 +10,6 @@ image: gelmain.jpg
 thumb: gelthumbnail.jpg
 pdf: contraceptive-january-cover.pdf
 ---
-## ***The new male birth control gel you rub on your shoulder***
-
-
-
 It is a breakthrough many hope will herald a new era for modern relationships and transform sex lives across the world.
 
 British couples are among hundreds worldwide trialling a pioneering form of contraception - designed specifically for men. If it's a success, and early results are good, it could be the first nonpermanent male contraceptive to become available since condoms were invented more than 400 years ago.
