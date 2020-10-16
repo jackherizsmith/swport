@@ -10,10 +10,6 @@ image: supersurvivors.jpg
 thumb: thumbnail.jpg
 pdf: super-survivors-may-cover-story.pdf
 ---
-## ***What we can all learn from the 100-year-old super survivors who got the virus – and lived...***
-
-
-
 The odds were stacked against 100-year-old Elsie Kelsall. 
 
 Three weeks ago, the great great-grandmother from Staffordshire was taken to hospital with a high temperature and mild cough - both symptoms of Covid-19. Two days later, her family's worst fears were confirmed when tests came back positive.
