@@ -2,7 +2,7 @@
 layout: portfolio.njk
 tags: portfolio
 featured: true
-title: Prostate cancer HIFU
+title: "A prostate cancer cure? "
 journal: The Mail on Sunday
 date: 2019-10-13T15:58:37.976Z
 link: https://www.dailymail.co.uk/health/article-7565919/Why-wont-doctors-tell-prostate-cancer-cure-spare-mans-sex-life.html
@@ -10,10 +10,6 @@ image: prostatecancer.jpg
 thumb: prostatethumbnail.jpg
 pdf: hifu-october-cover-story-.pdf
 ---
-## ***There's a prostate cancer cure that can spare a man's sex life. So why won't doctors tell us about it?***
-
-
-
 It was an agonising decision - and one faced by thousands of British men each year. 
 
 Paul Sayer had been given the devastating news that he had prostate cancer. It was aggressive - and his surgeon said the best chance was a major operation.
