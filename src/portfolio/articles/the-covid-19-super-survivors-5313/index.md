@@ -6,8 +6,8 @@ title: "The Covid-19 'super survivors' "
 journal: The Mail on Sunday
 date: 2020-05-03T16:53:43.621Z
 link: https://www.dailymail.co.uk/health/article-8280547/What-learn-100-year-old-super-survivors-caught-coronavirus-lived.html
-image: supersurvivors.jpg
-thumb: thumbnail.jpg
+image: covidsupersurvivorsspread.jpg
+thumb: covidsupersurvivors.jpg
 pdf: super-survivors-may-cover-story.pdf
 ---
 The odds were stacked against 100-year-old Elsie Kelsall. 
