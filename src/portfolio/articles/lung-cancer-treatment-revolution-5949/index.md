@@ -7,7 +7,7 @@ journal: The Mail on Sunday
 date: 2020-09-27T11:31:10.233Z
 link: https://www.dailymail.co.uk/health/article-8775669/Meet-Bob-living-proof-lung-cancer-isnt-death-sentence-was.html
 image: lungcancertreatment.jpg
-thumb: lungcancerthumbnail.jpg
+thumb: lungcancertreatment.jpg
 pdf: lungcancer.pdf
 ---
 Lung cancer was once considered pretty much a death sentence. Just two decades ago, it was near-impossible to treat. Doctors had only a handful of drugs at their disposal – and most patients were given just months to live.
