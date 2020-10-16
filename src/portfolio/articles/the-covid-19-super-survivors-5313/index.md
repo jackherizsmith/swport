@@ -6,7 +6,7 @@ title: COVID-19 'SUPER-SURVIVORS'
 journal: The Mail on Sunday
 date: 2020-05-03T16:53:43.621Z
 link: https://www.dailymail.co.uk/health/article-8280547/What-learn-100-year-old-super-survivors-caught-coronavirus-lived.html
-image: covidsupersurvivorsspread.jpg
+image: supersurvivors.jpg
 thumb: covidsupersurvivors.jpg
 pdf: super-survivors-may-cover-story.pdf
 ---
