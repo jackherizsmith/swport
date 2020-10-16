@@ -2,11 +2,11 @@
 layout: portfolio.njk
 tags: portfolio
 featured: true
-title: Lung cancer
+title: "Lung cancer "
 journal: The Mail on Sunday
 date: 2020-09-27T11:31:10.233Z
 link: https://www.dailymail.co.uk/health/article-8775669/Meet-Bob-living-proof-lung-cancer-isnt-death-sentence-was.html
-image: lung-cancer.jpg
+image: lungcancertreatment.jpg
 thumb: lungcancerthumbnail.jpg
 pdf: lungcancer.pdf
 ---
