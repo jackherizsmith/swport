@@ -6,7 +6,7 @@ title: AT-HOME DNA TEST
 journal: The Mail on Sunday
 date: 2020-02-02T14:55:55.942Z
 link: https://www.dailymail.co.uk/health/article-7955875/SALLY-WARDLE-frightening-discovery-thats-convinced-DNA-tests-harm-good.html
-image: dna2.jpg
+image: dna3.jpg
 thumb: dna1.jpg
 ---
 If you could look into a crystal ball and see your future, would you? Would you want to find out – right now – that in years to come you might develop dementia, a condition that could rob you of your memories and independence?
