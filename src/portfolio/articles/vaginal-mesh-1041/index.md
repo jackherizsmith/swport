@@ -10,10 +10,6 @@ image: meshmain.jpg
 thumb: meshthumbnail.jpg
 pdf: mesh-july-cover-story.pdf
 ---
-## ***VINDICATED: The thousands of women left in agony by vaginal mesh – but told they were imagining it***
-
-
-
 They were questioned, doubted, ignored and sidelined - often by the very doctors they begged for help.
 
 But now, thousands of women who have suffered life-changing injuries as a result of vaginal-mesh operations are set to be vindicated by a landmark inquiry.
@@ -31,8 +27,6 @@ The women affected now hope the publication will mark a shift in attitudes, and 
 It comes as a new group legal action - involving more than 250 vaginal-mesh claims - is launched in England against surgeons, private hospitals, NHS trusts and manufacturers. Thompsons Solicitors, which is representing the group, says many women were not adequately informed about the risks of the surgery beforehand and were not told about less invasive options that could treat their condition, such as physiotherapy.
 
 Medical firm Johnson & Johnson, the main manufacturer of the mesh used in England, has already agreed to pay a reported £50million settlement to women in Scotland who say they were left in agony by the implants. It is hoped there could be a similar payout in England.
-
-
 
 Kath Sansom, 52, from Cambridge, is one of those eagerly awaiting the findings of the independent review. The mother-of-two had mesh implanted on the NHS to treat stress urinary incontinence, brought on by childbirth, in March 2015. 
 
@@ -53,8 +47,6 @@ Thanks to campaigners such as Kath, in July 2018 NHS England put an immediate pa
 It followed a recommendation from the independent review, which suggested the procedure should not be carried out until strict conditions are met. This included the setting up of a national database, where details of all mesh operations would be reported, and the establishment of centres dedicated to removal and helping those adversely affected by the procedure.
 
 Two years later, these conditions have not been met. As a result, it is widely expected the suspension will remain in place when Baroness Cumberlege, chairman of the inquiry, makes her findings public. But one uncomfortable question remains. Just why did it take so long for these women to be heard - and believed? 
-
-
 
 Mesh - also known as tension-free vaginal tape, or TVT - was introduced in the 1990s, as a surgical method to treat stress urinary incontinence. The condition, which affects millions of women in the UK, causes urine to leak out of the bladder involuntarily.
 
