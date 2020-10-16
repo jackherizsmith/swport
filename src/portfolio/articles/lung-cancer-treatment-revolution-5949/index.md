@@ -1,7 +1,7 @@
 ---
 layout: portfolio.njk
 tags: portfolio
-featured: true
+featured: false
 title: ADVANCES IN LUNG CANCER
 journal: The Mail on Sunday
 date: 2020-09-27T11:31:10.233Z
