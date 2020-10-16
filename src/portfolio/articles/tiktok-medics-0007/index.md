@@ -1,7 +1,7 @@
 ---
 layout: portfolio.njk
 tags: portfolio
-featured: true
+featured: false
 title: TIKTOK MEDICS
 journal: The Mail on Sunday
 date: 2020-05-10T14:00:48.213Z
