@@ -6,7 +6,7 @@ title: PROSTATE CANCER CURE
 journal: The Mail on Sunday
 date: 2019-10-13T15:58:37.976Z
 link: https://www.dailymail.co.uk/health/article-7565919/Why-wont-doctors-tell-prostate-cancer-cure-spare-mans-sex-life.html
-image: prostatecancerspread.jpg
+image: prostatecancerspread2.jpg
 thumb: prostatecancercure.jpg
 pdf: hifu-october-cover-story-.pdf
 ---
