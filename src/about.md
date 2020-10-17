@@ -2,7 +2,7 @@
 title: ABOUT
 tags: about
 ---
-\| Freelance journalist, based in London |
+### Freelance journalist, based in London
 
 I began my career at the Press Association, the UK's leading national news agency. I initially covered breaking news and current affairs, and was later appointed as Health and Science Correspondent. 
 
