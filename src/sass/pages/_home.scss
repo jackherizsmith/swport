@@ -7,8 +7,16 @@
     margin: 0 auto;
     color: $colour-black-dark;
     display: flex;
-    max-width:60%;
+    max-width: 60%;
     flex-direction: column;
+
+    & h3 {
+      width: fit-content;
+      padding: 0 2rem;
+      border-left: solid 0.1rem black;
+      border-right: solid 0.1rem black;
+      margin: 0 auto 2rem;
+    }
   }
 
   //break point 774
@@ -98,7 +106,7 @@
 
     & > p > a:link,
     & > p > a:visited {
-      color: $colour-black-dark;;
+      color: $colour-black-dark;
     }
     & > p > a:hover {
       color: hsl(340, 83%, 75%);
@@ -114,11 +122,10 @@
 
   .section-about {
     &__content {
-      margin:0 auto;
+      margin: 0 auto;
       max-width: 80%;
     }
     &__title {
-      padding-left: 3rem;
       font-size: 4rem;
     }
     &__text {
@@ -140,16 +147,16 @@
   }
 
   .section-contact {
+    padding-bottom: 1rem;
     &__header {
       padding: 0 3rem;
       margin: 0 auto;
     }
     &__title {
-      padding-left: 3rem;
       font-size: 4rem;
     }
     &__text {
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
   }
 }

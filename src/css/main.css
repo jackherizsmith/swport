@@ -222,21 +222,21 @@ hr {
     margin-bottom: 2.2rem;
     font-size: 2.3rem;
     font-weight: 200;
-    letter-spacing: .1rem;
-    line-height: .7; }
+    letter-spacing: 0.1rem;
+    line-height: 0.7; }
     .form__label > span {
       color: #363c49; }
   .form__input {
     font-size: 2rem;
     font-weight: 300;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
     border: 0.2rem solid #3b434f;
     padding: 1.5rem;
     background-color: #fcf8f9;
     min-width: 100%;
     max-width: 100%; }
     .form__input:focus {
-      outline-offset: .3rem;
+      outline-offset: 0.3rem;
       outline: 0.4rem solid #3b434f; }
     .form__input:only-of-type {
       min-height: 15rem; }
@@ -267,14 +267,23 @@ hr {
     opacity: 0;
     font-size: 2.3rem;
     font-weight: 200;
-    letter-spacing: .1rem;
-    margin: 0 2rem .3rem 0;
+    letter-spacing: 0.1rem;
+    margin: 0 2rem 0.3rem 0;
     color: #303741;
-    transition: all .3s; }
+    transition: all 0.3s; }
 
 @media only screen and (max-width: 600px) {
   .form {
-    max-width: 30rem; }
+    max-width: 30rem;
+    margin-top: 7rem; }
+    .form__label, .form__input {
+      display: block; }
+    .form__label {
+      margin-bottom: 1rem;
+      font-size: 2rem; }
+    .form__input {
+      font-size: 1.8rem;
+      padding: 1rem; }
     .form__error {
       margin-bottom: 5rem; }
     .form__submit {
@@ -399,6 +408,12 @@ hr {
     display: flex;
     max-width: 60%;
     flex-direction: column; }
+    .section-about__content h3 {
+      width: fit-content;
+      padding: 0 2rem;
+      border-left: solid 0.1rem black;
+      border-right: solid 0.1rem black;
+      margin: 0 auto 2rem; }
   .section-about__title {
     text-align: center;
     font-weight: 300;
@@ -473,7 +488,6 @@ hr {
     margin: 0 auto;
     max-width: 80%; }
   .section-about__title {
-    padding-left: 3rem;
     font-size: 4rem; }
   .section-about__text {
     padding: 0 2rem;
@@ -484,14 +498,15 @@ hr {
     font-size: 4rem; }
   .section-portfolio__link {
     font-size: 2rem; }
-  .section-contact__header {
-    padding: 0 3rem;
-    margin: 0 auto; }
-  .section-contact__title {
-    padding-left: 3rem;
-    font-size: 4rem; }
-  .section-contact__text {
-    font-size: 2rem; } }
+  .section-contact {
+    padding-bottom: 1rem; }
+    .section-contact__header {
+      padding: 0 3rem;
+      margin: 0 auto; }
+    .section-contact__title {
+      font-size: 4rem; }
+    .section-contact__text {
+      font-size: 2.2rem; } }
 
 .portfolio {
   display: flex;
@@ -520,7 +535,7 @@ hr {
     width: 100%;
     font-size: 3.5rem;
     font-weight: 700;
-    letter-spacing: .3rem;
+    letter-spacing: 0.3rem;
     text-transform: uppercase;
     text-align: left;
     padding: 3rem 1rem 2rem 2rem;
@@ -534,9 +549,9 @@ hr {
       display: block;
       margin-left: 50%;
       width: 0;
-      height: .2rem;
+      height: 0.2rem;
       background-color: #363c49;
-      transition: all .4s; }
+      transition: all 0.4s; }
     .port-nav__item--current {
       position: relative;
       background-color: #303741;
@@ -545,10 +560,10 @@ hr {
         color: #f5f6fa; }
     .port-nav__item::before {
       content: "";
-      margin-bottom: .5rem; }
+      margin-bottom: 0.5rem; }
     .port-nav__item::after {
       content: "";
-      margin-top: .9rem; }
+      margin-top: 0.9rem; }
     .port-nav__item:hover {
       color: #222;
       background-color: rgba(248, 241, 244, 0.5); }
@@ -562,10 +577,10 @@ hr {
     padding: 1.4rem 2rem;
     font-size: 2.5rem;
     font-weight: 700;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     text-decoration: none;
     color: #303741;
-    transition: all .3s;
+    transition: all 0.3s;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -579,7 +594,7 @@ hr {
       right: 0; }
   .port-nav__journal, .port-nav__date {
     letter-spacing: initial;
-    margin: .2rem 2rem 0; }
+    margin: 0.2rem 2rem 0; }
   .port-nav__journal {
     font-size: 1.5rem;
     font-weight: 300; }
@@ -633,7 +648,7 @@ hr {
   .article__journal:hover {
     color: #f05c8d; }
   .article__detail {
-    letter-spacing: .08rem;
+    letter-spacing: 0.08rem;
     font-size: 1.8rem; }
   .article__pdf {
     font-size: 1.3rem;
@@ -646,10 +661,11 @@ hr {
       background-color: #303741; }
   .article__wrapper {
     padding: 5rem;
+    margin-bottom: 2rem;
     text-align: justify; }
     .article__wrapper > p {
       font-size: 2rem;
-      letter-spacing: .1rem;
+      letter-spacing: 0.1rem;
       font-weight: 300;
       display: block; }
       .article__wrapper > p:not(:first-child) {
@@ -666,21 +682,23 @@ hr {
         .article__wrapper > p > strong > em {
           font-weight: 600;
           font-style: italic; }
-      .article__wrapper > p > a:link, .article__wrapper > p > a:visited {
+      .article__wrapper > p > a:link,
+      .article__wrapper > p > a:visited {
         color: #d95984;
         text-decoration: none;
-        padding: 0 .4rem;
-        border: .3rem dotted transparent; }
-        .article__wrapper > p > a:link:hover, .article__wrapper > p > a:visited:hover {
+        padding: 0 0.4rem;
+        border: 0.3rem dotted transparent; }
+        .article__wrapper > p > a:link:hover,
+        .article__wrapper > p > a:visited:hover {
           border-color: #222; }
       .article__wrapper > p > img {
         display: block;
         margin: 3rem auto;
         max-width: 100%;
-        box-shadow: 0rem .3rem .7rem #444; }
+        box-shadow: 0rem 0.3rem 0.7rem #444; }
     .article__wrapper > blockquote {
       display: block;
-      letter-spacing: .2rem;
+      letter-spacing: 0.2rem;
       font-weight: 200;
       padding: 3rem;
       margin: 4rem 2rem 6rem;
@@ -708,12 +726,12 @@ hr {
     font-size: 2.2rem;
     padding: 1rem 1.5rem;
     text-decoration: none;
-    box-shadow: 0 0.2rem .4rem #aaa;
-    border-radius: .3rem;
+    box-shadow: 0 0.2rem 0.4rem #aaa;
+    border-radius: 0.3rem;
     z-index: 3;
     background-color: #f8f1f4;
-    transition: all .4s;
-    border: .1rem solid #303741;
+    transition: all 0.4s;
+    border: 0.1rem solid #303741;
     color: #303741; }
     .article__top:hover {
       opacity: 100%; }
